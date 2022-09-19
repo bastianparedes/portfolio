@@ -25,7 +25,7 @@ exports['<About /> should render 1'] = `
         <p
           class="mainLeft__p"
         >
-          Un Full Stack Developer con experiencia construyendo sitios web con responsive design que conecten front-end y back-end. Me especializo en el uso de JavaScript, React.js y Next.js.
+          Un Front End Developer con experiencia construyendo sitios web con responsive design que conecten front-end y back-end. Me especializo en el uso de JavaScript, React.js y Next.js.
         </p>
         <p
           class="mainLeft__p"

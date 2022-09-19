@@ -27,7 +27,7 @@ const About = (): JSX.Element => {
         <div className={styles.mainLeft}>
           <h2 className={styles.mainLeft__h2}>Soy Bastián Paredes,</h2>
           <p className={styles.mainLeft__p}>
-            Un Full Stack Developer con experiencia construyendo sitios web con
+            Un Front End Developer con experiencia construyendo sitios web con
             responsive design que conecten front-end y back-end. Me especializo
             en el uso de JavaScript, React.js y Next.js.
           </p>

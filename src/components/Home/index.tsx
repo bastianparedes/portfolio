@@ -83,7 +83,7 @@ const Home = (): JSX.Element => {
         <div className={styles.typewriterContainer}>
           <Typewriter
             onInit={(typewriter) => {
-              typewriter.typeString('Full Stack Developer').start()
+              typewriter.typeString('Front End Developer').start()
             }}
           />
         </div>
