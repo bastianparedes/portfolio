@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<Footer /> should render 1'] = `
+<div>
+  <footer
+    class="footer"
+  >
+    <a
+      class="footer__a"
+      href="https://github.com/BastianParedes/bastianparedes.github.io"
+      rel="noreferrer noopener"
+      target="_blank"
+    >
+      Portfolio designed by @Bastián Paredes, © 2022
+    </a>
+  </footer>
+</div>
+`;

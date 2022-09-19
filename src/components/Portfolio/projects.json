@@ -1,0 +1,53 @@
+{
+  "projects": [
+    {
+      "name": "Falabella",
+      "link": "https://www.falabella.com/falabella-cl/",
+      "image": "falabella.png",
+      "github": "",
+      "description": "A/B Tester de la plataforma. Desarrollo nuevas versiones de la página y comparo la antigua versión con la nueva para recolectar datos y así desplegar la que obtenga mejores resultados.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "Dinamic Yield",
+        "Adobe Experience Data Collection"
+      ]
+    },
+    {
+      "name": "Tu Salad",
+      "link": "https://tusalad.vercel.app/",
+      "image": "tu-salad.png",
+      "github": "https://github.com/BastianParedes/tusalad/",
+      "description": "Página web de venta de bowls de ensalada que incluye un carrito de compras y una pasarela de pago construida mediante el servicio Webpay plus de Transbank. Las compras quedan registradas en una base de datos para consultar su estado.",
+      "technologies": ["React.js", "Next.js", "TypeScript", "WebPay"]
+    },
+    {
+      "name": "PDF Constructor",
+      "link": "https://pdf-constructor.vercel.app/",
+      "image": "pdf-constructor.png",
+      "github": "https://github.com/BastianParedes/pdf-constructor/",
+      "description": "Es una página web que recibe las imágenes cargadas por el usuario, las configura a gusto y finalmente genera un archivo PDF que se guarda en el computador del mismo. Todo el proceso ocurre del lado del Front-end.",
+      "technologies": ["React.js", "SortableJS", "jsPDF"]
+    },
+    {
+      "name": "My Global Chat",
+      "link": "https://my-global-chat.vercel.app/",
+      "image": "my-global-chat.png",
+      "github": "https://github.com/BastianParedes/my-global-chat/",
+      "description": "Aplicación web que pide al usuario un nombre y lo lleva a una sala donde todos los conectados a la página en ese momento pueden conversar al mismo tiempo.",
+      "technologies": ["React.js", "Socket.IO"]
+    },
+    {
+      "name": "TstMaker",
+      "link": "",
+      "image": "tstmaker.png",
+      "github": "https://github.com/BastianParedes/tstmaker/",
+      "description": "Aplicación de escritorio que construye evaluaciones de seleción única de matemática para el nivel secundario de las escuelas chilenas.",
+      "technologies": ["Python3", "Tkinter", "MiKTeX"]
+    }
+  ]
+}

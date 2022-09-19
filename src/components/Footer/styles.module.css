@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  height: 6.25rem;
+}
+
+.footer__a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__a:hover {
+  color: rgb(173, 216, 230);
+}

@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<About /> should render 1'] = `
+<div>
+  <section
+    class="section"
+    id="about"
+  >
+    <h3
+      class="title"
+    >
+      About me
+    </h3>
+    <div
+      class="main"
+    >
+      <div
+        class="mainLeft"
+      >
+        <h2
+          class="mainLeft__h2"
+        >
+          Soy Bastián Paredes,
+        </h2>
+        <p
+          class="mainLeft__p"
+        >
+          Un Full Stack Developer con experiencia construyendo sitios web con responsive design que conecten front-end y back-end. Me especializo en el uso de JavaScript, React.js y Next.js.
+        </p>
+        <p
+          class="mainLeft__p"
+        >
+          Siempre busco mejorar mis habilidades desarrollando proyectos propios a la par de mi trabajo. Estoy constantemente estudiando acerca de las nuevas tecnologías para actualizar mi repertorio de herramientas para que los códigos de mis creaciones sean fáciles de leer, seguros y eficientes.
+        </p>
+        <button
+          class="buttonCv"
+        >
+          <a
+            class="buttonCv__a"
+            href="https://drive.google.com/file/d/1LheHpim4QsBKLe6kxYD1OMggrRW8DLWl/view?usp=sharing"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            Ver currículum
+          </a>
+        </button>
+      </div>
+      <div
+        class="mainRight"
+      >
+        <h2
+          class="mainRight__h2"
+        >
+          Skills
+        </h2>
+        <div
+          class="skillsContainer"
+        >
+          <div
+            class="skillCard"
+          >
+            <img
+              alt="HTML 5"
+              class="skillImage"
+              src="/images/skills/html5.png"
+            />
+            <p
+              class="skillName"
+            >
+              HTML 5
+            </p>
+          </div>
+          <div
+            class="skillCard"
+          >
+            <img
+              alt="CSS 3"
+              class="skillImage"
+              src="/images/skills/css3.png"
+            />
+            <p
+              class="skillName"
+            >
+              CSS 3
+            </p>
+          </div>
+          <div
+            class="skillCard"
+          >
+            <img
+              alt="JavaScript"
+              class="skillImage"
+              src="/images/skills/javascript.png"
+            />
+            <p
+              class="skillName"
+            >
+              JavaScript
+            </p>
+          </div>
+          <div
+            class="skillCard"
+          >
+            <img
+              alt="TypeScript"
+              class="skillImage"
+              src="/images/skills/typescript.png"
+            />
+            <p
+              class="skillName"
+            >
+              TypeScript
+            </p>
+          </div>
+          <div
+            class="skillCard"
+          >
+            <img
+              alt="React.js"
+              class="skillImage"
+              src="/images/skills/react.js.png"
+            />
+            <p
+              class="skillName"
+            >
+              React.js
+            </p>
+          </div>
+          <div
+            class="skillCard"
+          >
+            <img
+              alt="Next.js"
+              class="skillImage"
+              src="/images/skills/next.js.png"
+            />
+            <p
+              class="skillName"
+            >
+              Next.js
+            </p>
+          </div>
+          <div
+            class="skillCard"
+          >
+            <img
+              alt="Python 3"
+              class="skillImage"
+              src="/images/skills/python3.png"
+            />
+            <p
+              class="skillName"
+            >
+              Python 3
+            </p>
+          </div>
+          <div
+            class="skillCard"
+          >
+            <img
+              alt="MySql"
+              class="skillImage"
+              src="/images/skills/mysql.png"
+            />
+            <p
+              class="skillName"
+            >
+              MySql
+            </p>
+          </div>
+          <div
+            class="skillCard"
+          >
+            <img
+              alt="MongoDB"
+              class="skillImage"
+              src="/images/skills/mongodb.svg"
+            />
+            <p
+              class="skillName"
+            >
+              MongoDB
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

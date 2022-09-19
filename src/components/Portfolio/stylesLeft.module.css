@@ -1,0 +1,22 @@
+.imageContainer,
+.image {
+  grid-column: 6 / -1;
+}
+
+.projectName {
+  grid-column: 1 / 6;
+  text-align: left;
+}
+
+.projectDescriptionContainer {
+  grid-column: 1 / 9;
+}
+
+.projectTechnologies {
+  grid-column: 1 / 6;
+  text-align: left;
+}
+
+.linksContainer {
+  grid-column: 1 / 3;
+}
