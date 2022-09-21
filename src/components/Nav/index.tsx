@@ -1,6 +1,7 @@
 import React from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
 import styles from './styles.module.css'
+import constants from '../../config/constants.json'
 
 interface LinkProps {
   link: string
@@ -10,20 +11,7 @@ interface LinkProps {
 const Nav = (): JSX.Element => {
   const [opened, setOpened] = React.useState(false)
   const logoPath = process.env.PUBLIC_URL + '/images/logo.png'
-  const linkInfo = [
-    {
-      link: '#home',
-      title: 'Home'
-    },
-    {
-      link: '#about',
-      title: 'About'
-    },
-    {
-      link: '#portfolio',
-      title: 'Porftolio'
-    }
-  ]
+
   const buttonClickHandler = (): void => {
     setOpened((value) => !value)
   }
@@ -35,7 +23,7 @@ const Nav = (): JSX.Element => {
   const Link = (props: LinkProps): JSX.Element => {
     return (
       <li className={styles.link}>
-        <a href={props.link} className={styles.link__a} onClick={openNav}>
+        <a href={'#' + props.link} className={styles.link__a} onClick={openNav}>
           {props.title}
         </a>
       </li>
@@ -61,9 +49,21 @@ const Nav = (): JSX.Element => {
           opened ? styles.linksContainerOpened : ''
         }`}
       >
-        {linkInfo.map((info) => (
-          <Link key={info.link} {...info} />
-        ))}
+        <Link
+          key={constants.NAV.BUTTONS.HOME.ID}
+          link={constants.NAV.BUTTONS.HOME.ID}
+          title={constants.NAV.BUTTONS.HOME.TITLE}
+        />
+        <Link
+          key={constants.NAV.BUTTONS.ABOUT.ID}
+          link={constants.NAV.BUTTONS.ABOUT.ID}
+          title={constants.NAV.BUTTONS.ABOUT.TITLE}
+        />
+        <Link
+          key={constants.NAV.BUTTONS.PORTFOLIO.ID}
+          link={constants.NAV.BUTTONS.PORTFOLIO.ID}
+          title={constants.NAV.BUTTONS.PORTFOLIO.TITLE}
+        />
       </ul>
     </nav>
   )

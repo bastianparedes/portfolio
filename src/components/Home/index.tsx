@@ -1,13 +1,13 @@
 import React from 'react'
 import Particles from 'react-tsparticles'
-
 import styles from './styles.module.css'
 import { BiDownArrowAlt } from 'react-icons/bi'
 import Typewriter from 'typewriter-effect'
+import constants from '../../config/constants.json'
 
 const Home = (): JSX.Element => {
   return (
-    <section id="home" className={styles.home}>
+    <section id={constants.NAV.BUTTONS.HOME.ID} className={styles.home}>
       <Particles
         className={styles.particles}
         options={{
@@ -79,16 +79,16 @@ const Home = (): JSX.Element => {
         }}
       />
       <div className={styles.cuadro}>
-        <h1 className={styles.myName}>Bastián Paredes</h1>
+        <h1 className={styles.myName}>{constants.HOME.NAME}</h1>
         <div className={styles.typewriterContainer}>
           <Typewriter
             onInit={(typewriter) => {
-              typewriter.typeString('Front End Developer').start()
+              typewriter.typeString(constants.HOME.JOB).start()
             }}
           />
         </div>
       </div>
-      <a className={styles.btnDown} href="#about">
+      <a className={styles.btnDown} href={'#' + constants.NAV.BUTTONS.ABOUT.ID}>
         <BiDownArrowAlt />
       </a>
     </section>

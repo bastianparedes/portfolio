@@ -3,6 +3,7 @@ import styles from './styles.module.css'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 import { FiInstagram } from 'react-icons/fi'
 import { VscGithubAlt, VscMail } from 'react-icons/vsc'
+import constants from '../../config/constants.json'
 
 interface LinkProps {
   link: string
@@ -28,16 +29,16 @@ const Contact = (): JSX.Element => {
   return (
     <div className={styles.linkContainer}>
       <ul className={styles.linksList}>
-        <Link link="https://github.com/BastianParedes">
+        <Link link={constants.CONTACT.LINKS.GITHUB}>
           <VscGithubAlt />
         </Link>
-        <Link link="mailto:bastian.p.trabajo@outlook.com">
+        <Link link={constants.CONTACT.LINKS.EMAIL}>
           <VscMail />
         </Link>
-        <Link link="https://www.linkedin.com/in/bastianparedes/">
+        <Link link={constants.CONTACT.LINKS.LINKEDIN}>
           <AiOutlineLinkedin />
         </Link>
-        <Link link="https://www.instagram.com/bastian.p.95/">
+        <Link link={constants.CONTACT.LINKS.INSTAGRAM}>
           <FiInstagram />
         </Link>
         <div className={styles.verticalLine}></div>

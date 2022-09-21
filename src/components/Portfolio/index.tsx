@@ -1,12 +1,10 @@
 import React from 'react'
 import { VscSignOut, VscGithub } from 'react-icons/vsc'
-
 import { Section } from '../Common'
 import styles from './styles.module.css'
 import stylesRight from './stylesRight.module.css'
 import stylesLeft from './stylesLeft.module.css'
-
-import projects from './projects.json'
+import constants from '../../config/constants.json'
 
 interface ProjectProps {
   index: number
@@ -104,16 +102,16 @@ const Portfolio = (): JSX.Element => {
   return (
     <Section id="portfolio" title="Portfolio">
       <div className={styles.projectsContainer}>
-        {projects.projects.map((info, index) => (
+        {constants.PORTFOLIO.PROJECTS.map((info, index) => (
           <Project
-            key={index}
+            key={info.NAME}
             index={index}
-            name={info.name}
-            link={info.link}
-            image={info.image}
-            github={info.github}
-            description={info.description}
-            technologies={info.technologies}
+            name={info.NAME}
+            link={info.LINK}
+            image={info.IMAGE}
+            github={info.GITHUB}
+            description={info.DESCRIPTION}
+            technologies={info.TECHNOLOGIES}
           />
         ))}
       </div>

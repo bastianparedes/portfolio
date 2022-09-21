@@ -1,17 +1,11 @@
 import React from 'react'
 import styles from './styles.module.css'
+import constants from '../../config/constants.json'
 
 const Footer = (): JSX.Element => {
   return (
     <footer className={styles.footer}>
-      <a
-        className={styles.footer__a}
-        href="https://github.com/BastianParedes/bastianparedes.github.io"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        Portfolio designed by @Bastián Paredes, © 2022
-      </a>
+      <span className={styles.footer__span}>{constants.FOOTER.MESSAGE}</span>
     </footer>
   )
 }
