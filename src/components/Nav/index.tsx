@@ -10,7 +10,7 @@ interface LinkProps {
 
 const Nav = (): JSX.Element => {
   const [opened, setOpened] = React.useState(false)
-  const logoPath = process.env.PUBLIC_URL + '/images/logo.png'
+  const logoPath = '/images/logo.png'
 
   const buttonClickHandler = (): void => {
     setOpened((value) => !value)

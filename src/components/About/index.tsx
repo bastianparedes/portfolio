@@ -13,7 +13,7 @@ const Skill = (props: SkillProps): JSX.Element => {
     <div className={styles.skillCard}>
       <img
         className={styles.skillImage}
-        src={process.env.PUBLIC_URL + '/images/skills/' + props.src}
+        src={'/images/skills/' + props.src}
         alt={props.name}
       />
       <p className={styles.skillName}>{props.name}</p>

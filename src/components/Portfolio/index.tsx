@@ -26,7 +26,7 @@ const Project = ({
   technologies
 }: ProjectProps): JSX.Element => {
   const stylesSide = index % 2 === 0 ? stylesRight : stylesLeft
-  const imagePath = process.env.PUBLIC_URL + '/images/projects/' + image
+  const imagePath = '/images/projects/' + image
 
   return (
     <div className={styles.projectCard}>
