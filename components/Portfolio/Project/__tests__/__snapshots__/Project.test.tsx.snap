@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Project /> should render left 1`] = `
+<div>
+  <div
+    class="projectCard"
+  >
+    <a
+      class="imageContainer imageContainer"
+      href="https://www.falabella.com/falabella-cl/"
+      rel="noreferrer noopener"
+      target="_blank"
+    >
+      <span
+        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+      >
+        <img
+          alt="falabella.png"
+          data-nimg="fill"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+        />
+        <noscript />
+      </span>
+    </a>
+    <h2
+      class="projectName projectName"
+    >
+      Falabella
+    </h2>
+    <div
+      class="projectDescriptionContainer projectDescriptionContainer"
+    >
+      <p
+        class="projectDescription projectDescription"
+      >
+        A/B Tester de la plataforma. Desarrollo nuevas versiones de la página y comparo la antigua versión con la nueva para recolectar datos y así desplegar la que obtenga mejores resultados.
+      </p>
+    </div>
+    <span
+      class="projectTechnologies projectTechnologies"
+    >
+      HTML, CSS, JavaScript, React.js, Next.js, TypeScript, Dinamic Yield, Adobe Experience Data Collection
+    </span>
+    <div
+      class="linksContainer linksContainer"
+    >
+      <a
+        class="linkWebsite linkWebsite"
+        href="https://www.falabella.com/falabella-cl/"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M11.02 3.77v1.56l1-.99V2.5l-.5-.5h-9l-.5.5v.486L2 3v10.29l.36.46 5 1.72L8 15v-1h3.52l.5-.5v-1.81l-1-1V13H8V4.71l-.33-.46L4.036 3h6.984v.77zM7 14.28l-4-1.34V3.72l4 1.34v9.22zm6.52-5.8H8.55v-1h4.93l-1.6-1.6.71-.7 2.47 2.46v.71l-2.49 2.48-.7-.7 1.65-1.65z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Project /> should render right 1`] = `
+<div>
+  <div
+    class="projectCard"
+  >
+    <a
+      class="imageContainer imageContainer"
+      href="https://www.falabella.com/falabella-cl/"
+      rel="noreferrer noopener"
+      target="_blank"
+    >
+      <span
+        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+      >
+        <img
+          alt="falabella.png"
+          data-nimg="fill"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+        />
+        <noscript />
+      </span>
+    </a>
+    <h2
+      class="projectName projectName"
+    >
+      Falabella
+    </h2>
+    <div
+      class="projectDescriptionContainer projectDescriptionContainer"
+    >
+      <p
+        class="projectDescription projectDescription"
+      >
+        A/B Tester de la plataforma. Desarrollo nuevas versiones de la página y comparo la antigua versión con la nueva para recolectar datos y así desplegar la que obtenga mejores resultados.
+      </p>
+    </div>
+    <span
+      class="projectTechnologies projectTechnologies"
+    >
+      HTML, CSS, JavaScript, React.js, Next.js, TypeScript, Dinamic Yield, Adobe Experience Data Collection
+    </span>
+    <div
+      class="linksContainer linksContainer"
+    >
+      <a
+        class="linkWebsite linkWebsite"
+        href="https://www.falabella.com/falabella-cl/"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M11.02 3.77v1.56l1-.99V2.5l-.5-.5h-9l-.5.5v.486L2 3v10.29l.36.46 5 1.72L8 15v-1h3.52l.5-.5v-1.81l-1-1V13H8V4.71l-.33-.46L4.036 3h6.984v.77zM7 14.28l-4-1.34V3.72l4 1.34v9.22zm6.52-5.8H8.55v-1h4.93l-1.6-1.6.71-.7 2.47 2.46v.71l-2.49 2.48-.7-.7 1.65-1.65z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+`;

@@ -1,74 +1,45 @@
 {
-  "homepage": "./",
-  "name": "bastianparedes",
-  "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.11.59",
-    "@types/react": "^18.0.20",
-    "@types/react-dom": "^18.0.6",
-    "normalize.css": "^8.0.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.3.1",
-    "react-scripts": "5.0.1",
-    "react-tsparticles": "^1.43.1",
-    "typewriter-effect": "^2.18.2",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --coverage --watchAll",
-    "eject": "react-scripts eject",
-    "format": "prettier --write .",
-    "lint": "eslint . --ext js,jsx,ts,tsx --fix"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest",
+    "test:ci": "jest --ci",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "prepare": "husky install",
+    "fix": "npm run format:fix && npm run lint:fix && npm run test -- -u"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx,ts,tsx}",
-      "!src/types/*",
-      "!src/index.tsx"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
-      }
-    }
+  "dependencies": {
+    "next": "latest",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-icons": "^4.4.0",
+    "react-tsparticles": "^2.3.2",
+    "tsparticles": "^2.3.2",
+    "tsparticles-engine": "^2.3.2",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.37.0",
-    "eslint": "^8.23.1",
+    "@testing-library/jest-dom": "5.16.4",
+    "@testing-library/react": "13.2.0",
+    "@testing-library/user-event": "14.2.0",
+    "@types/react": "18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "eslint": "^8.24.0",
+    "eslint-config-next": "12.3.1",
     "eslint-config-standard-with-typescript": "^23.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-n": "^15.3.0",
     "eslint-plugin-promise": "^6.0.1",
     "eslint-plugin-react": "^7.31.8",
+    "husky": "^8.0.0",
+    "jest": "28.1.0",
+    "jest-environment-jsdom": "28.1.0",
+    "node-mocks-http": "^1.11.0",
     "prettier": "^2.7.1",
     "typescript": "^4.8.3"
   }

@@ -1,0 +1,47 @@
+.linkContainer {
+  width: fit-content;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  color: rgb(255, 255, 255);
+  display: flex;
+}
+
+.linksList {
+  position: sticky;
+  list-style: none;
+  bottom: 0;
+  margin: auto 0 0;
+  padding-top: 4rem;
+}
+
+.verticalLine {
+  width: 1px;
+  height: 10rem;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+}
+
+@media (max-device-width: 700px) {
+  .linkContainer {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .linksList {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .verticalLine {
+    display: none;
+  }
+}

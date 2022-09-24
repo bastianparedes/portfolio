@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MyParticles /> should render 1`] = `
+<div>
+  <div
+    class="particles"
+    id="tsparticles"
+  >
+    <canvas
+      style="width: 100%; height: 100%;"
+    />
+  </div>
+</div>
+`;

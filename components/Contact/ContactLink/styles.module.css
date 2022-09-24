@@ -1,0 +1,29 @@
+.link {
+  width: 100%;
+  margin: 2rem 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.link__a {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  transition: all ease 0.2s;
+}
+
+.link__a:hover {
+  bottom: 0.2rem;
+  color: rgb(0, 255, 255);
+}
+
+@media (max-device-width: 700px) {
+  .link {
+    margin: 0;
+    text-align: center;
+    font-size: 4rem;
+  }
+}

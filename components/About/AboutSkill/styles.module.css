@@ -1,0 +1,72 @@
+.main {
+  display: grid;
+  gap: 80px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mainLeft {
+}
+
+.mainLeft__h2 {
+}
+
+.mainLeft__p {
+  text-align: justify;
+  line-height: 40px;
+  font-size: 1.2rem;
+}
+
+.buttonCv {
+  display: block;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: rgb(103, 212, 255);
+  border: black 1px solid;
+}
+
+.buttonCv__a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor: inherit;
+}
+
+.mainRight {
+}
+
+.mainRight__h2 {
+  text-align: center;
+}
+
+.skillsContainer {
+  position: relative;
+  padding-top: 0.9rem;
+  display: grid;
+  place-items: center;
+  gap: 3rem 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+}
+
+.skillCard {
+  width: 5rem;
+}
+
+.skillImageContainer {
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.skillName {
+  font-weight: bolder;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-device-width: 1000px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}

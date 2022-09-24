@@ -1,0 +1,22 @@
+.link {
+}
+
+.link__a {
+  color: rgb(255, 255, 255);
+  font-size: inherit;
+  text-decoration: none;
+}
+
+.link__a:hover {
+  color: rgb(103, 255, 124);
+}
+
+@media (max-device-width: 700px) {
+  .link {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

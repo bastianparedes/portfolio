@@ -1,0 +1,9 @@
+.projectsContainer {
+  width: max(60%, 700px);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  padding-bottom: 10rem;
+  margin: auto;
+}

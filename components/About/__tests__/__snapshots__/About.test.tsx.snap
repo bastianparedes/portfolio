@@ -1,0 +1,289 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<About /> should render 1`] = `
+<div>
+  <section
+    class="section"
+    id="about"
+  >
+    <h3
+      class="title"
+    >
+      About me
+    </h3>
+    <div
+      class="main"
+    >
+      <div
+        class="mainLeft"
+      >
+        <h2
+          class="mainLeft__h2"
+        >
+          Soy Bastián Paredes,
+        </h2>
+        <p
+          class="mainLeft__p"
+        >
+          Un Front End Developer con experiencia construyendo sitios web con responsive design que conecten front-end y back-end. Me especializo en el uso de JavaScript, React.js y Next.js.
+        </p>
+        <p
+          class="mainLeft__p"
+        >
+          Siempre busco mejorar mis habilidades desarrollando proyectos propios a la par de mi trabajo. Estoy constantemente estudiando acerca de las nuevas tecnologías para actualizar mi repertorio de herramientas para que los códigos de mis creaciones sean fáciles de leer, seguros y eficientes.
+        </p>
+        <button
+          class="buttonCv"
+        >
+          <a
+            class="buttonCv__a"
+            href="/api/cv"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            Ver currículum
+          </a>
+        </button>
+      </div>
+      <div
+        class="mainRight"
+      >
+        <h2
+          class="mainRight__h2"
+        >
+          Skills
+        </h2>
+        <div
+          class="skillsContainer"
+        >
+          <div
+            class="skillCard"
+          >
+            <div
+              class="skillImageContainer"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt="HTML 5"
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <p
+              class="skillName"
+            >
+              HTML 5
+            </p>
+          </div>
+          <div
+            class="skillCard"
+          >
+            <div
+              class="skillImageContainer"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt="CSS 3"
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <p
+              class="skillName"
+            >
+              CSS 3
+            </p>
+          </div>
+          <div
+            class="skillCard"
+          >
+            <div
+              class="skillImageContainer"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt="JavaScript"
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <p
+              class="skillName"
+            >
+              JavaScript
+            </p>
+          </div>
+          <div
+            class="skillCard"
+          >
+            <div
+              class="skillImageContainer"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt="TypeScript"
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <p
+              class="skillName"
+            >
+              TypeScript
+            </p>
+          </div>
+          <div
+            class="skillCard"
+          >
+            <div
+              class="skillImageContainer"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt="React.js"
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <p
+              class="skillName"
+            >
+              React.js
+            </p>
+          </div>
+          <div
+            class="skillCard"
+          >
+            <div
+              class="skillImageContainer"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt="Next.js"
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <p
+              class="skillName"
+            >
+              Next.js
+            </p>
+          </div>
+          <div
+            class="skillCard"
+          >
+            <div
+              class="skillImageContainer"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt="Python 3"
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <p
+              class="skillName"
+            >
+              Python 3
+            </p>
+          </div>
+          <div
+            class="skillCard"
+          >
+            <div
+              class="skillImageContainer"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt="MySql"
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <p
+              class="skillName"
+            >
+              MySql
+            </p>
+          </div>
+          <div
+            class="skillCard"
+          >
+            <div
+              class="skillImageContainer"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt="MongoDB"
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <p
+              class="skillName"
+            >
+              MongoDB
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

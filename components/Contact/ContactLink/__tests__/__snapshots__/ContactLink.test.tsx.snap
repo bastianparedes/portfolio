@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContactLink /> should render 1`] = `
+<div>
+  <li
+    class="link"
+  >
+    <a
+      class="link__a"
+      href="https://github.com/BastianParedes"
+      rel="noreferrer noopener"
+      target="_blank"
+    />
+  </li>
+</div>
+`;
