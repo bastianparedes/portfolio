@@ -1,64 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`/index should render 1`] = `
+exports[`<Main /> should render 1`] = `
 <div>
-  <section
-    class="home"
-    id="home"
-  >
-    <div
-      class="particles"
-      id="tsparticles"
-    >
-      <canvas
-        style="width: 100%; height: 100%;"
-      />
-    </div>
-    <div
-      class="cuadro"
-    >
-      <h1
-        class="myName"
-      >
-        Bastián Paredes
-      </h1>
-      <div
-        class="typewriterContainer"
-      >
-        <div
-          class="Typewriter"
-          data-testid="typewriter-wrapper"
-        >
-          <span
-            class="Typewriter__wrapper"
-          />
-          <span
-            class="Typewriter__cursor"
-          >
-            |
-          </span>
-        </div>
-      </div>
-    </div>
-    <a
-      class="btnDown"
-      href="#about"
-    >
-      <svg
-        fill="currentColor"
-        height="1em"
-        stroke="currentColor"
-        stroke-width="0"
-        viewBox="0 0 24 24"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="m18.707 12.707-1.414-1.414L13 15.586V6h-2v9.586l-4.293-4.293-1.414 1.414L12 19.414z"
-        />
-      </svg>
-    </a>
-  </section>
   <main
     class="main"
   >
@@ -958,14 +901,5 @@ exports[`/index should render 1`] = `
       </ul>
     </div>
   </main>
-  <footer
-    class="footer"
-  >
-    <span
-      class="footer__span"
-    >
-      Portfolio designed by @Bastián Paredes, © 2022
-    </span>
-  </footer>
 </div>
 `;

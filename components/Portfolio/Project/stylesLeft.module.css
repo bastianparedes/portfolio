@@ -20,3 +20,15 @@
 .linksContainer {
   grid-column: 1 / 3;
 }
+
+@media screen and (max-width: 768px) {
+  .linksContainer {
+    grid-column: 1 / 3;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .linksContainer {
+    grid-column: 1 / 5;
+  }
+}

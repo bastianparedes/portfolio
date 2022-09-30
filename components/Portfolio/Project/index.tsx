@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from './styles.module.css'
 import stylesRight from './stylesRight.module.css'
 import stylesLeft from './stylesLeft.module.css'
+import classNames from '../../../utils/classNames'
 
 interface ProjectProps {
   index: number
@@ -31,7 +32,10 @@ const Project = ({
     <div className={styles.projectCard}>
       {link !== '' ? (
         <a
-          className={`${styles.imageContainer} ${stylesSide.imageContainer}`}
+          className={classNames(
+            styles.imageContainer,
+            stylesSide.imageContainer
+          )}
           href={link}
           target="_blank"
           rel="noreferrer noopener"
@@ -45,7 +49,10 @@ const Project = ({
         </a>
       ) : (
         <div
-          className={`${styles.imageContainer} ${stylesSide.imageContainer}`}
+          className={classNames(
+            styles.imageContainer,
+            stylesSide.imageContainer
+          )}
         >
           <Image
             src={imagePath}
@@ -56,47 +63,47 @@ const Project = ({
         </div>
       )}
 
-      <h2 className={`${styles.projectName} ${stylesSide.projectName}`}>
+      <h2 className={classNames(styles.projectName, stylesSide.projectName)}>
         {name}
       </h2>
       <div
-        className={`${styles.projectDescriptionContainer} ${stylesSide.projectDescriptionContainer}`}
+        className={classNames(
+          styles.projectDescriptionContainer,
+          stylesSide.projectDescriptionContainer
+        )}
       >
-        <p
-          className={`${styles.projectDescription} ${stylesSide.projectDescription}`}
-        >
-          {description}
-        </p>
+        <p className={styles.projectDescription}>{description}</p>
       </div>
       <span
-        className={`${styles.projectTechnologies} ${stylesSide.projectTechnologies}`}
+        className={classNames(
+          styles.projectTechnologies,
+          stylesSide.projectTechnologies
+        )}
       >
         {technologies.join(', ')}
       </span>
-      <div className={`${styles.linksContainer} ${stylesSide.linksContainer}`}>
-        {link !== '' ? (
+      <div
+        className={classNames(styles.linksContainer, stylesSide.linksContainer)}
+      >
+        {link !== '' && (
           <a
-            className={`${styles.linkWebsite} ${stylesSide.linkWebsite}`}
+            className={styles.linkWebsite}
             href={link}
             target="_blank"
             rel="noreferrer noopener"
           >
             <VscSignOut />
           </a>
-        ) : (
-          ''
         )}
-        {github !== '' ? (
+        {github !== '' && (
           <a
-            className={`${styles.linkGithub} ${stylesSide.linkGithub}`}
+            className={styles.linkGithub}
             href={github}
             target="_blank"
             rel="noreferrer noopener"
           >
             <VscGithub />
           </a>
-        ) : (
-          ''
         )}
       </div>
     </div>

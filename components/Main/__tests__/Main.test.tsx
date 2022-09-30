@@ -1,10 +1,10 @@
 import React from 'react'
-import Index from '../../pages/index'
+import Main from '..'
 import { render } from '@testing-library/react'
 
-describe('/index', () => {
+describe('<Main />', () => {
   it('should render', () => {
-    const { container } = render(<Index />)
+    const { container } = render(<Main />)
     expect(container).toMatchSnapshot()
   })
 })

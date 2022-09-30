@@ -1,9 +1,23 @@
 .projectsContainer {
-  width: max(60%, 700px);
+  width: 100%;
   display: grid;
   justify-content: center;
   align-items: center;
   gap: 10rem;
   padding-bottom: 10rem;
   margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .projectsContainer {
+    gap: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projectsContainer {
+    gap: 2rem;
+    padding-bottom: 2rem;
+  }
 }

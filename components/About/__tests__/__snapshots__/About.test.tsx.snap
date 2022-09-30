@@ -45,9 +45,7 @@ exports[`<About /> should render 1`] = `
           </a>
         </button>
       </div>
-      <div
-        class="mainRight"
-      >
+      <div>
         <h2
           class="mainRight__h2"
         >

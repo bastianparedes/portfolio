@@ -32,7 +32,7 @@ const About = (): JSX.Element => {
             </a>
           </button>
         </div>
-        <div className={styles.mainRight}>
+        <div>
           <h2 className={styles.mainRight__h2}>
             {constants.ABOUT.SKILLS.TITLE}
           </h2>

@@ -4,6 +4,7 @@ import styles from './styles.module.css'
 import constants from '../../config/constants.json'
 import Image from 'next/image'
 import NavLink from './NavLink'
+import classNames from '../../utils/classNames'
 
 const Nav = (): JSX.Element => {
   const [opened, setOpened] = React.useState(false)
@@ -30,7 +31,10 @@ const Nav = (): JSX.Element => {
       </div>
       <div className={styles.buttonContainer}>
         <button
-          className={`${styles.button} ${opened ? styles.buttonAnimation : ''}`}
+          className={classNames(
+            styles.button,
+            opened && styles.buttonAnimation
+          )}
           data-testid="data-testid-nav__button"
           onClick={buttonClickHandler}
         >
@@ -38,9 +42,10 @@ const Nav = (): JSX.Element => {
         </button>
       </div>
       <ul
-        className={`${styles.linksContainer} ${
-          opened ? styles.linksContainerOpened : ''
-        }`}
+        className={classNames(
+          styles.linksContainer,
+          opened && styles.linksContainerOpened
+        )}
       >
         <NavLink
           link={constants.NAV.BUTTONS.HOME.ID}

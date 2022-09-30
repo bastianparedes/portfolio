@@ -16,7 +16,7 @@ const customJestConfig = {
   testEnvironment: 'jest-environment-jsdom',
   collectCoverage: true,
   collectCoverageFrom: [
-    '{components,config,pages,public,styles}/**/*.{js,jsx,ts,tsx,css}',
+    '{components,config,pages,public,styles,util}/**/*.{js,jsx,ts,tsx,css}',
     '!pages/_app.tsx'
   ],
   coverageThreshold: {

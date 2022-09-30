@@ -33,7 +33,7 @@ exports[`<Project /> should render left 1`] = `
       class="projectDescriptionContainer projectDescriptionContainer"
     >
       <p
-        class="projectDescription projectDescription"
+        class="projectDescription"
       >
         A/B Tester de la plataforma. Desarrollo nuevas versiones de la página y comparo la antigua versión con la nueva para recolectar datos y así desplegar la que obtenga mejores resultados.
       </p>
@@ -47,7 +47,7 @@ exports[`<Project /> should render left 1`] = `
       class="linksContainer linksContainer"
     >
       <a
-        class="linkWebsite linkWebsite"
+        class="linkWebsite"
         href="https://www.falabella.com/falabella-cl/"
         rel="noreferrer noopener"
         target="_blank"
@@ -106,7 +106,7 @@ exports[`<Project /> should render right 1`] = `
       class="projectDescriptionContainer projectDescriptionContainer"
     >
       <p
-        class="projectDescription projectDescription"
+        class="projectDescription"
       >
         A/B Tester de la plataforma. Desarrollo nuevas versiones de la página y comparo la antigua versión con la nueva para recolectar datos y así desplegar la que obtenga mejores resultados.
       </p>
@@ -120,7 +120,7 @@ exports[`<Project /> should render right 1`] = `
       class="linksContainer linksContainer"
     >
       <a
-        class="linkWebsite linkWebsite"
+        class="linkWebsite"
         href="https://www.falabella.com/falabella-cl/"
         rel="noreferrer noopener"
         target="_blank"

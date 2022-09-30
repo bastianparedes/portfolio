@@ -32,9 +32,6 @@
   cursor: inherit;
 }
 
-.mainRight {
-}
-
 .mainRight__h2 {
   text-align: center;
 }
@@ -44,29 +41,23 @@
   padding-top: 0.9rem;
   display: grid;
   place-items: center;
-  gap: 3rem 6rem;
-  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  gap: 2.5rem 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
 }
 
-.skillCard {
-  width: 5rem;
-}
-
-.skillImageContainer {
-  width: 5rem;
-  height: 5rem;
-  position: relative;
-  margin-bottom: 0.5rem;
-}
-
-.skillName {
-  font-weight: bolder;
-  text-align: center;
-  margin: 0;
-}
-
-@media (max-device-width: 1000px) {
+@media screen and (max-width: 768px) {
   .main {
     grid-template-columns: 1fr;
+  }
+  .skillsContainer {
+    gap: 2.5rem 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skillsContainer {
+    gap: 2.5rem 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
   }
 }

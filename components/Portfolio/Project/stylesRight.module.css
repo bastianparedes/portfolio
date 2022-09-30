@@ -21,3 +21,15 @@
   grid-column: 11 / -1;
   direction: rtl;
 }
+
+@media screen and (max-width: 768px) {
+  .linksContainer {
+    grid-column: 11 / -1;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .linksContainer {
+    grid-column: 9 / -1;
+  }
+}

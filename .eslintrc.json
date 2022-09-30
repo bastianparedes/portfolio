@@ -26,7 +26,8 @@
       { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }
     ],
     "no-console": "warn",
-    "no-alert": "error"
+    "no-alert": "error",
+    "arrow-parens": "warn"
   },
   "settings": {
     "react": {

@@ -45,7 +45,7 @@ exports[`<Portfolio /> should render 1`] = `
           class="projectDescriptionContainer projectDescriptionContainer"
         >
           <p
-            class="projectDescription projectDescription"
+            class="projectDescription"
           >
             A/B Tester de la plataforma. Desarrollo nuevas versiones de la página y comparo la antigua versión con la nueva para recolectar datos y así desplegar la que obtenga mejores resultados.
           </p>
@@ -59,7 +59,7 @@ exports[`<Portfolio /> should render 1`] = `
           class="linksContainer linksContainer"
         >
           <a
-            class="linkWebsite linkWebsite"
+            class="linkWebsite"
             href="https://www.falabella.com/falabella-cl/"
             rel="noreferrer noopener"
             target="_blank"
@@ -113,7 +113,7 @@ exports[`<Portfolio /> should render 1`] = `
           class="projectDescriptionContainer projectDescriptionContainer"
         >
           <p
-            class="projectDescription projectDescription"
+            class="projectDescription"
           >
             Página web de venta de bowls de ensalada que incluye un carrito de compras y una pasarela de pago construida mediante el servicio Webpay plus de Transbank. Las compras quedan registradas en una base de datos para consultar su estado.
           </p>
@@ -127,7 +127,7 @@ exports[`<Portfolio /> should render 1`] = `
           class="linksContainer linksContainer"
         >
           <a
-            class="linkWebsite linkWebsite"
+            class="linkWebsite"
             href="https://tusalad.vercel.app/"
             rel="noreferrer noopener"
             target="_blank"
@@ -149,7 +149,7 @@ exports[`<Portfolio /> should render 1`] = `
             </svg>
           </a>
           <a
-            class="linkGithub linkGithub"
+            class="linkGithub"
             href="https://github.com/BastianParedes/tusalad/"
             rel="noreferrer noopener"
             target="_blank"
@@ -201,7 +201,7 @@ exports[`<Portfolio /> should render 1`] = `
           class="projectDescriptionContainer projectDescriptionContainer"
         >
           <p
-            class="projectDescription projectDescription"
+            class="projectDescription"
           >
             Es una página web que recibe las imágenes cargadas por el usuario, las configura a gusto y finalmente genera un archivo PDF que se guarda en el computador del mismo. Todo el proceso ocurre del lado del Front-end.
           </p>
@@ -215,7 +215,7 @@ exports[`<Portfolio /> should render 1`] = `
           class="linksContainer linksContainer"
         >
           <a
-            class="linkWebsite linkWebsite"
+            class="linkWebsite"
             href="https://pdf-constructor.vercel.app/"
             rel="noreferrer noopener"
             target="_blank"
@@ -237,7 +237,7 @@ exports[`<Portfolio /> should render 1`] = `
             </svg>
           </a>
           <a
-            class="linkGithub linkGithub"
+            class="linkGithub"
             href="https://github.com/BastianParedes/pdf-constructor/"
             rel="noreferrer noopener"
             target="_blank"
@@ -289,7 +289,7 @@ exports[`<Portfolio /> should render 1`] = `
           class="projectDescriptionContainer projectDescriptionContainer"
         >
           <p
-            class="projectDescription projectDescription"
+            class="projectDescription"
           >
             Aplicación web que pide al usuario un nombre y lo lleva a una sala donde todos los conectados a la página en ese momento pueden conversar al mismo tiempo.
           </p>
@@ -303,7 +303,7 @@ exports[`<Portfolio /> should render 1`] = `
           class="linksContainer linksContainer"
         >
           <a
-            class="linkWebsite linkWebsite"
+            class="linkWebsite"
             href="https://my-global-chat.vercel.app/"
             rel="noreferrer noopener"
             target="_blank"
@@ -325,7 +325,7 @@ exports[`<Portfolio /> should render 1`] = `
             </svg>
           </a>
           <a
-            class="linkGithub linkGithub"
+            class="linkGithub"
             href="https://github.com/BastianParedes/my-global-chat/"
             rel="noreferrer noopener"
             target="_blank"
@@ -374,7 +374,7 @@ exports[`<Portfolio /> should render 1`] = `
           class="projectDescriptionContainer projectDescriptionContainer"
         >
           <p
-            class="projectDescription projectDescription"
+            class="projectDescription"
           >
             Aplicación de escritorio que construye evaluaciones de seleción única de matemática para el nivel secundario de las escuelas chilenas.
           </p>
@@ -388,7 +388,7 @@ exports[`<Portfolio /> should render 1`] = `
           class="linksContainer linksContainer"
         >
           <a
-            class="linkGithub linkGithub"
+            class="linkGithub"
             href="https://github.com/BastianParedes/tstmaker/"
             rel="noreferrer noopener"
             target="_blank"
