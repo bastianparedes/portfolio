@@ -17,9 +17,7 @@ exports[`<About /> should render 1`] = `
       <div
         class="mainLeft"
       >
-        <h2
-          class="mainLeft__h2"
-        >
+        <h2>
           Soy Bastián Paredes,
         </h2>
         <p

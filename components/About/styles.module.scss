@@ -5,15 +5,11 @@
 }
 
 .mainLeft {
-}
-
-.mainLeft__h2 {
-}
-
-.mainLeft__p {
-  text-align: justify;
-  line-height: 40px;
-  font-size: 1.2rem;
+  &__p {
+    text-align: justify;
+    line-height: 40px;
+    font-size: 1.2rem;
+  }
 }
 
 .buttonCv {
@@ -24,16 +20,18 @@
   cursor: pointer;
   background-color: rgb(103, 212, 255);
   border: black 1px solid;
+
+  &__a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    cursor: inherit;
+  }
 }
 
-.buttonCv__a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  cursor: inherit;
-}
-
-.mainRight__h2 {
-  text-align: center;
+.mainRight {
+  &__h2 {
+    text-align: center;
+  }
 }
 
 .skillsContainer {

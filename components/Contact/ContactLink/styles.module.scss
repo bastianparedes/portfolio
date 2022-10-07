@@ -3,20 +3,20 @@
   margin: 2rem 0;
   font-size: 2rem;
   text-align: center;
-}
 
-.link__a {
-  width: 100%;
-  position: relative;
-  text-align: center;
-  display: flex;
-  text-decoration: none;
-  color: inherit;
-  transition: all ease 0.2s;
+  &__a {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    transition: all ease 0.2s;
 
-  &:hover {
-    bottom: 0.2rem;
-    color: rgb(0, 255, 255);
+    &:hover {
+      bottom: 0.2rem;
+      color: rgb(0, 255, 255);
+    }
   }
 }
 

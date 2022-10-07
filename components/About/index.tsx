@@ -12,9 +12,7 @@ const About = (): JSX.Element => {
     >
       <div className={styles.main}>
         <div className={styles.mainLeft}>
-          <h2 className={styles.mainLeft__h2}>
-            {constants.ABOUT.DESCRIPTION_PART_1}
-          </h2>
+          <h2>{constants.ABOUT.DESCRIPTION_PART_1}</h2>
           <p className={styles.mainLeft__p}>
             {constants.ABOUT.DESCRIPTION_PART_2}
           </p>
