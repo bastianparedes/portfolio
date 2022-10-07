@@ -3,7 +3,7 @@ import Nav from '../Nav'
 import About from '../About'
 import Portfolio from '../Portfolio'
 import Contact from '../Contact'
-import styles from './styles.module.css'
+import styles from './styles.module.scss'
 
 const Main = (): JSX.Element => {
   return (

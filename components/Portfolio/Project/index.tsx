@@ -1,9 +1,9 @@
 import React from 'react'
 import { VscSignOut, VscGithub } from 'react-icons/vsc'
 import Image from 'next/image'
-import styles from './styles.module.css'
-import stylesRight from './stylesRight.module.css'
-import stylesLeft from './stylesLeft.module.css'
+import styles from './styles.module.scss'
+import stylesRight from './stylesRight.module.scss'
+import stylesLeft from './stylesLeft.module.scss'
 import classNames from '../../../utils/classNames'
 
 interface ProjectProps {

@@ -1,5 +1,5 @@
 import React, { MouseEventHandler } from 'react'
-import styles from './styles.module.css'
+import styles from './styles.module.scss'
 
 interface NavLinkProps {
   link: string

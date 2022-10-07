@@ -1,6 +1,6 @@
 import React from 'react'
 import { Section } from '../Common'
-import styles from './styles.module.css'
+import styles from './styles.module.scss'
 import Project from './Project'
 import constants from '../../config/constants.json'
 

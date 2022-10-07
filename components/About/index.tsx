@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './styles.module.css'
+import styles from './styles.module.scss'
 import { Section } from '../Common'
 import constants from '../../config/constants.json'
 import AboutSkill from './AboutSkill'
