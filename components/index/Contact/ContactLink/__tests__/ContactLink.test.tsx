@@ -1,7 +1,7 @@
 import React from 'react'
 import ContactLink from '..'
 import { render } from '@testing-library/react'
-import constants from '../../../../config/constants.json'
+import constants from '../../../../../config/constants.json'
 
 describe('<ContactLink />', () => {
   const props = {

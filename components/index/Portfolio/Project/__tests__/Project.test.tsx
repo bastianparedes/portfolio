@@ -1,7 +1,7 @@
 import React from 'react'
 import Project from '..'
 import { render } from '@testing-library/react'
-import constants from '../../../../config/constants.json'
+import constants from '../../../../../config/constants.json'
 
 describe('<Project />', () => {
   const project = constants.PORTFOLIO.PROJECTS[0]

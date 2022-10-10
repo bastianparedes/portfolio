@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from '..'
 import { render, screen, fireEvent } from '@testing-library/react'
-import constants from '../../../config/constants.json'
+import constants from '../../../../config/constants.json'
 
 describe('<Nav />', () => {
   it('should render', () => {

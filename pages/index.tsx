@@ -1,8 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
-import Home from '../components/Home'
-import Main from '../components/Main'
-import Footer from '../components/Footer'
+import Home from '../components/index/Home'
+import Main from '../components/index/Main'
+import Footer from '../components/index/Footer'
 
 const App = (): JSX.Element => {
   return (

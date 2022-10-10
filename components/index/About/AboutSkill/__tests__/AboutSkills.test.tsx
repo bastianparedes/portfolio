@@ -1,7 +1,7 @@
 import React from 'react'
 import AboutSkill from '..'
 import { render } from '@testing-library/react'
-import constants from '../../../../config/constants.json'
+import constants from '../../../../../config/constants.json'
 
 describe('<AboutSkill />', () => {
   const skill = constants.ABOUT.SKILLS.LIST[0]

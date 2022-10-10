@@ -4,7 +4,7 @@ import Image from 'next/image'
 import styles from './styles.module.scss'
 import stylesRight from './stylesRight.module.scss'
 import stylesLeft from './stylesLeft.module.scss'
-import classNames from '../../../utils/classNames'
+import classNames from '../../../../utils/classNames'
 
 interface ProjectProps {
   index: number

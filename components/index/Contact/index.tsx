@@ -3,7 +3,7 @@ import styles from './styles.module.scss'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 import { FiInstagram } from 'react-icons/fi'
 import { VscGithubAlt, VscMail } from 'react-icons/vsc'
-import constants from '../../config/constants.json'
+import constants from '../../../config/constants.json'
 import ContactLink from './ContactLink'
 
 const Contact = (): JSX.Element => {
