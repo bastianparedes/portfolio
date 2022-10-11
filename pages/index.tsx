@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Home from '../components/index/Home'
 import Main from '../components/index/Main'
-import Footer from '../components/index/Footer'
+import Footer from '../components/common/Footer'
 
 const App = (): JSX.Element => {
   return (

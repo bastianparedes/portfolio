@@ -1,4 +1,6 @@
-const classNames = (...classes: Array<string | boolean>): string => {
+const classNames = (
+  ...classes: Array<string | boolean | undefined>
+): string => {
   const arrayClasses: string[] = []
 
   classes.forEach((element) => {

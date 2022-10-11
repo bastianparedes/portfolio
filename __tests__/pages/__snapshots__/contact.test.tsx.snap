@@ -2,8 +2,51 @@
 
 exports[`/contact should render 1`] = `
 <div>
-  <button>
-    Enviar mensaje
-  </button>
+  <main
+    class="main"
+  >
+    <h1
+      class="title"
+    >
+      Contáctame
+    </h1>
+    <form
+      class="form"
+    >
+      <input
+        name="name"
+        placeholder="Nombre"
+        type="text"
+      />
+      <input
+        name="email"
+        placeholder="Correo electrónico"
+        type="email"
+      />
+      <input
+        name="subject"
+        placeholder="Asunto"
+        type="text"
+      />
+      <textarea
+        class="textarea"
+        name="message"
+        placeholder="Mensaje"
+      />
+      <input
+        type="submit"
+        value="Enviar"
+      />
+    </form>
+  </main>
+  <footer
+    class="footer"
+  >
+    <span
+      class="footer__span"
+    >
+      Portfolio designed by @Bastián Paredes, © 2022
+    </span>
+  </footer>
 </div>
 `;

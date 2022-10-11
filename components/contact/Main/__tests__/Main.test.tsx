@@ -1,10 +1,10 @@
 import React from 'react'
-import Contact from '../../pages/contact'
+import Main from '..'
 import { render } from '@testing-library/react'
 
-describe('/contact', () => {
+describe('<Main />', () => {
   it('should render', () => {
-    const { container } = render(<Contact />)
+    const { container } = render(<Main />)
     expect(container).toMatchSnapshot()
   })
 })

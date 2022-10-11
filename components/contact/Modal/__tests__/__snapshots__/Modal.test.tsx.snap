@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Modal /> should render 1`] = `
+<div>
+  <div
+    class="modal"
+  >
+    Éxito
+    <span>
+      Success
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<Modal /> should render 2`] = `
+<div>
+  <div
+    class="modal"
+  >
+    Fracaso
+    <span>
+      Success
+    </span>
+  </div>
+</div>
+`;
