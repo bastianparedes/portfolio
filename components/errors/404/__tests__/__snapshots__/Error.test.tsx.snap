@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Error /> should render 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <h1>
+      Esta página no está disponible.
+    </h1>
+    <h2>
+      Prueba a realizar otra búsqueda.
+    </h2>
+  </div>
+</div>
+`;

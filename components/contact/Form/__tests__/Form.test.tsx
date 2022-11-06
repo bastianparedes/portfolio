@@ -3,6 +3,10 @@ import Form from '..'
 import { fireEvent, render } from '@testing-library/react'
 
 describe('<Form />', () => {
+  afterEach(() => {
+    jest.clearAllMocks()
+  })
+
   it('should render', () => {
     const { container } = render(<Form />)
     expect(container).toMatchSnapshot()
