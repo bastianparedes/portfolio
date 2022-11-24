@@ -9,9 +9,7 @@ interface props {
 const Body = ({ children }: props): JSX.Element => {
   return (
     <>
-      <div className={styles.body}>
-        {children}
-      </div>
+      <div className={styles.body}>{children}</div>
       <Footer />
     </>
   )

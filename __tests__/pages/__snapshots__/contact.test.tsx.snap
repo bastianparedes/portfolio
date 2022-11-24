@@ -15,6 +15,7 @@ exports[`/contact should render 1`] = `
       </h1>
       <form
         class="form"
+        data-testid="contact-form"
       >
         <input
           name="name"

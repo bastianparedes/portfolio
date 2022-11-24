@@ -4,6 +4,7 @@ exports[`<Form /> should render 1`] = `
 <div>
   <form
     class="form"
+    data-testid="contact-form"
   >
     <input
       name="name"

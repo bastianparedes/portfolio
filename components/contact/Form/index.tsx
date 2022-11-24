@@ -18,11 +18,12 @@ const Form = (): JSX.Element => {
     event.preventDefault()
     const target = event.target as typeof event.target & submitInfo
     const [name, email, subject, message] = [
-      target.name.value,
-      target.email.value,
-      target.subject.value,
-      target.message.value
+      target.name?.value,
+      target.email?.value,
+      target.subject?.value,
+      target.message?.value
     ]
+
     fetch('/api/contact', {
       method: 'POST',
       body: JSON.stringify({
@@ -59,7 +60,11 @@ const Form = (): JSX.Element => {
 
   return (
     <>
-      <form onSubmit={onSubmit} className={styles.form}>
+      <form
+        data-testid="contact-form"
+        onSubmit={onSubmit}
+        className={styles.form}
+      >
         <input name="name" type="text" placeholder="Nombre" />
         <input name="email" type="email" placeholder="Correo electrónico" />
         <input name="subject" type="text" placeholder="Asunto" />
@@ -70,7 +75,13 @@ const Form = (): JSX.Element => {
         />
         <input type="submit" value="Enviar" />
       </form>
-      {modalIsActive && <Modal success={submitSuccessful} text={modalText} />}
+      {modalIsActive && (
+        <Modal
+          success={submitSuccessful}
+          text={modalText}
+          onClose={setModalIsActive}
+        />
+      )}
     </>
   )
 }
