@@ -3,22 +3,15 @@ import Modal from '..';
 import { fireEvent, render } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
 
+interface shadowProps {
+  children: React.ReactNode;
+}
+
+jest.mock('../../Shadow', () => ({ children }: shadowProps) => <>{children}</>);
+
 describe('<Modal />', () => {
   it('should render', () => {
     const props = {
-      success: true,
-      text: 'Success',
-      setModalVisible: jest.fn()
-    };
-
-    const { container } = render(<Modal {...props} />);
-    expect(container).toMatchSnapshot();
-  });
-
-  it('should render', () => {
-    const props = {
-      success: false,
-      text: 'Fail',
       setModalVisible: jest.fn()
     };
 

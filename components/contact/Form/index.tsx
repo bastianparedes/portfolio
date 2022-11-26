@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './styles.module.scss';
-import Modal from '../Modal';
+import Modal from '../../common/Modal';
 
 interface typeElements extends HTMLFormControlsCollection {
   userName: { value: string };
@@ -15,8 +15,7 @@ interface typeTarget {
 
 const Form = (): JSX.Element => {
   const [modalVisible, setModalVisible] = useState(false);
-  const [submitSuccessful, setSubmitSuccessful] = useState(true);
-  const [modalText, setModalText] = useState('');
+  const [, setSubmitSuccessful] = useState(true);
 
   const onSubmit = (event: React.FormEvent): void => {
     event.preventDefault();
@@ -42,19 +41,12 @@ const Form = (): JSX.Element => {
       .then((response) => {
         if (response.ok) {
           setSubmitSuccessful(true);
-          setModalText('Mensaje enviado correctamente');
         } else {
           setSubmitSuccessful(false);
-          setModalText(
-            'Ha ocurrido un error inesperado, por favor inténtelo más tarde'
-          );
         }
       })
       .catch(() => {
         setSubmitSuccessful(false);
-        setModalText(
-          'Ha ocurrido un error inesperado, por favor inténtelo más tarde'
-        );
       })
       .finally(() => {
         setModalVisible(true);
@@ -80,13 +72,7 @@ const Form = (): JSX.Element => {
           Enviar
         </button>
       </form>
-      {modalVisible && (
-        <Modal
-          success={submitSuccessful}
-          text={modalText}
-          setModalVisible={setModalVisible}
-        />
-      )}
+      {modalVisible && <Modal setModalVisible={setModalVisible} />}
     </>
   );
 };

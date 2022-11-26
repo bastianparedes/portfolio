@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CShadow /> should render 1`] = `
+<div>
+  <div
+    class="shadow"
+    data-testid="data-testid-shadow"
+  />
+</div>
+`;

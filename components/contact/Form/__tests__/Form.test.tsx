@@ -7,7 +7,7 @@ interface propsModal {
   setModalVisible: (boolean: boolean) => void;
 }
 
-jest.mock('../../Modal', () => ({ setModalVisible }: propsModal) => {
+jest.mock('../../../common/Modal', () => ({ setModalVisible }: propsModal) => {
   const handleOnClose = (): void => {
     setModalVisible(false);
   };
