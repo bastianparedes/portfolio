@@ -1,28 +1,28 @@
-import React, { useState } from 'react'
-import styles from './styles.module.scss'
-import Modal from '../Modal'
+import React, { useState } from 'react';
+import styles from './styles.module.scss';
+import Modal from '../Modal';
 
 interface submitInfo {
-  name: { value: string }
-  email: { value: string }
-  subject: { value: string }
-  message: { value: string }
+  name: { value: string };
+  email: { value: string };
+  subject: { value: string };
+  message: { value: string };
 }
 
 const Form = (): JSX.Element => {
-  const [modalIsActive, setModalIsActive] = useState(false)
-  const [submitSuccessful, setSubmitSuccessful] = useState(true)
-  const [modalText, setModalText] = useState('')
+  const [modalVisible, setModalVisible] = useState(false);
+  const [submitSuccessful, setSubmitSuccessful] = useState(true);
+  const [modalText, setModalText] = useState('');
 
   const onSubmit = (event: React.FormEvent): void => {
-    event.preventDefault()
-    const target = event.target as typeof event.target & submitInfo
+    event.preventDefault();
+    const target = event.target as typeof event.target & submitInfo;
     const [name, email, subject, message] = [
       target.name?.value,
       target.email?.value,
       target.subject?.value,
       target.message?.value
-    ]
+    ];
 
     fetch('/api/contact', {
       method: 'POST',
@@ -38,25 +38,25 @@ const Form = (): JSX.Element => {
     })
       .then((response) => {
         if (response.ok) {
-          setSubmitSuccessful(true)
-          setModalText('Mensaje enviado correctamente')
+          setSubmitSuccessful(true);
+          setModalText('Mensaje enviado correctamente');
         } else {
-          setSubmitSuccessful(false)
+          setSubmitSuccessful(false);
           setModalText(
             'Ha ocurrido un error inesperado, por favor inténtelo más tarde'
-          )
+          );
         }
       })
       .catch(() => {
-        setSubmitSuccessful(false)
+        setSubmitSuccessful(false);
         setModalText(
           'Ha ocurrido un error inesperado, por favor inténtelo más tarde'
-        )
+        );
       })
       .finally(() => {
-        setModalIsActive(true)
-      })
-  }
+        setModalVisible(true);
+      });
+  };
 
   return (
     <>
@@ -75,15 +75,15 @@ const Form = (): JSX.Element => {
         />
         <input type="submit" value="Enviar" />
       </form>
-      {modalIsActive && (
+      {modalVisible && (
         <Modal
           success={submitSuccessful}
           text={modalText}
-          onClose={setModalIsActive}
+          setModalVisible={setModalVisible}
         />
       )}
     </>
-  )
-}
+  );
+};
 
-export default Form
+export default Form;

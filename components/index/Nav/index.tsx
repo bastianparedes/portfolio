@@ -1,21 +1,21 @@
-import React from 'react'
-import { AiOutlineMenu } from 'react-icons/ai'
-import styles from './styles.module.scss'
-import constants from '../../../config/constants.json'
-import Image from 'next/image'
-import NavLink from './NavLink'
-import classNames from '../../../utils/classNames'
+import React from 'react';
+import { AiOutlineMenu } from 'react-icons/ai';
+import styles from './styles.module.scss';
+import constants from '../../../config/constants.json';
+import Image from 'next/image';
+import NavLink from './NavLink';
+import classNames from '../../../utils/classNames';
 
 const Nav = (): JSX.Element => {
-  const [opened, setOpened] = React.useState(false)
+  const [opened, setOpened] = React.useState(false);
 
   const buttonClickHandler = (): void => {
-    setOpened((value) => !value)
-  }
+    setOpened((value) => !value);
+  };
 
   const closeNav = (): void => {
-    setOpened(false)
-  }
+    setOpened(false);
+  };
 
   return (
     <nav className={styles.nav}>
@@ -42,6 +42,7 @@ const Nav = (): JSX.Element => {
         </button>
       </div>
       <ul
+        data-testid="data-testid-nav__ul"
         className={classNames(
           styles.linksContainer,
           opened && styles.linksContainerOpened
@@ -50,21 +51,21 @@ const Nav = (): JSX.Element => {
         <NavLink
           link={constants.NAV.BUTTONS.HOME.ID}
           title={constants.NAV.BUTTONS.HOME.TITLE}
-          onClick={closeNav}
+          closeNav={closeNav}
         />
         <NavLink
           link={constants.NAV.BUTTONS.ABOUT.ID}
           title={constants.NAV.BUTTONS.ABOUT.TITLE}
-          onClick={closeNav}
+          closeNav={closeNav}
         />
         <NavLink
           link={constants.NAV.BUTTONS.PORTFOLIO.ID}
           title={constants.NAV.BUTTONS.PORTFOLIO.TITLE}
-          onClick={closeNav}
+          closeNav={closeNav}
         />
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;

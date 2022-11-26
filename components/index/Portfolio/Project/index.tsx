@@ -1,19 +1,19 @@
-import React from 'react'
-import { VscSignOut, VscGithub } from 'react-icons/vsc'
-import Image from 'next/image'
-import styles from './styles.module.scss'
-import stylesRight from './stylesRight.module.scss'
-import stylesLeft from './stylesLeft.module.scss'
-import classNames from '../../../../utils/classNames'
+import React from 'react';
+import { VscSignOut, VscGithub } from 'react-icons/vsc';
+import Image from 'next/image';
+import styles from './styles.module.scss';
+import stylesRight from './stylesRight.module.scss';
+import stylesLeft from './stylesLeft.module.scss';
+import classNames from '../../../../utils/classNames';
 
 interface ProjectProps {
-  index: number
-  name: string
-  link: string
-  image: string
-  github: string
-  description: string
-  technologies: string[]
+  index: number;
+  name: string;
+  link: string;
+  image: string;
+  github: string;
+  description: string;
+  technologies: string[];
 }
 
 const Project = ({
@@ -25,8 +25,8 @@ const Project = ({
   description,
   technologies
 }: ProjectProps): JSX.Element => {
-  const stylesSide = index % 2 === 0 ? stylesRight : stylesLeft
-  const imagePath = '/images/projects/' + image
+  const stylesSide = index % 2 === 0 ? stylesRight : stylesLeft;
+  const imagePath = '/images/projects/' + image;
 
   return (
     <div className={styles.projectCard}>
@@ -107,7 +107,7 @@ const Project = ({
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;

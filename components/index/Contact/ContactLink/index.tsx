@@ -1,9 +1,9 @@
-import React from 'react'
-import styles from './styles.module.scss'
+import React from 'react';
+import styles from './styles.module.scss';
 
 interface LinkProps {
-  link: string
-  children?: React.ReactNode
+  link: string;
+  children: React.ReactNode;
 }
 
 const ContactLink = ({ link, children }: LinkProps): JSX.Element => {
@@ -18,7 +18,7 @@ const ContactLink = ({ link, children }: LinkProps): JSX.Element => {
         {children}
       </a>
     </li>
-  )
-}
+  );
+};
 
-export default ContactLink
+export default ContactLink;

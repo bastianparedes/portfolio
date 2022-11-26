@@ -1,6 +1,6 @@
-import { createTransport, SentMessageInfo } from 'nodemailer'
+import { createTransport, SentMessageInfo } from 'nodemailer';
 
-const defaultTo = process.env.PERSONAL_EMAIL
+const defaultTo = process.env.PERSONAL_EMAIL;
 
 const sendMail = async (
   subject: string,
@@ -20,7 +20,7 @@ const sendMail = async (
     to,
     subject,
     text
-  })
-}
+  });
+};
 
-export default sendMail
+export default sendMail;

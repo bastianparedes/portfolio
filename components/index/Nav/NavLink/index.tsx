@@ -1,24 +1,20 @@
-import React, { MouseEventHandler } from 'react'
-import styles from './styles.module.scss'
+import React from 'react';
+import styles from './styles.module.scss';
 
 interface NavLinkProps {
-  link: string
-  title: string
-  onClick: MouseEventHandler<HTMLAnchorElement>
+  link: string;
+  title: string;
+  closeNav: () => void;
 }
 
-const NavLink = (props: NavLinkProps): JSX.Element => {
+const NavLink = ({ link, title, closeNav }: NavLinkProps): JSX.Element => {
   return (
     <li className={styles.link}>
-      <a
-        href={'#' + props.link}
-        className={styles.link__a}
-        onClick={props.onClick}
-      >
-        {props.title}
+      <a href={'#' + link} className={styles.link__a} onClick={closeNav}>
+        {title}
       </a>
     </li>
-  )
-}
+  );
+};
 
-export default NavLink
+export default NavLink;

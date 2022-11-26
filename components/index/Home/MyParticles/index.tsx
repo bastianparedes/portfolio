@@ -1,13 +1,13 @@
-import React, { useCallback } from 'react'
-import Particles from 'react-tsparticles'
-import { loadFull } from 'tsparticles'
-import type { Engine } from 'tsparticles-engine'
-import styles from './styles.module.scss'
+import React, { useCallback } from 'react';
+import Particles from 'react-tsparticles';
+import { loadFull } from 'tsparticles';
+import type { Engine } from 'tsparticles-engine';
+import styles from './styles.module.scss';
 
 const MyParticles = (): JSX.Element => {
   const particlesInit = useCallback(async (engine: Engine) => {
-    await loadFull(engine)
-  }, [])
+    await loadFull(engine);
+  }, []);
 
   return (
     <Particles
@@ -81,7 +81,7 @@ const MyParticles = (): JSX.Element => {
         pauseOnOutsideViewport: true
       }}
     />
-  )
-}
+  );
+};
 
-export default MyParticles
+export default MyParticles;

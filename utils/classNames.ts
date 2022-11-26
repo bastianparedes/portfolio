@@ -1,16 +1,16 @@
 const classNames = (
   ...classes: Array<string | boolean | undefined>
 ): string => {
-  const arrayClasses: string[] = []
+  const arrayClasses: string[] = [];
 
   classes.forEach((element) => {
     if (typeof element === 'string') {
-      arrayClasses.push(element)
+      arrayClasses.push(element);
     }
-  })
+  });
 
-  const className = arrayClasses.join(' ')
-  return className
-}
+  const className = arrayClasses.join(' ');
+  return className;
+};
 
-export default classNames
+export default classNames;

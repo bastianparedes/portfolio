@@ -9,7 +9,9 @@ exports[`<Modal /> should render 1`] = `
     <span>
       Success
     </span>
-    <button />
+    <button
+      data-testid="data-testid-button-closer-modal"
+    />
   </div>
 </div>
 `;
@@ -21,9 +23,11 @@ exports[`<Modal /> should render 2`] = `
   >
     Fracaso
     <span>
-      Success
+      Fail
     </span>
-    <button />
+    <button
+      data-testid="data-testid-button-closer-modal"
+    />
   </div>
 </div>
 `;

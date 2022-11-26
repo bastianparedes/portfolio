@@ -1,9 +1,9 @@
-import React from 'react'
-import Nav from '../Nav'
-import About from '../About'
-import Portfolio from '../Portfolio'
-import Contact from '../Contact'
-import styles from './styles.module.scss'
+import React from 'react';
+import Nav from '../Nav';
+import About from '../About';
+import Portfolio from '../Portfolio';
+import Contact from '../Contact';
+import styles from './styles.module.scss';
 
 const Main = (): JSX.Element => {
   return (
@@ -13,7 +13,7 @@ const Main = (): JSX.Element => {
       <Portfolio />
       <Contact />
     </main>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

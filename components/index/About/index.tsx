@@ -1,8 +1,8 @@
-import React from 'react'
-import styles from './styles.module.scss'
-import { Section } from '../Common'
-import constants from '../../../config/constants.json'
-import AboutSkill from './AboutSkill'
+import React from 'react';
+import styles from './styles.module.scss';
+import { Section } from '../Common';
+import constants from '../../../config/constants.json';
+import AboutSkill from './AboutSkill';
 
 const About = (): JSX.Element => {
   return (
@@ -42,7 +42,7 @@ const About = (): JSX.Element => {
         </div>
       </div>
     </Section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

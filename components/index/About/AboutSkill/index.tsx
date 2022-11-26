@@ -1,10 +1,10 @@
-import React from 'react'
-import styles from './styles.module.scss'
-import Image from 'next/image'
+import React from 'react';
+import styles from './styles.module.scss';
+import Image from 'next/image';
 
 interface SkillProps {
-  src: string
-  name: string
+  src: string;
+  name: string;
 }
 
 const AboutSkill = (props: SkillProps): JSX.Element => {
@@ -20,7 +20,7 @@ const AboutSkill = (props: SkillProps): JSX.Element => {
       </div>
       <p className={styles.skillName}>{props.name}</p>
     </div>
-  )
-}
+  );
+};
 
-export default AboutSkill
+export default AboutSkill;

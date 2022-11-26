@@ -1,9 +1,9 @@
-import React from 'react'
-import Footer from '../Footer'
-import styles from './styles.module.scss'
+import React from 'react';
+import Footer from '../Footer';
+import styles from './styles.module.scss';
 
 interface props {
-  children?: React.ReactNode
+  children?: React.ReactNode;
 }
 
 const Body = ({ children }: props): JSX.Element => {
@@ -12,7 +12,7 @@ const Body = ({ children }: props): JSX.Element => {
       <div className={styles.body}>{children}</div>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Body
+export default Body;

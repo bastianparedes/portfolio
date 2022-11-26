@@ -1,16 +1,18 @@
-import React from 'react'
-import AboutSkill from '..'
-import { render } from '@testing-library/react'
-import constants from '../../../../../config/constants.json'
+import React from 'react';
+import AboutSkill from '..';
+import { render } from '@testing-library/react';
 
 describe('<AboutSkill />', () => {
-  const skill = constants.ABOUT.SKILLS.LIST[0]
+  const skill = {
+    SRC: 'html5.png',
+    NAME: 'HTML 5'
+  };
   const props = {
     src: skill.SRC,
     name: skill.NAME
-  }
+  };
   it('should render', () => {
-    const { container } = render(<AboutSkill {...props} />)
-    expect(container).toMatchSnapshot()
-  })
-})
+    const { container } = render(<AboutSkill {...props} />);
+    expect(container).toMatchSnapshot();
+  });
+});

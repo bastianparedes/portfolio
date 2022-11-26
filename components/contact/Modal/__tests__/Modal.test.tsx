@@ -1,23 +1,45 @@
-import React from 'react'
-import Modal from '..'
-import { render } from '@testing-library/react'
+import React from 'react';
+import Modal from '..';
+import { fireEvent, render } from '@testing-library/react';
+import { act } from 'react-dom/test-utils';
 
 describe('<Modal />', () => {
   it('should render', () => {
     const props = {
       success: true,
-      text: 'Success'
-    }
-    const { container } = render(<Modal {...props} />)
-    expect(container).toMatchSnapshot()
-  })
+      text: 'Success',
+      setModalVisible: jest.fn()
+    };
+
+    const { container } = render(<Modal {...props} />);
+    expect(container).toMatchSnapshot();
+  });
 
   it('should render', () => {
     const props = {
       success: false,
-      text: 'Success'
-    }
-    const { container } = render(<Modal {...props} />)
-    expect(container).toMatchSnapshot()
-  })
-})
+      text: 'Fail',
+      setModalVisible: jest.fn()
+    };
+
+    const { container } = render(<Modal {...props} />);
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should close modal when button is clicked', () => {
+    const props = {
+      success: true,
+      text: 'Success',
+      setModalVisible: jest.fn()
+    };
+
+    const { getByTestId } = render(<Modal {...props} />);
+    const button = getByTestId('data-testid-button-closer-modal');
+    act(() => {
+      fireEvent.click(button);
+    });
+
+    expect(props.setModalVisible).toBeCalledTimes(1);
+    expect(props.setModalVisible).toBeCalledWith(false);
+  });
+});

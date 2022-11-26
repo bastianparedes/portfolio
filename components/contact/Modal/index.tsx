@@ -1,26 +1,29 @@
-import React from 'react'
-import styles from './styles.module.scss'
+import React from 'react';
+import styles from './styles.module.scss';
 
 interface props {
-  success: boolean
-  text: string
-  onClose: (boolean: boolean) => void
+  success: boolean;
+  text: string;
+  setModalVisible: (boolean: boolean) => void;
 }
 
-const Modal = ({ success, text, onClose }: props): JSX.Element => {
-  const svg = success ? 'Éxito' : 'Fracaso'
+const Modal = ({ success, text, setModalVisible }: props): JSX.Element => {
+  const svg = success ? 'Éxito' : 'Fracaso';
 
   const handleOnClose = (): void => {
-    onClose(false)
-  }
+    setModalVisible(false);
+  };
 
   return (
     <div className={styles.modal}>
       {svg}
       <span>{text}</span>
-      <button onClick={handleOnClose}></button>
+      <button
+        data-testid="data-testid-button-closer-modal"
+        onClick={handleOnClose}
+      ></button>
     </div>
-  )
-}
+  );
+};
 
-export default Modal
+export default Modal;

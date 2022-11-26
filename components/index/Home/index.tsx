@@ -1,9 +1,9 @@
-import React from 'react'
-import styles from './styles.module.scss'
-import { BiDownArrowAlt } from 'react-icons/bi'
-import Typewriter from 'typewriter-effect'
-import constants from '../../../config/constants.json'
-import MyParticles from './MyParticles'
+import React from 'react';
+import styles from './styles.module.scss';
+import { BiDownArrowAlt } from 'react-icons/bi';
+import Typewriter from 'typewriter-effect';
+import constants from '../../../config/constants.json';
+import MyParticles from './MyParticles';
 
 const Home = (): JSX.Element => {
   return (
@@ -14,7 +14,7 @@ const Home = (): JSX.Element => {
         <div className={styles.typewriterContainer}>
           <Typewriter
             onInit={(typewriter) => {
-              typewriter.typeString(constants.HOME.JOB).start()
+              typewriter.typeString(constants.HOME.JOB).start();
             }}
           />
         </div>
@@ -23,7 +23,7 @@ const Home = (): JSX.Element => {
         <BiDownArrowAlt />
       </a>
     </section>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

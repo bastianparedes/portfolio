@@ -1,5 +1,5 @@
-import React from 'react'
-import { Html, Head, Main, NextScript } from 'next/document'
+import React from 'react';
+import { Html, Head, Main, NextScript } from 'next/document';
 
 const _document = (): JSX.Element => {
   return (
@@ -10,7 +10,7 @@ const _document = (): JSX.Element => {
         <NextScript />
       </body>
     </Html>
-  )
-}
+  );
+};
 
-export default _document
+export default _document;

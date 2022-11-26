@@ -1,10 +1,10 @@
-import React from 'react'
-import styles from './styles.module.scss'
+import React from 'react';
+import styles from './styles.module.scss';
 
 interface SectionProps {
-  id: string
-  title: string
-  children?: React.ReactNode
+  id: string;
+  title: string;
+  children?: React.ReactNode;
 }
 
 const Section = (props: SectionProps): JSX.Element => {
@@ -13,7 +13,7 @@ const Section = (props: SectionProps): JSX.Element => {
       <h3 className={styles.title}>{props.title}</h3>
       {props.children}
     </section>
-  )
-}
+  );
+};
 
-export default Section
+export default Section;

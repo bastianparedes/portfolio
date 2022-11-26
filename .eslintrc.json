@@ -8,7 +8,8 @@
   "extends": [
     "next/core-web-vitals",
     "plugin:react/recommended",
-    "standard-with-typescript"
+    "standard-with-typescript",
+    "prettier"
   ],
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -20,9 +21,9 @@
     "multiline-ternary": ["error", "never"],
     "quotes": ["warn", "single"],
     "react/display-name": "off",
-    "semi": ["error", "never"],
+    "semi": ["warn", "always"],
     "no-unused-vars": [
-      "error",
+      "warn",
       { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }
     ],
     "no-console": "warn",

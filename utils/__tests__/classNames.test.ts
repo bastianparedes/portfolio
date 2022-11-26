@@ -1,10 +1,10 @@
-import classNames from '../classNames'
+import classNames from '../classNames';
 
 describe('classNames', () => {
   it('receives no strings. Should return empty string', () => {
-    const result = classNames()
-    expect(result).toBe('')
-  })
+    const result = classNames();
+    expect(result).toBe('');
+  });
 
   it('recieves strings, falses and undefined. Should return certain string', () => {
     const result = classNames(
@@ -18,7 +18,7 @@ describe('classNames', () => {
       'c',
       'd',
       undefined
-    )
-    expect(result).toBe('a b c d')
-  })
-})
+    );
+    expect(result).toBe('a b c d');
+  });
+});

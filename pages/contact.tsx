@@ -1,7 +1,7 @@
-import React from 'react'
-import Body from '../components/common/Body'
-import Main from '../components/contact/Main'
-import Form from '../components/contact/Form'
+import React from 'react';
+import Body from '../components/common/Body';
+import Main from '../components/contact/Main';
+import Form from '../components/contact/Form';
 
 const Contact = (): JSX.Element => {
   return (
@@ -10,7 +10,7 @@ const Contact = (): JSX.Element => {
         <Form />
       </Main>
     </Body>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

@@ -1,8 +1,8 @@
-import React from 'react'
-import Head from 'next/head'
-import '../styles/global.css'
-import '../styles/normalize.css'
-import type { AppProps } from 'next/app'
+import React from 'react';
+import Head from 'next/head';
+import '../styles/global.css';
+import '../styles/normalize.css';
+import type { AppProps } from 'next/app';
 
 const _App = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
@@ -14,7 +14,7 @@ const _App = ({ Component, pageProps }: AppProps): JSX.Element => {
       </Head>
       <Component {...pageProps} />
     </>
-  )
-}
+  );
+};
 
-export default _App
+export default _App;

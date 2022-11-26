@@ -1,8 +1,8 @@
-import React from 'react'
-import styles from './styles.module.scss'
+import React from 'react';
+import styles from './styles.module.scss';
 
 interface props {
-  children?: React.ReactNode
+  children?: React.ReactNode;
 }
 
 const Main = ({ children }: props): JSX.Element => {
@@ -11,7 +11,7 @@ const Main = ({ children }: props): JSX.Element => {
       <h1 className={styles.title}>Contáctame</h1>
       {children}
     </main>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;
