@@ -1,3 +1,5 @@
+@import 'styles/_breakpoints';
+
 .nav {
   height: fit-content;
   background-color: rgb(0, 16, 85);
@@ -68,7 +70,7 @@
 .sectionName {
 }
 
-@media screen and (max-width: 768px) {
+@include phone-and-tablet {
   .button {
     display: flex;
   }

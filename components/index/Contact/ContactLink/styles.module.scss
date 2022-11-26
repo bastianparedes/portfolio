@@ -1,3 +1,5 @@
+@import 'styles/_breakpoints';
+
 .link {
   width: 100%;
   margin: 2rem 0;
@@ -20,7 +22,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@include phone-and-tablet {
   .link {
     margin: 0;
     text-align: center;
@@ -28,7 +30,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@include phone {
   .link {
     margin: 0;
     text-align: center;

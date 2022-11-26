@@ -1,3 +1,5 @@
+@import 'styles/_breakpoints';
+
 .main {
   display: grid;
   gap: 80px;
@@ -43,7 +45,7 @@
   grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
 }
 
-@media screen and (max-width: 768px) {
+@include phone-and-tablet {
   .main {
     grid-template-columns: 1fr;
   }
@@ -53,7 +55,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@include phone {
   .skillsContainer {
     gap: 2.5rem 1rem;
     grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));

@@ -1,3 +1,5 @@
+@import 'styles/_breakpoints';
+
 .imageContainer,
 .image {
   grid-column: 1 / 8;
@@ -22,13 +24,13 @@
   direction: rtl;
 }
 
-@media screen and (max-width: 768px) {
+@include phone-and-tablet {
   .linksContainer {
     grid-column: 11 / -1;
   }
 }
 
-@media screen and (max-width: 480px) {
+@include phone {
   .linksContainer {
     grid-column: 9 / -1;
   }

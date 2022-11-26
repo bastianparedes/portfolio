@@ -1,3 +1,5 @@
+@import 'styles/_breakpoints';
+
 .projectsContainer {
   width: 100%;
   display: grid;
@@ -8,14 +10,14 @@
   margin: auto;
 }
 
-@media screen and (max-width: 768px) {
+@include phone-and-tablet {
   .projectsContainer {
     gap: 5rem;
     padding-bottom: 5rem;
   }
 }
 
-@media screen and (max-width: 480px) {
+@include phone {
   .projectsContainer {
     gap: 2rem;
     padding-bottom: 2rem;

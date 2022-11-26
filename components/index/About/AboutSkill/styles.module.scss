@@ -1,3 +1,5 @@
+@import 'styles/_breakpoints';
+
 .skillCard {
   width: 5rem;
   position: relative;
@@ -16,7 +18,7 @@
   margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+@include phone-and-tablet {
   .skillCard {
     width: 5rem;
   }
@@ -25,7 +27,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@include phone {
   .skillCard {
     width: 4rem;
   }

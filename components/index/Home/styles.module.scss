@@ -1,3 +1,5 @@
+@import 'styles/_breakpoints';
+
 .home {
   position: relative;
   height: 100vh;
@@ -53,7 +55,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@include phone-and-tablet {
   .myName {
     font-size: 5rem;
   }
@@ -62,7 +64,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@include phone {
   .myName {
     font-size: 4rem;
   }
