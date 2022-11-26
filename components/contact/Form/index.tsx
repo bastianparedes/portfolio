@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import styles from './styles.module.scss';
 import Modal from '../Modal';
 
-interface submitInfo {
-  name: { value: string };
+interface typeElements extends HTMLFormControlsCollection {
+  userName: { value: string };
   email: { value: string };
   subject: { value: string };
   message: { value: string };
+}
+
+interface typeTarget {
+  elements: typeElements;
 }
 
 const Form = (): JSX.Element => {
@@ -16,20 +20,19 @@ const Form = (): JSX.Element => {
 
   const onSubmit = (event: React.FormEvent): void => {
     event.preventDefault();
-    const target = event.target as typeof event.target & submitInfo;
-    const [name, email, subject, message] = [
-      target.name?.value,
-      target.email?.value,
-      target.subject?.value,
-      target.message?.value
-    ];
+    const target = event.target as typeof event.target & typeTarget;
+    const elements = target.elements;
+    const userName = elements.userName.value;
+    const email = elements.email.value;
+    const subject = elements.subject.value;
+    const message = elements.message.value;
 
     fetch('/api/contact', {
       method: 'POST',
       body: JSON.stringify({
-        subject: `${name} quiere contactarte.`,
+        subject: `${userName} quiere contactarte.`,
         text: [
-          `Nombre: ${name}`,
+          `Nombre: ${userName}`,
           `Subject: ${subject}`,
           `E-mail: ${email}`,
           `Message: ${message}`
@@ -65,7 +68,7 @@ const Form = (): JSX.Element => {
         onSubmit={onSubmit}
         className={styles.form}
       >
-        <input name="name" type="text" placeholder="Nombre" />
+        <input name="userName" type="text" placeholder="Nombre" />
         <input name="email" type="email" placeholder="Correo electrónico" />
         <input name="subject" type="text" placeholder="Asunto" />
         <textarea
@@ -73,7 +76,9 @@ const Form = (): JSX.Element => {
           placeholder="Mensaje"
           className={styles.textarea}
         />
-        <input type="submit" value="Enviar" />
+        <button type="submit" value="Enviar">
+          Enviar
+        </button>
       </form>
       {modalVisible && (
         <Modal

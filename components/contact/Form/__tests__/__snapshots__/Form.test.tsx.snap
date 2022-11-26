@@ -7,7 +7,7 @@ exports[`<Form /> should render 1`] = `
     data-testid="contact-form"
   >
     <input
-      name="name"
+      name="userName"
       placeholder="Nombre"
       type="text"
     />
@@ -26,10 +26,12 @@ exports[`<Form /> should render 1`] = `
       name="message"
       placeholder="Mensaje"
     />
-    <input
+    <button
       type="submit"
       value="Enviar"
-    />
+    >
+      Enviar
+    </button>
   </form>
 </div>
 `;
