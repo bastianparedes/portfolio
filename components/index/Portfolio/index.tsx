@@ -1,8 +1,9 @@
 import React from 'react';
-import { Section } from '../Common';
-import styles from './styles.module.scss';
-import Project from './Project';
+
 import constants from '../../../config/constants.json';
+import { Section } from '../Common';
+import Project from './Project';
+import styles from './styles.module.scss';
 
 const Portfolio = (): JSX.Element => {
   return (

@@ -1,6 +1,8 @@
 import React from 'react';
-import Portfolio from '..';
+
 import { render } from '@testing-library/react';
+
+import Portfolio from '..';
 import { Section } from '../../Common';
 
 jest.mock('../../Common');

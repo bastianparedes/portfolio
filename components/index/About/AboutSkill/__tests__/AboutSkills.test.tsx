@@ -1,6 +1,8 @@
 import React from 'react';
-import AboutSkill from '..';
+
 import { render } from '@testing-library/react';
+
+import AboutSkill from '..';
 
 describe('<AboutSkill />', () => {
   const skill = {

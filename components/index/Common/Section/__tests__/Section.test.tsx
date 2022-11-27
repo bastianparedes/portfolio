@@ -1,6 +1,8 @@
 import React from 'react';
-import Section from '..';
+
 import { render } from '@testing-library/react';
+
+import Section from '..';
 
 describe('<Section />', () => {
   const props = {

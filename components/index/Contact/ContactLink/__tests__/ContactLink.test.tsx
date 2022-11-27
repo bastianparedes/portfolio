@@ -1,6 +1,8 @@
 import React from 'react';
-import ContactLink from '..';
+
 import { render } from '@testing-library/react';
+
+import ContactLink from '..';
 
 describe('<ContactLink />', () => {
   const props = {

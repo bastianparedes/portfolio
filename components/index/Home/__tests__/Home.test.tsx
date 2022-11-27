@@ -1,6 +1,8 @@
 import React from 'react';
-import Home from '..';
+
 import { render } from '@testing-library/react';
+
+import Home from '..';
 
 jest.mock(
   'typewriter-effect',

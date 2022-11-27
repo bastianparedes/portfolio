@@ -1,6 +1,8 @@
 import React from 'react';
+
+import { fireEvent, render } from '@testing-library/react';
+
 import NavLink from '..';
-import { render, fireEvent } from '@testing-library/react';
 import constants from '../../../../../config/constants.json';
 
 describe('<NavLink />', () => {

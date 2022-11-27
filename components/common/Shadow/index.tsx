@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from './styles.module.scss';
+
 import classNames from '../../../utils/classNames';
+import styles from './styles.module.scss';
 
 interface ShadowProps {
   children?: React.ReactNode;

@@ -1,10 +1,12 @@
 import React from 'react';
-import { VscSignOut, VscGithub } from 'react-icons/vsc';
+
 import Image from 'next/image';
-import styles from './styles.module.scss';
-import stylesRight from './stylesRight.module.scss';
-import stylesLeft from './stylesLeft.module.scss';
+import { VscGithub, VscSignOut } from 'react-icons/vsc';
+
 import classNames from '../../../../utils/classNames';
+import styles from './styles.module.scss';
+import stylesLeft from './stylesLeft.module.scss';
+import stylesRight from './stylesRight.module.scss';
 
 interface ProjectProps {
   index: number;

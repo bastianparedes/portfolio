@@ -1,6 +1,8 @@
 import React from 'react';
-import Shadow from '..';
+
 import { fireEvent, render } from '@testing-library/react';
+
+import Shadow from '..';
 
 describe('<Shadow />', () => {
   it('should render', () => {

@@ -1,6 +1,8 @@
 import React from 'react';
-import Project from '..';
+
 import { render } from '@testing-library/react';
+
+import Project from '..';
 
 describe('<Project />', () => {
   const props = {

@@ -1,8 +1,9 @@
 import React from 'react';
-import styles from './styles.module.scss';
-import { Section } from '../Common';
+
 import constants from '../../../config/constants.json';
+import { Section } from '../Common';
 import AboutSkill from './AboutSkill';
+import styles from './styles.module.scss';
 
 const About = (): JSX.Element => {
   return (

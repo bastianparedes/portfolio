@@ -1,6 +1,8 @@
 import React from 'react';
-import Body from '..';
+
 import { render } from '@testing-library/react';
+
+import Body from '..';
 
 jest.mock('../../Footer');
 

@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
-import styles from './styles.module.scss';
-import ResultModal from '../ResultModal';
-import { useLoaderContext } from '@/components/common/Loader/Context';
-import { GrStatusGood } from 'react-icons/gr';
+
 import { BiErrorCircle } from 'react-icons/bi';
+import { GrStatusGood } from 'react-icons/gr';
+
+import { useLoaderContext } from '@/components/common/Loader/Context';
+
+import ResultModal from '../ResultModal';
+import styles from './styles.module.scss';
 
 interface typeElements extends HTMLFormControlsCollection {
   userName: { value: string };

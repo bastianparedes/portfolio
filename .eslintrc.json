@@ -16,7 +16,7 @@
     "sourceType": "module",
     "project": "tsconfig.json"
   },
-  "plugins": ["react"],
+  "plugins": ["react", "import"],
   "rules": {
     "multiline-ternary": ["error", "never"],
     "quotes": ["warn", "single"],
@@ -28,7 +28,39 @@
     ],
     "no-console": "warn",
     "no-alert": "error",
-    "arrow-parens": "warn"
+    "arrow-parens": "warn",
+    "sort-imports": [
+      "error",
+      { "ignoreCase": true, "ignoreDeclarationSort": true }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          ["external", "builtin"],
+          "internal",
+          ["sibling", "parent"],
+          "index"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "@(react|react-native)",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "@src/**",
+            "group": "internal"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["internal", "react"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
   },
   "settings": {
     "react": {

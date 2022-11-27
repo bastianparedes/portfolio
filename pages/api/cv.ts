@@ -1,6 +1,6 @@
 import fs from 'fs';
-import path from 'path';
 import type { NextApiRequest, NextApiResponse } from 'next';
+import path from 'path';
 
 const filePath = path.resolve('public/files/cv.pdf');
 const imageBuffer = fs.readFileSync(filePath);

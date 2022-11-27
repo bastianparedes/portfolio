@@ -1,6 +1,8 @@
 import React from 'react';
-import Error from '..';
+
 import { render } from '@testing-library/react';
+
+import Error from '..';
 
 describe('<Error />', () => {
   it('should render', () => {

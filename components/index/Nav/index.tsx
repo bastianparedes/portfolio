@@ -1,10 +1,12 @@
 import React from 'react';
-import { AiOutlineMenu } from 'react-icons/ai';
-import styles from './styles.module.scss';
-import constants from '../../../config/constants.json';
+
 import Image from 'next/image';
-import NavLink from './NavLink';
+import { AiOutlineMenu } from 'react-icons/ai';
+
+import constants from '../../../config/constants.json';
 import classNames from '../../../utils/classNames';
+import NavLink from './NavLink';
+import styles from './styles.module.scss';
 
 const Nav = (): JSX.Element => {
   const [opened, setOpened] = React.useState(false);

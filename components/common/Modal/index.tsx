@@ -1,7 +1,9 @@
 import React from 'react';
-import styles from './styles.module.scss';
-import Shadow from '../Shadow';
+
 import { MdClose } from 'react-icons/md';
+
+import Shadow from '../Shadow';
+import styles from './styles.module.scss';
 
 interface props {
   children?: React.ReactNode;

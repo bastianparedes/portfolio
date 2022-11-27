@@ -1,6 +1,8 @@
 import React from 'react';
-import About from '..';
+
 import { render } from '@testing-library/react';
+
+import About from '..';
 import { Section } from '../../Common';
 
 jest.mock('../../Common');

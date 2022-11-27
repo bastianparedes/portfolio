@@ -1,6 +1,8 @@
 import React from 'react';
-import MyParticles from '..';
+
 import { render } from '@testing-library/react';
+
+import MyParticles from '..';
 
 jest.mock('react-tsparticles', () => (init: { init: () => void }) => {
   init.init();

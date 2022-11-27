@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from './styles.module.scss';
+
 import Shadow from '../Shadow';
+import styles from './styles.module.scss';
 
 const Loader = (): JSX.Element => {
   return (

@@ -1,7 +1,9 @@
 import React from 'react';
-import Modal from '..';
+
 import { fireEvent, render } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
+
+import Modal from '..';
 
 jest.mock(
   '../../Shadow',

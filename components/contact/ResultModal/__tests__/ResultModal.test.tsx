@@ -1,8 +1,10 @@
 import React from 'react';
+
 import { fireEvent, render } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
-import ResultModal from '..';
 import { GrStatusGood } from 'react-icons/gr';
+
+import ResultModal from '..';
 
 jest.mock(
   '../../../common/Modal',

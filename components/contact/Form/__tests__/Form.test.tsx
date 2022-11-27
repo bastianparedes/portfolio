@@ -1,8 +1,11 @@
 import React from 'react';
-import Form from '..';
+
 import { fireEvent, render } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
+
 import { useLoaderContext } from '@/components/common/Loader/Context';
+
+import Form from '..';
 
 jest.mock(
   '../../ResultModal',

@@ -1,6 +1,8 @@
 import React from 'react';
-import Modal from '../../common/Modal';
+
 import { IconType } from 'react-icons';
+
+import Modal from '../../common/Modal';
 import styles from './styles.module.scss';
 
 interface props {

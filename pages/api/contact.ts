@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
+
 import sendMail from '../../utils/sendMail';
 
 const Contact = async (
