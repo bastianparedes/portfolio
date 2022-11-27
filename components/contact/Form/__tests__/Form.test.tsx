@@ -3,16 +3,20 @@ import Form from '..';
 import { fireEvent, render } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
 
-interface propsModal {
+interface propsResultModal {
   setModalVisible: (boolean: boolean) => void;
 }
 
-jest.mock('../../../common/Modal', () => ({ setModalVisible }: propsModal) => {
-  const handleOnClose = (): void => {
-    setModalVisible(false);
-  };
-  return <button onClick={handleOnClose}>X</button>;
-});
+jest.mock(
+  '../../ResultModal',
+  () =>
+    ({ setModalVisible }: propsResultModal) => {
+      const handleOnClose = (): void => {
+        setModalVisible(false);
+      };
+      return <button onClick={handleOnClose}>X</button>;
+    }
+);
 
 describe('<Form />', () => {
   afterEach(() => {

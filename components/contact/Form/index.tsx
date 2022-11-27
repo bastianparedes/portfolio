@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styles from './styles.module.scss';
-import Modal from '../../common/Modal';
+import ResultModal from '../ResultModal';
+import { GrStatusGood } from 'react-icons/gr';
+import { BiErrorCircle } from 'react-icons/bi';
 
 interface typeElements extends HTMLFormControlsCollection {
   userName: { value: string };
@@ -15,7 +17,17 @@ interface typeTarget {
 
 const Form = (): JSX.Element => {
   const [modalVisible, setModalVisible] = useState(false);
-  const [, setSubmitSuccessful] = useState(true);
+  const [modalProps, setModalProps] = useState({});
+
+  const successModalProps = {
+    Icon: GrStatusGood,
+    text: 'Mensaje enviado correctamente, te contactaré lo antes posible.'
+  };
+
+  const failModalProps = {
+    Icon: BiErrorCircle,
+    text: 'Ha ocurrido un error, por favor inténtelo más tarde.'
+  };
 
   const onSubmit = (event: React.FormEvent): void => {
     event.preventDefault();
@@ -40,13 +52,13 @@ const Form = (): JSX.Element => {
     })
       .then((response) => {
         if (response.ok) {
-          setSubmitSuccessful(true);
+          setModalProps({ ...successModalProps });
         } else {
-          setSubmitSuccessful(false);
+          setModalProps({ ...failModalProps });
         }
       })
       .catch(() => {
-        setSubmitSuccessful(false);
+        setModalProps({ ...failModalProps });
       })
       .finally(() => {
         setModalVisible(true);
@@ -72,7 +84,9 @@ const Form = (): JSX.Element => {
           Enviar
         </button>
       </form>
-      {modalVisible && <Modal setModalVisible={setModalVisible} />}
+      {modalVisible && (
+        <ResultModal setModalVisible={setModalVisible} {...modalProps} />
+      )}
     </>
   );
 };
