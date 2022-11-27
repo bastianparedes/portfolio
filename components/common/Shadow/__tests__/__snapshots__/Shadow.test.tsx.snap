@@ -1,9 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<CShadow /> should render 1`] = `
+exports[`<Shadow /> should render 1`] = `
 <div>
   <div
-    class="shadow"
+    class="shadow dark"
+    data-testid="data-testid-shadow"
+  />
+</div>
+`;
+
+exports[`<Shadow /> should render without props 1`] = `
+<div>
+  <div
+    class="shadow dark"
     data-testid="data-testid-shadow"
   />
 </div>

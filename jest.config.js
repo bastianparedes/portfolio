@@ -18,7 +18,8 @@ const customJestConfig = {
   collectCoverageFrom: [
     '{components,config,pages,public,util}/**/*.{js,jsx,ts,tsx}',
     '!pages/_*.tsx',
-    '!pages/404.tsx'
+    '!pages/404.tsx',
+    '!components/common/Loader/Context.ts'
   ],
   coverageThreshold: {
     global: {

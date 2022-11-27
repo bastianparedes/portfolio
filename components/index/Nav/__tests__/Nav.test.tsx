@@ -4,14 +4,12 @@ import { render, fireEvent } from '@testing-library/react';
 import constants from '../../../../config/constants.json';
 import { act } from 'react-dom/test-utils';
 
-interface NavLinkProps {
-  title: string;
-  closeNav: () => void;
-}
-
-jest.mock('../NavLink', () => ({ title, closeNav }: NavLinkProps) => (
-  <button onClick={closeNav}>{title}</button>
-));
+jest.mock(
+  '../NavLink',
+  () =>
+    ({ title, closeNav }: { title: string; closeNav: () => void }) =>
+      <button onClick={closeNav}>{title}</button>
+);
 
 describe('<Nav />', () => {
   it('should render', () => {

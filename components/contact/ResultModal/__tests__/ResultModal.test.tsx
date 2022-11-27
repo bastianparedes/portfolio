@@ -4,15 +4,16 @@ import { act } from 'react-dom/test-utils';
 import ResultModal from '..';
 import { GrStatusGood } from 'react-icons/gr';
 
-interface ModalProps {
-  setModalVisible: (boolean: boolean) => void;
-  children: React.ReactNode;
-}
-
 jest.mock(
   '../../../common/Modal',
   () =>
-    ({ setModalVisible, children }: ModalProps) => {
+    ({
+      setModalVisible,
+      children
+    }: {
+      setModalVisible: (boolean: boolean) => void;
+      children: React.ReactNode;
+    }) => {
       return (
         <>
           <button onClick={() => setModalVisible(false)}>X</button>

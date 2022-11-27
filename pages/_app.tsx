@@ -3,6 +3,7 @@ import Head from 'next/head';
 import '../styles/global.css';
 import '../styles/normalize.css';
 import type { AppProps } from 'next/app';
+import { LoaderProvider } from '@/components/common/Loader/Context';
 
 const _App = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
@@ -12,7 +13,9 @@ const _App = ({ Component, pageProps }: AppProps): JSX.Element => {
         <link rel="icon" href="/favicon.ico" />
         <title>Bastián Paredes</title>
       </Head>
-      <Component {...pageProps} />
+      <LoaderProvider>
+        <Component {...pageProps} />
+      </LoaderProvider>
     </>
   );
 };

@@ -2,30 +2,37 @@ import React from 'react';
 import Form from '..';
 import { fireEvent, render } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
-
-interface propsResultModal {
-  setModalVisible: (boolean: boolean) => void;
-}
+import { useLoaderContext } from '@/components/common/Loader/Context';
 
 jest.mock(
   '../../ResultModal',
   () =>
-    ({ setModalVisible }: propsResultModal) => {
+    ({ setModalVisible }: { setModalVisible: (boolean: boolean) => void }) => {
       const handleOnClose = (): void => {
         setModalVisible(false);
       };
       return <button onClick={handleOnClose}>X</button>;
     }
 );
+jest.mock('@/components/common/Loader/Context');
 
 describe('<Form />', () => {
-  afterEach(() => {
-    jest.clearAllMocks();
+  const addLoaderCounter = jest.fn();
+  const substractLoaderCounter = jest.fn();
+
+  beforeEach(() => {
+    (useLoaderContext as jest.Mock).mockReturnValue({
+      addLoaderCounter,
+      substractLoaderCounter
+    });
   });
 
   it('should render', () => {
     const { container } = render(<Form />);
+
     expect(container).toMatchSnapshot();
+    expect(addLoaderCounter).toBeCalledTimes(0);
+    expect(substractLoaderCounter).toBeCalledTimes(0);
   });
 
   it('should call api/contact and success with response.ok true', async () => {
@@ -39,6 +46,8 @@ describe('<Form />', () => {
     });
 
     expect(fetch).toBeCalledTimes(1);
+    expect(addLoaderCounter).toBeCalledTimes(1);
+    expect(substractLoaderCounter).toBeCalledTimes(1);
   });
 
   it('should call api/contact and success with response.ok false', async () => {
@@ -49,7 +58,10 @@ describe('<Form />', () => {
     await act(() => {
       fireEvent.click(getByText('Enviar'));
     });
+
     expect(fetch).toBeCalledTimes(1);
+    expect(addLoaderCounter).toBeCalledTimes(1);
+    expect(substractLoaderCounter).toBeCalledTimes(1);
   });
 
   it('should call api/contact and fail', async () => {
@@ -58,7 +70,10 @@ describe('<Form />', () => {
     await act(() => {
       fireEvent.click(getByText('Enviar'));
     });
+
     expect(fetch).toBeCalledTimes(1);
+    expect(addLoaderCounter).toBeCalledTimes(1);
+    expect(substractLoaderCounter).toBeCalledTimes(1);
   });
 
   it('should close modal after it is opened', async () => {
@@ -72,11 +87,12 @@ describe('<Form />', () => {
 
     const buttonCloserModal = getByText('X');
     expect(buttonCloserModal).toBeInTheDocument();
-
     act(() => {
       fireEvent.click(buttonCloserModal);
     });
-
     expect(buttonCloserModal).not.toBeInTheDocument();
+
+    expect(addLoaderCounter).toBeCalledTimes(1);
+    expect(substractLoaderCounter).toBeCalledTimes(1);
   });
 });

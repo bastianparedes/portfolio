@@ -2,23 +2,27 @@ import React from 'react';
 import Home from '..';
 import { render } from '@testing-library/react';
 
-interface TypewriterProps {
-  onInit: (typewriter: {
-    typeString: () => {
-      start: () => null;
-    };
-  }) => void;
-}
+jest.mock(
+  'typewriter-effect',
+  () =>
+    ({
+      onInit
+    }: {
+      onInit: (typewriter: {
+        typeString: () => {
+          start: () => null;
+        };
+      }) => void;
+    }) => {
+      const typewriter = {
+        typeString: () => ({
+          start: () => null
+        })
+      };
 
-jest.mock('typewriter-effect', () => ({ onInit }: TypewriterProps) => {
-  const typewriter = {
-    typeString: () => ({
-      start: () => null
-    })
-  };
-
-  onInit(typewriter);
-});
+      onInit(typewriter);
+    }
+);
 jest.mock('../MyParticles', () => () => <></>);
 
 describe('<Home />', () => {

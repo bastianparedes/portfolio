@@ -1,3 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`/contact should render 1`] = `<div />`;
+exports[`/contact should render with <Loader /> 1`] = `
+<div>
+  <div
+    data-testid="data-testid-loader"
+  />
+</div>
+`;
+
+exports[`/contact should render without <Loader /> 1`] = `<div />`;

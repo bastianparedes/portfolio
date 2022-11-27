@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './styles.module.scss';
 import ResultModal from '../ResultModal';
+import { useLoaderContext } from '@/components/common/Loader/Context';
 import { GrStatusGood } from 'react-icons/gr';
 import { BiErrorCircle } from 'react-icons/bi';
 
@@ -18,6 +19,7 @@ interface typeTarget {
 const Form = (): JSX.Element => {
   const [modalVisible, setModalVisible] = useState(false);
   const [modalProps, setModalProps] = useState({});
+  const { addLoaderCounter, substractLoaderCounter } = useLoaderContext();
 
   const successModalProps = {
     Icon: GrStatusGood,
@@ -31,6 +33,7 @@ const Form = (): JSX.Element => {
 
   const onSubmit = (event: React.FormEvent): void => {
     event.preventDefault();
+    addLoaderCounter();
     const target = event.target as typeof event.target & typeTarget;
     const elements = target.elements;
     const userName = elements.userName.value;
@@ -61,6 +64,7 @@ const Form = (): JSX.Element => {
         setModalProps({ ...failModalProps });
       })
       .finally(() => {
+        substractLoaderCounter();
         setModalVisible(true);
       });
   };

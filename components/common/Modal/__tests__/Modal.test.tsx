@@ -3,11 +3,12 @@ import Modal from '..';
 import { fireEvent, render } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
 
-interface shadowProps {
-  children: React.ReactNode;
-}
-
-jest.mock('../../Shadow', () => ({ children }: shadowProps) => <>{children}</>);
+jest.mock(
+  '../../Shadow',
+  () =>
+    ({ children }: { children: React.ReactNode }) =>
+      <>{children}</>
+);
 
 describe('<Modal />', () => {
   it('should render', () => {

@@ -2,16 +2,19 @@ import React from 'react';
 import Shadow from '..';
 import { fireEvent, render } from '@testing-library/react';
 
-describe('<CShadow />', () => {
+describe('<Shadow />', () => {
   it('should render', () => {
     const props = {
       setVisible: jest.fn()
     };
-    const { container } = render(
-      <Shadow {...props}>
-        <></>
-      </Shadow>
-    );
+
+    const { container } = render(<Shadow {...props} />);
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should render without props', () => {
+    const { container, getByTestId } = render(<Shadow />);
+    fireEvent.click(getByTestId('data-testid-shadow'));
     expect(container).toMatchSnapshot();
   });
 
@@ -19,13 +22,9 @@ describe('<CShadow />', () => {
     const props = {
       setVisible: jest.fn()
     };
-    const { getByTestId } = render(
-      <Shadow {...props}>
-        <></>
-      </Shadow>
-    );
-    const shadow = getByTestId('data-testid-shadow');
-    fireEvent.click(shadow);
+
+    const { getByTestId } = render(<Shadow {...props} />);
+    fireEvent.click(getByTestId('data-testid-shadow'));
 
     expect(props.setVisible).toBeCalledTimes(1);
     expect(props.setVisible).toBeCalledWith(false);

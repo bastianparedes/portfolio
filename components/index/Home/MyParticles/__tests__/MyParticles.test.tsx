@@ -2,11 +2,7 @@ import React from 'react';
 import MyParticles from '..';
 import { render } from '@testing-library/react';
 
-interface typeInit {
-  init: () => void;
-}
-
-jest.mock('react-tsparticles', () => (init: typeInit) => {
+jest.mock('react-tsparticles', () => (init: { init: () => void }) => {
   init.init();
   return <></>;
 });
