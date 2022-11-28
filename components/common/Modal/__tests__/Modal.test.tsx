@@ -24,9 +24,9 @@ describe('<Modal />', () => {
 
   it('should close modal when button is clicked', () => {
     const props = {
+      setModalVisible: jest.fn(),
       success: true,
-      text: 'Success',
-      setModalVisible: jest.fn()
+      text: 'Success'
     };
 
     const { getByTestId } = render(<Modal {...props} />);

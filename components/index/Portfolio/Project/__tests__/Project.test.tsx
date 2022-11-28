@@ -6,13 +6,13 @@ import Project from '..';
 
 describe('<Project />', () => {
   const props = {
-    index: 0,
-    name: 'Falabella',
-    link: 'https://www.falabella.com/falabella-cl/',
-    image: 'falabella.png',
-    github: 'https://github.com/BastianParedes/falabella',
     description:
       'A/B Tester de la plataforma. Desarrollo nuevas versiones de la página y comparo la antigua versión con la nueva para recolectar datos y así desplegar la que obtenga mejores resultados.',
+    github: 'https://github.com/BastianParedes/falabella',
+    image: 'falabella.png',
+    index: 0,
+    link: 'https://www.falabella.com/falabella-cl/',
+    name: 'Falabella',
     technologies: [
       'HTML',
       'CSS',

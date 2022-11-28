@@ -18,7 +18,7 @@
     "sourceType": "module",
     "project": "tsconfig.json"
   },
-  "plugins": ["react", "import"],
+  "plugins": ["react", "import", "sort-keys-fix"],
   "rules": {
     "multiline-ternary": ["error", "never"],
     "quotes": ["warn", "single"],
@@ -31,12 +31,23 @@
     "no-console": "warn",
     "no-alert": "error",
     "arrow-parens": "warn",
+    "sort-keys": [
+      "warn",
+      "asc",
+      {
+        "allowLineSeparatedGroups": false,
+        "caseSensitive": true,
+        "natural": true,
+        "minKeys": 2
+      }
+    ],
+    "sort-keys-fix/sort-keys-fix": "warn",
     "sort-imports": [
-      "error",
+      "warn",
       { "ignoreCase": true, "ignoreDeclarationSort": true }
     ],
     "import/order": [
-      "error",
+      "warn",
       {
         "groups": [
           ["external", "builtin"],

@@ -45,7 +45,6 @@ const Form = (): JSX.Element => {
     const message = elements.message.value;
 
     fetch('/api/contact', {
-      method: 'POST',
       body: JSON.stringify({
         subject: `${userName} quiere contactarte.`,
         text: [
@@ -54,7 +53,8 @@ const Form = (): JSX.Element => {
           `E-mail: ${email}`,
           `Message: ${message}`
         ].join('\n')
-      })
+      }),
+      method: 'POST'
     })
       .then((response) => {
         if (response.ok) {

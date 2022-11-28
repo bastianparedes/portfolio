@@ -7,9 +7,9 @@ import constants from '../../../../../config/constants';
 
 describe('<NavLink />', () => {
   const props = {
+    closeNav: jest.fn(),
     link: constants.NAV.BUTTONS.HOME.ID,
-    title: constants.NAV.BUTTONS.HOME.TITLE,
-    closeNav: jest.fn()
+    title: constants.NAV.BUTTONS.HOME.TITLE
   };
 
   it('should render', () => {

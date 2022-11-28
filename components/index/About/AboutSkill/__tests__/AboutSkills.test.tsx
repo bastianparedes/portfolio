@@ -6,12 +6,12 @@ import AboutSkill from '..';
 
 describe('<AboutSkill />', () => {
   const skill = {
-    SRC: 'html5.png',
-    NAME: 'HTML 5'
+    NAME: 'HTML 5',
+    SRC: 'html5.png'
   };
   const props = {
-    src: skill.SRC,
-    name: skill.NAME
+    name: skill.NAME,
+    src: skill.SRC
   };
   it('should render', () => {
     const { container } = render(<AboutSkill {...props} />);

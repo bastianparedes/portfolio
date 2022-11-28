@@ -17,41 +17,43 @@ const MyParticles = (): JSX.Element => {
       init={particlesInit}
       options={{
         autoPlay: true,
-        fullScreen: false,
+        background: {},
         fpsLimit: 60,
+        fullScreen: false,
         interactivity: {
           detectsOn: 'canvas',
           events: {
-            onHover: {
-              enable: true,
-              mode: 'grab'
-            },
             onClick: {
               enable: true,
               mode: 'push'
+            },
+            onHover: {
+              enable: true,
+              mode: 'grab'
             }
           },
           modes: {
-            push: {
-              quantity: 1
-            },
             grab: {
               distance: 200
+            },
+            push: {
+              quantity: 1
             }
           }
         },
-        background: {},
         particles: {
           color: {
             value: '#2034fa'
           },
-          number: {
-            value: 30,
-            limit: 30
+          links: {
+            color: '#2034fa',
+            distance: 200,
+            enable: true,
+            width: 2
           },
           move: {
-            enable: true,
             direction: 'top',
+            enable: true,
             random: true,
             speed: 2,
             trail: {
@@ -59,24 +61,22 @@ const MyParticles = (): JSX.Element => {
             },
             vibrate: false
           },
-          size: {
-            value: {
-              min: 1,
-              max: 5
-            },
-            animation: {
-              enable: true,
-              speed: 5
-            }
+          number: {
+            limit: 30,
+            value: 30
           },
           shape: {
             type: 'circle'
           },
-          links: {
-            color: '#2034fa',
-            distance: 200,
-            enable: true,
-            width: 2
+          size: {
+            animation: {
+              enable: true,
+              speed: 5
+            },
+            value: {
+              max: 5,
+              min: 1
+            }
           }
         },
         pauseOnBlur: true,

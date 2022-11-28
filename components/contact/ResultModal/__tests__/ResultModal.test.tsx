@@ -28,8 +28,8 @@ jest.mock(
 describe('<ResultModal />', () => {
   it('should render', () => {
     const props = {
-      setModalVisible: jest.fn(),
       Icon: GrStatusGood,
+      setModalVisible: jest.fn(),
       text: 'Success'
     };
 
@@ -48,8 +48,8 @@ describe('<ResultModal />', () => {
 
   it('should close modal when button is clicked', () => {
     const props = {
-      setModalVisible: jest.fn(),
       Icon: GrStatusGood,
+      setModalVisible: jest.fn(),
       text: 'Success'
     };
 

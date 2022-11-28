@@ -24,9 +24,9 @@ function useContext({
     setLoaderCounter((counter) => counter - 1);
 
   return {
+    addLoaderCounter,
     loaderCounter,
     setLoaderCounter,
-    addLoaderCounter,
     substractLoaderCounter
   };
 }
