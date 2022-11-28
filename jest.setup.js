@@ -4,7 +4,7 @@
 // Used for __tests__/testing-library.js
 // Learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom/extend-expect';
-import { jest, afterEach } from '@jest/globals';
+import { afterEach, jest } from '@jest/globals';
 
 jest.mock('next/image');
 ['ai', 'bi', 'fi', 'gr', 'md', 'vsc'].forEach((element) => {

@@ -1,5 +1,6 @@
-import Cv from '../../../pages/api/cv';
 import { createMocks } from 'node-mocks-http';
+
+import Cv from '../../../pages/api/cv';
 
 describe('/api/cv', () => {
   it('should have correct status, header and end', () => {

@@ -1,6 +1,8 @@
 import React from 'react';
-import Index from '../../pages/index';
+
 import { render } from '@testing-library/react';
+
+import Index from '../../pages/index';
 
 jest.mock('@/components/common/Body');
 jest.mock('@/components/index/Home', () => () => <></>);

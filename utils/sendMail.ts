@@ -8,18 +8,18 @@ const sendMail = async (
   to: string = defaultTo
 ): Promise<SentMessageInfo> => {
   return await createTransport({
+    auth: {
+      pass: process.env.SENDER_EMAIL_PASSWORD,
+      user: process.env.SENDER_EMAIL
+    },
     host: 'smtp-mail.outlook.com',
     port: 587,
-    secure: false,
-    auth: {
-      user: process.env.SENDER_EMAIL,
-      pass: process.env.SENDER_EMAIL_PASSWORD
-    }
+    secure: false
   }).sendMail({
     from: process.env.SENDER_EMAIL,
-    to,
     subject,
-    text
+    text,
+    to
   });
 };
 

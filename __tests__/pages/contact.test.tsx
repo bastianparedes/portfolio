@@ -1,7 +1,10 @@
 import React from 'react';
-import Contact from '../../pages/contact';
+
 import { render } from '@testing-library/react';
+
 import { useLoaderContext } from '@/components/common/Loader/Context';
+
+import Contact from '../../pages/contact';
 
 jest.mock('@/components/common/Body');
 jest.mock('@/components/contact/Main');
