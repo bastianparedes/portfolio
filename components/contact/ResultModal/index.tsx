@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IconType } from 'react-icons';
+import type { IconType } from 'react-icons';
 
 import Modal from '../../common/Modal';
 import styles from './styles.module.scss';
