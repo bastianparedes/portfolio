@@ -3,13 +3,15 @@
   "env": {
     "browser": true,
     "es2021": true,
-    "node": true
+    "node": true,
+    "jest": true
   },
   "extends": [
     "next/core-web-vitals",
     "plugin:react/recommended",
     "standard-with-typescript",
-    "prettier"
+    "prettier",
+    "eslint:recommended"
   ],
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -66,5 +68,8 @@
     "react": {
       "version": "detect"
     }
+  },
+  "globals": {
+    "JSX": "readonly"
   }
 }

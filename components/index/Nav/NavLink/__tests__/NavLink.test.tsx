@@ -3,7 +3,7 @@ import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
 
 import NavLink from '..';
-import constants from '../../../../../config/constants.json';
+import constants from '../../../../../config/constants';
 
 describe('<NavLink />', () => {
   const props = {

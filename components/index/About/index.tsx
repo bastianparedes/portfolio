@@ -1,6 +1,6 @@
 import React from 'react';
 
-import constants from '../../../config/constants.json';
+import constants from '../../../config/constants';
 import { Section } from '../Common';
 import AboutSkill from './AboutSkill';
 import styles from './styles.module.scss';

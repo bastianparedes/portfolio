@@ -3,7 +3,7 @@ import React from 'react';
 import { BiDownArrowAlt } from 'react-icons/bi';
 import Typewriter from 'typewriter-effect';
 
-import constants from '../../../config/constants.json';
+import constants from '../../../config/constants';
 import MyParticles from './MyParticles';
 import styles from './styles.module.scss';
 

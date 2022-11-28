@@ -1,6 +1,6 @@
 import React from 'react';
 
-import constants from '../../../config/constants.json';
+import constants from '../../../config/constants';
 import styles from './styles.module.scss';
 
 const Footer = (): JSX.Element => {

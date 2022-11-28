@@ -4,7 +4,7 @@ import { fireEvent, render } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
 
 import Nav from '..';
-import constants from '../../../../config/constants.json';
+import constants from '../../../../config/constants';
 
 jest.mock(
   '../NavLink',

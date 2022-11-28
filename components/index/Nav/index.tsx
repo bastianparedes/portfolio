@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import { AiOutlineMenu } from 'react-icons/ai';
 
-import constants from '../../../config/constants.json';
+import constants from '../../../config/constants';
 import classNames from '../../../utils/classNames';
 import NavLink from './NavLink';
 import styles from './styles.module.scss';
