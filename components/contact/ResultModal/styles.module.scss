@@ -1,3 +1,5 @@
+@import 'styles/_breakpoints';
+
 .container {
   position: relative;
   display: flex;
@@ -23,4 +25,10 @@
 .text {
   font-size: 1.5rem;
   text-align: justify;
+}
+
+@include phone {
+  .container {
+    padding: 0 2rem 2rem 2rem;
+  }
 }
