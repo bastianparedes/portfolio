@@ -90,7 +90,7 @@ describe('<Form />', () => {
 
     const buttonCloserModal = getByText('X');
     expect(buttonCloserModal).toBeInTheDocument();
-    act(() => {
+    await act(() => {
       fireEvent.click(buttonCloserModal);
     });
     expect(buttonCloserModal).not.toBeInTheDocument();

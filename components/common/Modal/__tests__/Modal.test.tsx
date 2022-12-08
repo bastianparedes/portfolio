@@ -22,7 +22,7 @@ describe('<Modal />', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should close modal when button is clicked', () => {
+  it('should close modal when button is clicked', async () => {
     const props = {
       setModalVisible: jest.fn(),
       success: true,
@@ -31,7 +31,7 @@ describe('<Modal />', () => {
 
     const { getByTestId } = render(<Modal {...props} />);
     const button = getByTestId('data-testid-button-closer-modal');
-    act(() => {
+    await act(() => {
       fireEvent.click(button);
     });
 

@@ -19,7 +19,7 @@ describe('<Nav />', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should open nav and close when link clicked', () => {
+  it('should open nav and close when link clicked', async () => {
     const navIsOpened = (ul: HTMLElement): boolean => {
       return Boolean(
         [...ul.classList].find((className) =>
@@ -36,12 +36,12 @@ describe('<Nav />', () => {
 
     expect(navIsOpened(ul)).toBe(false);
 
-    act(() => {
+    await act(() => {
       fireEvent.click(button);
     });
     expect(navIsOpened(ul)).toBe(true);
 
-    act(() => {
+    await act(() => {
       fireEvent.click(link);
     });
     expect(navIsOpened(ul)).toBe(false);

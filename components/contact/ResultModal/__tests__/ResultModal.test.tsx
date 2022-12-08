@@ -46,7 +46,7 @@ describe('<ResultModal />', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should close modal when button is clicked', () => {
+  it('should close modal when button is clicked', async () => {
     const props = {
       Icon: GrStatusGood,
       setModalVisible: jest.fn(),
@@ -55,7 +55,7 @@ describe('<ResultModal />', () => {
 
     const { getByText } = render(<ResultModal {...props} />);
     const button = getByText('X');
-    act(() => {
+    await act(() => {
       fireEvent.click(button);
     });
 
