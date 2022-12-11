@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import { VscGithub, VscSignOut } from 'react-icons/vsc';
 
 import classNames from '../../../../utils/classNames';

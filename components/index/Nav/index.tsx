@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import { AiOutlineMenu } from 'react-icons/ai';
 
 import constants from '../../../config/constants';
