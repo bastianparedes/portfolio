@@ -4,9 +4,9 @@ import { render } from '@testing-library/react';
 
 import Index from '../../pages/index';
 
-jest.mock('@/components/common/Body');
-jest.mock('@/components/index/Home', () => () => <></>);
-jest.mock('@/components/index/Main');
+jest.mock('../../components/common/Body');
+jest.mock('../../components/index/Home', () => () => <></>);
+jest.mock('../../components/index/Main');
 
 describe('/index', () => {
   it('should render', () => {

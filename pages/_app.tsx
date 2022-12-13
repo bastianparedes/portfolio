@@ -5,7 +5,7 @@ import Head from 'next/head';
 import '../styles/global.css';
 import '../styles/normalize.css';
 
-import { LoaderProvider } from '@/components/common/Loader/Context';
+import { LoaderProvider } from '../components/common/Loader/Context';
 
 const _App = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (

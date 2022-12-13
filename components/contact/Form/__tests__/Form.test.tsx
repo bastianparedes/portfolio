@@ -3,9 +3,8 @@ import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
 
-import { useLoaderContext } from '@/components/common/Loader/Context';
-
 import Form from '..';
+import { useLoaderContext } from '../../../common/Loader/Context';
 
 jest.mock(
   '../../ResultModal',
@@ -17,7 +16,7 @@ jest.mock(
       return <button onClick={handleOnClose}>X</button>;
     }
 );
-jest.mock('@/components/common/Loader/Context');
+jest.mock('../../../common/Loader/Context');
 
 describe('<Form />', () => {
   const addLoaderCounter = jest.fn();

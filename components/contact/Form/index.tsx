@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 import { BiErrorCircle } from 'react-icons/bi';
 import { GrStatusGood } from 'react-icons/gr';
 
-import { useLoaderContext } from '@/components/common/Loader/Context';
-
+import { useLoaderContext } from '../../common/Loader/Context';
 import ResultModal from '../ResultModal';
 import styles from './styles.module.scss';
 

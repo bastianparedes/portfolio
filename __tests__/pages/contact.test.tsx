@@ -2,17 +2,16 @@ import React from 'react';
 
 import { render } from '@testing-library/react';
 
-import { useLoaderContext } from '@/components/common/Loader/Context';
-
+import { useLoaderContext } from '../../components/common/Loader/Context';
 import Contact from '../../pages/contact';
 
-jest.mock('@/components/common/Body');
-jest.mock('@/components/contact/Main');
-jest.mock('@/components/contact/Form');
-jest.mock('@/components/common/Loader', () => () => (
+jest.mock('../../components/common/Body');
+jest.mock('../../components/contact/Main');
+jest.mock('../../components/contact/Form');
+jest.mock('../../components/common/Loader', () => () => (
   <div data-testid="data-testid-loader"></div>
 ));
-jest.mock('@/components/common/Loader/Context');
+jest.mock('../../components/common/Loader/Context');
 
 describe('/contact', () => {
   beforeEach(() => {
