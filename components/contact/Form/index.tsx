@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
+import { Loader } from 'bastianparedes/components';
 import { BiErrorCircle } from 'react-icons/bi';
 import { GrStatusGood } from 'react-icons/gr';
 
-import { useLoaderContext } from '../../common/Loader/Context';
 import ResultModal from '../ResultModal';
 import styles from './styles.module.scss';
 
@@ -21,8 +21,7 @@ interface typeTarget {
 const Form = (): JSX.Element => {
   const [modalVisible, setModalVisible] = useState(false);
   const [modalProps, setModalProps] = useState({});
-  const { addLoaderCounter, substractLoaderCounter } = useLoaderContext();
-
+  const [showLoader, setShowLoader] = useState(false);
   const successModalProps = {
     Icon: GrStatusGood,
     text: 'Mensaje enviado correctamente, te contactaré lo antes posible.'
@@ -35,7 +34,7 @@ const Form = (): JSX.Element => {
 
   const onSubmit = (event: React.FormEvent): void => {
     event.preventDefault();
-    addLoaderCounter();
+    setShowLoader(true);
     const target = event.target as typeof event.target & typeTarget;
     const elements = target.elements;
     const userName = elements.userName.value;
@@ -66,7 +65,7 @@ const Form = (): JSX.Element => {
         setModalProps({ ...failModalProps });
       })
       .finally(() => {
-        substractLoaderCounter();
+        setShowLoader(false);
         setModalVisible(true);
       });
   };
@@ -93,6 +92,7 @@ const Form = (): JSX.Element => {
       {modalVisible && (
         <ResultModal setModalVisible={setModalVisible} {...modalProps} />
       )}
+      {showLoader && <Loader />}
     </>
   );
 };

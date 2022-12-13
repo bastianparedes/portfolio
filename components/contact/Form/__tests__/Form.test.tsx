@@ -4,7 +4,6 @@ import { fireEvent, render } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
 
 import Form from '..';
-import { useLoaderContext } from '../../../common/Loader/Context';
 
 jest.mock(
   '../../ResultModal',
@@ -16,25 +15,12 @@ jest.mock(
       return <button onClick={handleOnClose}>X</button>;
     }
 );
-jest.mock('../../../common/Loader/Context');
+jest.mock('bastianparedes/components');
 
 describe('<Form />', () => {
-  const addLoaderCounter = jest.fn();
-  const substractLoaderCounter = jest.fn();
-
-  beforeEach(() => {
-    (useLoaderContext as jest.Mock).mockReturnValue({
-      addLoaderCounter,
-      substractLoaderCounter
-    });
-  });
-
   it('should render', () => {
     const { container } = render(<Form />);
-
     expect(container).toMatchSnapshot();
-    expect(addLoaderCounter).toBeCalledTimes(0);
-    expect(substractLoaderCounter).toBeCalledTimes(0);
   });
 
   it('should call api/contact and success with response.ok true', async () => {
@@ -48,8 +34,6 @@ describe('<Form />', () => {
     });
 
     expect(fetch).toBeCalledTimes(1);
-    expect(addLoaderCounter).toBeCalledTimes(1);
-    expect(substractLoaderCounter).toBeCalledTimes(1);
   });
 
   it('should call api/contact and success with response.ok false', async () => {
@@ -62,8 +46,6 @@ describe('<Form />', () => {
     });
 
     expect(fetch).toBeCalledTimes(1);
-    expect(addLoaderCounter).toBeCalledTimes(1);
-    expect(substractLoaderCounter).toBeCalledTimes(1);
   });
 
   it('should call api/contact and fail', async () => {
@@ -74,8 +56,6 @@ describe('<Form />', () => {
     });
 
     expect(fetch).toBeCalledTimes(1);
-    expect(addLoaderCounter).toBeCalledTimes(1);
-    expect(substractLoaderCounter).toBeCalledTimes(1);
   });
 
   it('should close modal after it is opened', async () => {
@@ -93,8 +73,5 @@ describe('<Form />', () => {
       fireEvent.click(buttonCloserModal);
     });
     expect(buttonCloserModal).not.toBeInTheDocument();
-
-    expect(addLoaderCounter).toBeCalledTimes(1);
-    expect(substractLoaderCounter).toBeCalledTimes(1);
   });
 });

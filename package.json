@@ -11,11 +11,10 @@
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "prepare": "husky install",
-    "fix": "npm run format:fix && npm run lint:fix && npm run test -- -u",
-    "no-verify": "git commit -m \"Not verified commit\" --no-verify && git push --no-verify"
+    "fix": "npm run format:fix && npm run lint:fix && npm run test -- -u"
   },
   "dependencies": {
-    "constate": "^3.3.2",
+    "bastianparedes": "^1.1.0",
     "next": "latest",
     "nodemailer": "^6.8.0",
     "react": "^18.2.0",
@@ -48,5 +47,9 @@
     "prettier": "^2.8.1",
     "ts-jest": "^29.0.3",
     "typescript": "^4.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bastianparedes/portfolio.git"
   }
 }

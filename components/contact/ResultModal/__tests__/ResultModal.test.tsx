@@ -5,25 +5,22 @@ import { act } from 'react-dom/test-utils';
 import { GrStatusGood } from 'react-icons/gr';
 
 import ResultModal from '..';
-
-jest.mock(
-  '../../../common/Modal',
-  () =>
-    ({
-      setModalVisible,
-      children
-    }: {
-      setModalVisible: (boolean: boolean) => void;
-      children: React.ReactNode;
-    }) => {
-      return (
-        <>
-          <button onClick={() => setModalVisible(false)}>X</button>
-          {children}
-        </>
-      );
-    }
-);
+jest.mock('bastianparedes/components', () => ({
+  Modal: ({
+    setModalVisible,
+    children
+  }: {
+    setModalVisible: (boolean: boolean) => void;
+    children: React.ReactNode;
+  }) => {
+    return (
+      <>
+        <button onClick={() => setModalVisible(false)}>X</button>
+        {children}
+      </>
+    );
+  }
+}));
 
 describe('<ResultModal />', () => {
   it('should render', () => {

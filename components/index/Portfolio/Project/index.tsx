@@ -1,9 +1,9 @@
 import React from 'react';
 
+import { classNames } from 'bastianparedes/utils';
 import Image from 'next/legacy/image';
 import { VscGithub, VscSignOut } from 'react-icons/vsc';
 
-import classNames from '../../../../utils/classNames';
 import styles from './styles.module.scss';
 import stylesLeft from './stylesLeft.module.scss';
 import stylesRight from './stylesRight.module.scss';

@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Body from '../components/common/Body';
+import { Body } from 'bastianparedes/components';
+
 import Home from '../components/index/Home';
 import Main from '../components/index/Main';
 

@@ -7,7 +7,7 @@ import '@testing-library/jest-dom/extend-expect';
 import { afterEach, jest } from '@jest/globals';
 
 jest.mock('next/image');
-['ai', 'bi', 'fi', 'gr', 'md', 'vsc'].forEach((element) => {
+['ai', 'bi', 'fi', 'gr', 'vsc'].forEach((element) => {
   jest.mock('react-icons/' + element);
 });
 

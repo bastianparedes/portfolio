@@ -4,7 +4,7 @@ import { render } from '@testing-library/react';
 
 import Index from '../../pages/index';
 
-jest.mock('../../components/common/Body');
+jest.mock('bastianparedes/components');
 jest.mock('../../components/index/Home', () => () => <></>);
 jest.mock('../../components/index/Main');
 

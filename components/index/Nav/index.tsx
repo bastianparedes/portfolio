@@ -1,10 +1,10 @@
 import React from 'react';
 
+import { classNames } from 'bastianparedes/utils';
 import Image from 'next/legacy/image';
 import { AiOutlineMenu } from 'react-icons/ai';
 
 import constants from '../../../config/constants';
-import classNames from '../../../utils/classNames';
 import NavLink from './NavLink';
 import styles from './styles.module.scss';
 
