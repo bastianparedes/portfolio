@@ -62,9 +62,6 @@ const constants = {
       LINKEDIN: 'https://www.linkedin.com/in/bastianparedes/'
     }
   },
-  FOOTER: {
-    MESSAGE: 'Portfolio designed by @Bastián Paredes, © 2022'
-  },
   HOME: {
     JOB: 'Front End Developer',
     NAME: 'Bastián Paredes'
@@ -128,7 +125,7 @@ const constants = {
           'Aplicación web que pide al usuario un nombre y lo lleva a una sala donde todos los conectados a la página en ese momento pueden conversar al mismo tiempo.',
         GITHUB: 'https://github.com/BastianParedes/my-global-chat/',
         IMAGE: 'my-global-chat.png',
-        LINK: 'https://my-global-chat.vercel.app/',
+        LINK: 'https://my-global-chat-production.up.railway.app/',
         NAME: 'My Global Chat',
         TECHNOLOGIES: ['React.js', 'Socket.IO']
       },
