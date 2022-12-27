@@ -6,11 +6,10 @@ const eslintrc = {
     node: true
   },
   extends: [
-    'next/core-web-vitals',
-    'plugin:react/recommended',
+    'eslint:recommended',
     'standard-with-typescript',
-    'prettier',
-    'eslint:recommended'
+    'plugin:react/recommended',
+    'plugin:prettier/recommended'
   ],
   globals: {
     JSX: 'readonly'
@@ -20,7 +19,7 @@ const eslintrc = {
     project: 'tsconfig.json',
     sourceType: 'module'
   },
-  plugins: ['react', 'import', 'sort-keys-fix'],
+  plugins: ['import', 'react', 'sort-keys-fix'],
   root: true,
   rules: {
     'arrow-parens': 'warn',
