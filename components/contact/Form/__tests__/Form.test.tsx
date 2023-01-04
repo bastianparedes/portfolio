@@ -29,7 +29,7 @@ describe('<Form />', () => {
     );
     const { getByText } = render(<Form />);
 
-    await act(() => {
+    await act(async () => {
       fireEvent.click(getByText('Enviar'));
     });
 
@@ -41,7 +41,7 @@ describe('<Form />', () => {
       async () => await Promise.resolve({ ok: false })
     );
     const { getByText } = render(<Form />);
-    await act(() => {
+    await act(async () => {
       fireEvent.click(getByText('Enviar'));
     });
 
@@ -51,7 +51,7 @@ describe('<Form />', () => {
   it('should call api/contact and fail', async () => {
     global.fetch = jest.fn(async () => await Promise.reject(new Error()));
     const { getByText } = render(<Form />);
-    await act(() => {
+    await act(async () => {
       fireEvent.click(getByText('Enviar'));
     });
 
@@ -63,13 +63,13 @@ describe('<Form />', () => {
       async () => await Promise.resolve({ ok: true })
     );
     const { getByText } = render(<Form />);
-    await act(() => {
+    await act(async () => {
       fireEvent.click(getByText('Enviar'));
     });
 
     const buttonCloserModal = getByText('X');
     expect(buttonCloserModal).toBeInTheDocument();
-    await act(() => {
+    await act(async () => {
       fireEvent.click(buttonCloserModal);
     });
     expect(buttonCloserModal).not.toBeInTheDocument();

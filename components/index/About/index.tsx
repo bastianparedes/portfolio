@@ -1,9 +1,9 @@
 import React from 'react';
 
-import constants from '../../../config/constants';
-import { Section } from '../Common';
 import AboutSkill from './AboutSkill';
 import styles from './styles.module.scss';
+import constants from '../../../config/constants';
+import { Section } from '../Common';
 
 const About = (): JSX.Element => {
   return (
@@ -24,8 +24,8 @@ const About = (): JSX.Element => {
             <a
               className={styles.buttonCv__a}
               href={constants.ABOUT.CV.LINK}
-              target="_blank"
               rel="noreferrer noopener"
+              target="_blank"
             >
               {constants.ABOUT.CV.MESSAGE}
             </a>
@@ -37,7 +37,7 @@ const About = (): JSX.Element => {
           </h2>
           <div className={styles.skillsContainer}>
             {constants.ABOUT.SKILLS.LIST.map((skill) => (
-              <AboutSkill key={skill.NAME} src={skill.SRC} name={skill.NAME} />
+              <AboutSkill key={skill.NAME} name={skill.NAME} src={skill.SRC} />
             ))}
           </div>
         </div>

@@ -14,10 +14,10 @@ const AboutSkill = (props: SkillProps): JSX.Element => {
     <div className={styles.skillCard}>
       <div className={styles.skillImageContainer}>
         <Image
-          src={'/images/skills/' + props.src}
           alt={props.name}
           layout="fill"
           objectFit="contain"
+          src={'/images/skills/' + props.src}
         />
       </div>
       <p className={styles.skillName}>{props.name}</p>

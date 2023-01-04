@@ -4,9 +4,9 @@ import { AiOutlineLinkedin } from 'react-icons/ai';
 import { FiInstagram } from 'react-icons/fi';
 import { VscGithubAlt, VscMail } from 'react-icons/vsc';
 
-import constants from '../../../config/constants';
 import ContactLink from './ContactLink';
 import styles from './styles.module.scss';
+import constants from '../../../config/constants';
 
 const Contact = (): JSX.Element => {
   return (

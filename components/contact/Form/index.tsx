@@ -4,8 +4,8 @@ import { Loader } from 'bastianparedes/components';
 import { BiErrorCircle } from 'react-icons/bi';
 import { GrStatusGood } from 'react-icons/gr';
 
-import ResultModal from '../ResultModal';
 import styles from './styles.module.scss';
+import ResultModal from '../ResultModal';
 
 interface typeElements extends HTMLFormControlsCollection {
   userName: { value: string };
@@ -73,17 +73,17 @@ const Form = (): JSX.Element => {
   return (
     <>
       <form
+        className={styles.form}
         data-testid="contact-form"
         onSubmit={onSubmit}
-        className={styles.form}
       >
-        <input name="userName" type="text" placeholder="Nombre" />
-        <input name="email" type="email" placeholder="Correo electrónico" />
-        <input name="subject" type="text" placeholder="Asunto" />
+        <input name="userName" placeholder="Nombre" type="text" />
+        <input name="email" placeholder="Correo electrónico" type="email" />
+        <input name="subject" placeholder="Asunto" type="text" />
         <textarea
+          className={styles.textarea}
           name="message"
           placeholder="Mensaje"
-          className={styles.textarea}
         />
         <button type="submit" value="Enviar">
           Enviar
