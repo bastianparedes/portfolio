@@ -39,14 +39,14 @@ const Project = ({
             stylesSide.imageContainer
           )}
           href={link}
-          target="_blank"
           rel="noreferrer noopener"
+          target="_blank"
         >
           <Image
-            src={imagePath}
             alt={image}
             layout="fill"
             objectFit="contain"
+            src={imagePath}
           />
         </a>
       ) : (
@@ -57,10 +57,10 @@ const Project = ({
           )}
         >
           <Image
-            src={imagePath}
             alt={image}
             layout="fill"
             objectFit="contain"
+            src={imagePath}
           />
         </div>
       )}
@@ -91,8 +91,8 @@ const Project = ({
           <a
             className={styles.linkWebsite}
             href={link}
-            target="_blank"
             rel="noreferrer noopener"
+            target="_blank"
           >
             <VscSignOut />
           </a>
@@ -101,8 +101,8 @@ const Project = ({
           <a
             className={styles.linkGithub}
             href={github}
-            target="_blank"
             rel="noreferrer noopener"
+            target="_blank"
           >
             <VscGithub />
           </a>

@@ -13,8 +13,8 @@ const ContactLink = ({ link, children }: LinkProps): JSX.Element => {
       <a
         className={styles.link__a}
         href={link}
-        target="_blank"
         rel="noreferrer noopener"
+        target="_blank"
       >
         {children}
       </a>

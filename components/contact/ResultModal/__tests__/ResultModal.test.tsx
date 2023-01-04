@@ -15,7 +15,13 @@ jest.mock('bastianparedes/components', () => ({
   }) => {
     return (
       <>
-        <button onClick={() => setModalVisible(false)}>X</button>
+        <button
+          onClick={() => {
+            setModalVisible(false);
+          }}
+        >
+          X
+        </button>
         {children}
       </>
     );
@@ -52,7 +58,7 @@ describe('<ResultModal />', () => {
 
     const { getByText } = render(<ResultModal {...props} />);
     const button = getByText('X');
-    await act(() => {
+    act(() => {
       fireEvent.click(button);
     });
 

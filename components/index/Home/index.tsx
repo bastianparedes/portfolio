@@ -9,7 +9,7 @@ import styles from './styles.module.scss';
 
 const Home = (): JSX.Element => {
   return (
-    <section id={constants.NAV.BUTTONS.HOME.ID} className={styles.home}>
+    <section className={styles.home} id={constants.NAV.BUTTONS.HOME.ID}>
       <MyParticles />
       <div className={styles.cuadro}>
         <h1 className={styles.myName}>{constants.HOME.NAME}</h1>

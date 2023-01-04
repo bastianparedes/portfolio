@@ -11,7 +11,7 @@ interface NavLinkProps {
 const NavLink = ({ link, title, closeNav }: NavLinkProps): JSX.Element => {
   return (
     <li className={styles.link}>
-      <a href={'#' + link} className={styles.link__a} onClick={closeNav}>
+      <a className={styles.link__a} href={'#' + link} onClick={closeNav}>
         {title}
       </a>
     </li>

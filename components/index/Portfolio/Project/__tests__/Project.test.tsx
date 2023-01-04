@@ -46,7 +46,7 @@ describe('<Project />', () => {
   });
 
   it('should render without link nor github', () => {
-    const { container } = render(<Project {...props} link="" github="" />);
+    const { container } = render(<Project {...props} github="" link="" />);
     expect(container).toMatchSnapshot();
   });
 });

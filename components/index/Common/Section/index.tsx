@@ -10,7 +10,7 @@ interface SectionProps {
 
 const Section = (props: SectionProps): JSX.Element => {
   return (
-    <section id={props.id} className={styles.section}>
+    <section className={styles.section} id={props.id}>
       <h3 className={styles.title}>{props.title}</h3>
       {props.children}
     </section>

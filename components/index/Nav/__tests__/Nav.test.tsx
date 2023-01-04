@@ -36,12 +36,12 @@ describe('<Nav />', () => {
 
     expect(navIsOpened(ul)).toBe(false);
 
-    await act(() => {
+    await act(async () => {
       fireEvent.click(button);
     });
     expect(navIsOpened(ul)).toBe(true);
 
-    await act(() => {
+    await act(async () => {
       fireEvent.click(link);
     });
     expect(navIsOpened(ul)).toBe(false);
