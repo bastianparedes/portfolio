@@ -133,8 +133,16 @@ const constants = {
           'Aplicación que genera el código QR correspondiente a la URL ingresada.',
         GITHUB: 'https://github.com/BastianParedes/qr-generator/',
         LINK: '/qr-generator',
-        NAME: 'qr-generator',
+        NAME: 'QR generator',
         TECHNOLOGIES: ['QRcode', 'Next.js']
+      },
+      {
+        DESCRIPTION:
+          'Aplicación que muestra el clima actual en la ubicación ingresada.',
+        GITHUB: 'https://github.com/BastianParedes/weather/',
+        LINK: '/weather',
+        NAME: 'Weather',
+        TECHNOLOGIES: ['Google Maps API', 'openWeather API', 'Next.js']
       },
       {
         DESCRIPTION:
