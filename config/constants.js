@@ -87,7 +87,6 @@ const constants = {
       {
         DESCRIPTION:
           'A/B Tester de la plataforma. Desarrollo nuevas versiones de la página y comparo la antigua versión con la nueva para recolectar datos y así desplegar la que obtenga mejores resultados.',
-        GITHUB: '',
         IMAGE: 'falabella.png',
         LINK: 'https://www.falabella.com/falabella-cl/',
         NAME: 'Falabella',
@@ -107,7 +106,7 @@ const constants = {
           'Página web de venta de bowls de ensalada que incluye un carrito de compras y una pasarela de pago construida mediante el servicio Webpay plus de Transbank. Las compras quedan registradas en una base de datos para consultar su estado.',
         GITHUB: 'https://github.com/BastianParedes/tusalad/',
         IMAGE: 'tu-salad.png',
-        LINK: 'https://tusalad.vercel.app/',
+        LINK: '/tusalad',
         NAME: 'Tu Salad',
         TECHNOLOGIES: ['React.js', 'Next.js', 'TypeScript', 'WebPay']
       },
@@ -116,7 +115,7 @@ const constants = {
           'Es una página web que recibe las imágenes cargadas por el usuario, las configura a gusto y finalmente genera un archivo PDF que se guarda en el computador del mismo. Todo el proceso ocurre del lado del Front-end.',
         GITHUB: 'https://github.com/BastianParedes/pdf-constructor/',
         IMAGE: 'pdf-constructor.png',
-        LINK: 'https://pdf-constructor.vercel.app/',
+        LINK: '/pdf-constructor',
         NAME: 'PDF Constructor',
         TECHNOLOGIES: ['React.js', 'SortableJS', 'jsPDF']
       },
@@ -131,10 +130,17 @@ const constants = {
       },
       {
         DESCRIPTION:
+          'Aplicación que genera el código QR correspondiente a la URL ingresada.',
+        GITHUB: 'https://github.com/BastianParedes/qr-generator/',
+        LINK: '/qr-generator',
+        NAME: 'qr-generator',
+        TECHNOLOGIES: ['QRcode', 'Next.js']
+      },
+      {
+        DESCRIPTION:
           'Aplicación de escritorio que construye evaluaciones de seleción única de matemática para el nivel secundario de las escuelas chilenas.',
         GITHUB: 'https://github.com/BastianParedes/tstmaker/',
         IMAGE: 'tstmaker.png',
-        LINK: '',
         NAME: 'TstMaker',
         TECHNOLOGIES: ['Python3', 'Tkinter', 'MiKTeX']
       }

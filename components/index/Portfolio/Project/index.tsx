@@ -11,9 +11,9 @@ import stylesRight from './stylesRight.module.scss';
 interface ProjectProps {
   index: number;
   name: string;
-  link: string;
-  image: string;
-  github: string;
+  link?: string;
+  image?: string;
+  github?: string;
   description: string;
   technologies: string[];
 }
@@ -28,11 +28,10 @@ const Project = ({
   technologies
 }: ProjectProps): JSX.Element => {
   const stylesSide = index % 2 === 0 ? stylesRight : stylesLeft;
-  const imagePath = '/images/projects/' + image;
 
   return (
     <div className={styles.projectCard}>
-      {link !== '' ? (
+      {link !== undefined ? (
         <a
           className={classNames(
             styles.imageContainer,
@@ -42,12 +41,14 @@ const Project = ({
           rel="noreferrer noopener"
           target="_blank"
         >
-          <Image
-            alt={image}
-            layout="fill"
-            objectFit="contain"
-            src={imagePath}
-          />
+          {image !== undefined && (
+            <Image
+              alt={image}
+              layout="fill"
+              objectFit="contain"
+              src={'/images/projects/' + image}
+            />
+          )}
         </a>
       ) : (
         <div
@@ -56,12 +57,14 @@ const Project = ({
             stylesSide.imageContainer
           )}
         >
-          <Image
-            alt={image}
-            layout="fill"
-            objectFit="contain"
-            src={imagePath}
-          />
+          {image !== undefined && (
+            <Image
+              alt={image}
+              layout="fill"
+              objectFit="contain"
+              src={'/images/projects/' + image}
+            />
+          )}
         </div>
       )}
 
@@ -87,7 +90,7 @@ const Project = ({
       <div
         className={classNames(styles.linksContainer, stylesSide.linksContainer)}
       >
-        {link !== '' && (
+        {link !== undefined && (
           <a
             className={styles.linkWebsite}
             href={link}
@@ -97,7 +100,7 @@ const Project = ({
             <VscSignOut />
           </a>
         )}
-        {github !== '' && (
+        {github !== undefined && (
           <a
             className={styles.linkGithub}
             href={github}

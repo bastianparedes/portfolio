@@ -183,6 +183,56 @@ exports[`<Project /> should render without github 1`] = `
 </div>
 `;
 
+exports[`<Project /> should render without image 1`] = `
+<div>
+  <div
+    class="projectCard"
+  >
+    <a
+      class="imageContainer imageContainer"
+      href="https://www.falabella.com/falabella-cl/"
+      rel="noreferrer noopener"
+      target="_blank"
+    />
+    <h2
+      class="projectName projectName"
+    >
+      Falabella
+    </h2>
+    <div
+      class="projectDescriptionContainer projectDescriptionContainer"
+    >
+      <p
+        class="projectDescription"
+      >
+        A/B Tester de la plataforma. Desarrollo nuevas versiones de la página y comparo la antigua versión con la nueva para recolectar datos y así desplegar la que obtenga mejores resultados.
+      </p>
+    </div>
+    <span
+      class="projectTechnologies projectTechnologies"
+    >
+      HTML, CSS, JavaScript, React.js, Next.js, TypeScript, Dinamic Yield, Adobe Experience Data Collection
+    </span>
+    <div
+      class="linksContainer linksContainer"
+    >
+      <a
+        class="linkWebsite"
+        href="https://www.falabella.com/falabella-cl/"
+        rel="noreferrer noopener"
+        target="_blank"
+      />
+      <a
+        class="linkGithub"
+        href="https://github.com/BastianParedes/falabella"
+        rel="noreferrer noopener"
+        target="_blank"
+      />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`<Project /> should render without link 1`] = `
 <div>
   <div

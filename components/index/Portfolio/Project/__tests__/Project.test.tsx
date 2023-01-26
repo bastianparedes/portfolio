@@ -36,17 +36,24 @@ describe('<Project />', () => {
   });
 
   it('should render without link', () => {
-    const { container } = render(<Project {...props} link="" />);
+    const { container } = render(<Project {...props} link={undefined} />);
     expect(container).toMatchSnapshot();
   });
 
   it('should render without github', () => {
-    const { container } = render(<Project {...props} github="" />);
+    const { container } = render(<Project {...props} github={undefined} />);
     expect(container).toMatchSnapshot();
   });
 
   it('should render without link nor github', () => {
-    const { container } = render(<Project {...props} github="" link="" />);
+    const { container } = render(
+      <Project {...props} github={undefined} link={undefined} />
+    );
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should render without image', () => {
+    const { container } = render(<Project {...props} image={undefined} />);
     expect(container).toMatchSnapshot();
   });
 });
