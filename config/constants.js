@@ -130,6 +130,15 @@ const constants = {
       },
       {
         DESCRIPTION:
+          'CRUD que administra las contraseñas ingresadas por el ususario, las encripta y la muestra en el Front-End.',
+        GITHUB: 'https://github.com/BastianParedes/passwords/',
+        IMAGE: 'passwords.png',
+        LINK: '/passwords',
+        NAME: 'Passwords',
+        TECHNOLOGIES: ['Next.js', 'MySQL', 'Prisma', 'Bcrypt']
+      },
+      {
+        DESCRIPTION:
           'Aplicación que genera el código QR correspondiente a la URL ingresada.',
         GITHUB: 'https://github.com/BastianParedes/qr-generator/',
         LINK: '/qr-generator',
