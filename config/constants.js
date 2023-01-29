@@ -141,6 +141,7 @@ const constants = {
         DESCRIPTION:
           'Aplicación que genera el código QR correspondiente a la URL ingresada.',
         GITHUB: 'https://github.com/BastianParedes/qr-generator/',
+        IMAGE: 'qr-generator.png',
         LINK: '/qr-generator',
         NAME: 'QR generator',
         TECHNOLOGIES: ['QRcode', 'Next.js']

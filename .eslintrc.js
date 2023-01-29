@@ -58,6 +58,12 @@ const eslintrc = {
       'warn',
       { args: 'after-used', ignoreRestSiblings: false, vars: 'all' }
     ],
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto'
+      }
+    ],
     quotes: ['warn', 'single'],
     'react/display-name': 'off',
     'react/jsx-sort-props': 1,
