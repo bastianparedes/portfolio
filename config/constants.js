@@ -124,7 +124,7 @@ const constants = {
           'Aplicación web que pide al usuario un nombre y lo lleva a una sala donde todos los conectados a la página en ese momento pueden conversar al mismo tiempo.',
         GITHUB: 'https://github.com/BastianParedes/my-global-chat/',
         IMAGE: 'my-global-chat.png',
-        LINK: 'https://my-global-chat-production.up.railway.app/',
+        LINK: '/my-global-chat',
         NAME: 'My Global Chat',
         TECHNOLOGIES: ['React.js', 'Socket.IO']
       },
