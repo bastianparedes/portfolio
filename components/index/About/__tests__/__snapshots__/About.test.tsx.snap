@@ -26,7 +26,7 @@ exports[`<About /> should render 1`] = `
       >
         <a
           class="buttonCv__a"
-          href="/api/cv"
+          href="/files/cv.pdf"
           rel="noreferrer noopener"
           target="_blank"
         >

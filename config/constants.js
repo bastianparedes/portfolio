@@ -1,7 +1,7 @@
 const constants = {
   ABOUT: {
     CV: {
-      LINK: '/api/cv',
+      LINK: '/files/cv.pdf',
       MESSAGE: 'Ver currículum'
     },
     DESCRIPTION_PART_1: 'Soy Bastián Paredes,',
