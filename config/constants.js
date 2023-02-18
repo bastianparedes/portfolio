@@ -39,8 +39,8 @@ const constants = {
           SRC: 'next.js.png'
         },
         {
-          NAME: 'Python 3',
-          SRC: 'python3.png'
+          NAME: 'Prisma',
+          SRC: 'prisma.svg'
         },
         {
           NAME: 'MySql',
@@ -49,6 +49,10 @@ const constants = {
         {
           NAME: 'MongoDB',
           SRC: 'mongodb.svg'
+        },
+        {
+          NAME: 'Python 3',
+          SRC: 'python3.png'
         }
       ],
       TITLE: 'Skills'
