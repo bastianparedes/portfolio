@@ -16,7 +16,7 @@ const constants = {
       LIST: [
         {
           NAME: 'HTML 5',
-          SRC: 'html5.png'
+          SRC: 'html5.svg'
         },
         {
           NAME: 'CSS 3',
