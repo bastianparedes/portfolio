@@ -23,6 +23,10 @@ const constants = {
           SRC: 'css3.png'
         },
         {
+          NAME: 'Sass',
+          SRC: 'sass.svg'
+        },
+        {
           NAME: 'JavaScript',
           SRC: 'javascript.png'
         },
