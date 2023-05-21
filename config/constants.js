@@ -28,19 +28,23 @@ const constants = {
         },
         {
           NAME: 'JavaScript',
-          SRC: 'javascript.png'
+          SRC: 'javascript.svg'
         },
         {
           NAME: 'TypeScript',
-          SRC: 'typescript.png'
+          SRC: 'typescript.svg'
         },
         {
-          NAME: 'React.js',
-          SRC: 'react.js.png'
+          NAME: 'React',
+          SRC: 'react.svg'
         },
         {
           NAME: 'Next.js',
           SRC: 'next.js.png'
+        },
+        {
+          NAME: 'GraphQL',
+          SRC: 'graphql.svg'
         },
         {
           NAME: 'Prisma',
