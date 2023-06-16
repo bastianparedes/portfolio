@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './styles.module.scss';
 
-const Error = (): JSX.Element => {
+const ErrorComponent = (): JSX.Element => {
   return (
     <div className={styles.container}>
       <h1>Esta página no está disponible.</h1>
@@ -11,4 +11,4 @@ const Error = (): JSX.Element => {
   );
 };
 
-export default Error;
+export default ErrorComponent;
