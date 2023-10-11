@@ -9,8 +9,9 @@ import constants from '../../../../config/constants';
 jest.mock(
   '../NavLink',
   () =>
-    ({ title, closeNav }: { title: string; closeNav: () => void }) =>
+    ({ title, closeNav }: { title: string; closeNav: () => void }) => (
       <button onClick={closeNav}>{title}</button>
+    )
 );
 
 describe('<Nav />', () => {
