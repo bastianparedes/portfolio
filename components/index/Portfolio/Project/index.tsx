@@ -46,6 +46,7 @@ const Project = ({
               alt={image}
               layout="fill"
               objectFit="contain"
+              placeholder="blur"
               src={'/images/projects/' + image}
             />
           )}
@@ -62,6 +63,7 @@ const Project = ({
               alt={image}
               layout="fill"
               objectFit="contain"
+              placeholder="blur"
               src={'/images/projects/' + image}
             />
           )}
