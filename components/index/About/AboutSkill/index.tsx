@@ -17,7 +17,6 @@ const AboutSkill = (props: SkillProps): JSX.Element => {
           alt={props.name}
           layout="fill"
           objectFit="contain"
-          placeholder="blur"
           src={'/images/skills/' + props.src}
         />
       </div>

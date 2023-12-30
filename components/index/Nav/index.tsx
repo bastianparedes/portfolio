@@ -27,7 +27,6 @@ const Nav = (): JSX.Element => {
             alt="Bastián Paredes Logo"
             layout="fill"
             objectFit="contain"
-            placeholder="blur"
             src="/images/logo.png"
           />
         </div>
