@@ -1,6 +1,8 @@
 import React from 'react';
 
-import AboutSkill from './AboutSkill';
+import Image from 'next/image';
+
+import images from './skillImages';
 import styles from './styles.module.scss';
 import constants from '../../../config/constants';
 import { Section } from '../Common';
@@ -36,8 +38,22 @@ const About = (): JSX.Element => {
             {constants.ABOUT.SKILLS.TITLE}
           </h2>
           <div className={styles.skillsContainer}>
-            {constants.ABOUT.SKILLS.LIST.map((skill) => (
-              <AboutSkill key={skill.NAME} name={skill.NAME} src={skill.SRC} />
+            {Object.keys(images).map((skill) => (
+              <div className={styles.skillCard} key={skill}>
+                <div className={styles.skillImageContainer}>
+                  <Image
+                    alt={skill}
+                    placeholder="blur"
+                    src={images[skill as keyof typeof images]}
+                    style={{
+                      height: '100%',
+                      objectFit: 'contain',
+                      width: '100%'
+                    }}
+                  />
+                </div>
+                <p className={styles.skillName}>{skill}</p>
+              </div>
             ))}
           </div>
         </div>

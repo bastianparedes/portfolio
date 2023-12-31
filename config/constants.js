@@ -1,4 +1,4 @@
-const constants = {
+const constants = Object.freeze({
   ABOUT: {
     CV: {
       LINK: '/files/cv.pdf',
@@ -13,68 +13,6 @@ const constants = {
       TITLE: 'About me'
     },
     SKILLS: {
-      LIST: [
-        {
-          NAME: 'HTML 5',
-          SRC: 'html5.svg'
-        },
-        {
-          NAME: 'CSS 3',
-          SRC: 'css3.png'
-        },
-        {
-          NAME: 'Sass',
-          SRC: 'sass.svg'
-        },
-        {
-          NAME: 'JavaScript',
-          SRC: 'javascript.svg'
-        },
-        {
-          NAME: 'TypeScript',
-          SRC: 'typescript.svg'
-        },
-        {
-          NAME: 'React',
-          SRC: 'react.svg'
-        },
-        {
-          NAME: 'Next.js',
-          SRC: 'next.js.png'
-        },
-        {
-          NAME: 'GraphQL',
-          SRC: 'graphql.svg'
-        },
-        {
-          NAME: 'Prisma',
-          SRC: 'prisma.svg'
-        },
-        {
-          NAME: 'Drizzle ORM',
-          SRC: 'drizzle-orm.png'
-        },
-        {
-          NAME: 'MySql',
-          SRC: 'mysql.png'
-        },
-        {
-          NAME: 'Postgresql',
-          SRC: 'postgresql.png'
-        },
-        {
-          NAME: 'MongoDB',
-          SRC: 'mongodb.svg'
-        },
-        {
-          NAME: 'Python 3',
-          SRC: 'python3.png'
-        },
-        {
-          NAME: 'Docker',
-          SRC: 'docker.png'
-        }
-      ],
       TITLE: 'Skills'
     }
   },
@@ -171,6 +109,6 @@ const constants = {
       }
     ]
   }
-};
+});
 
 export default constants;

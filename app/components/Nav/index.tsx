@@ -3,12 +3,13 @@
 import React from 'react';
 
 import { classNames } from 'bastianparedes/utils';
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import { AiOutlineMenu } from 'react-icons/ai';
 
 import NavLink from './NavLink';
 import styles from './styles.module.scss';
 import constants from '../../../config/constants';
+import logo from '../../../public/images/logo.png';
 
 const Nav = (): JSX.Element => {
   const [opened, setOpened] = React.useState(false);
@@ -26,10 +27,14 @@ const Nav = (): JSX.Element => {
       <div className={styles.navLeft}>
         <div className={styles.logoContainer}>
           <Image
-            alt="Bastián Paredes Logo"
-            layout="fill"
-            objectFit="contain"
-            src="/images/logo.png"
+            alt={'Bastián Paredes Logo'}
+            placeholder="blur"
+            src={logo}
+            style={{
+              height: '100%',
+              objectFit: 'contain',
+              width: '100%'
+            }}
           />
         </div>
       </div>
