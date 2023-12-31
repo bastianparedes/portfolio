@@ -6,9 +6,9 @@ import { VscGithubAlt, VscMail } from 'react-icons/vsc';
 
 import ContactLink from './ContactLink';
 import styles from './styles.module.scss';
-import constants from '../../../config/constants';
+import constants from '../../../../config/constants';
 
-const Contact = (): JSX.Element => {
+const Contact = () => {
   return (
     <div className={styles.linkContainer}>
       <ul className={styles.linksList}>

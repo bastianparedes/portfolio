@@ -8,10 +8,10 @@ import { AiOutlineMenu } from 'react-icons/ai';
 
 import NavLink from './NavLink';
 import styles from './styles.module.scss';
-import constants from '../../../config/constants';
-import logo from '../../../public/images/logo.png';
+import constants from '../../../../config/constants';
+import logo from '../../../../public/images/logo.png';
 
-const Nav = (): JSX.Element => {
+const Nav = () => {
   const [opened, setOpened] = React.useState(false);
 
   const buttonClickHandler = (): void => {

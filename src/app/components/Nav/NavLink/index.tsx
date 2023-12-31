@@ -8,7 +8,7 @@ interface NavLinkProps {
   closeNav: () => void;
 }
 
-const NavLink = ({ link, title, closeNav }: NavLinkProps): JSX.Element => {
+const NavLink = ({ link, title, closeNav }: NavLinkProps) => {
   return (
     <li className={styles.link}>
       <a className={styles.link__a} href={'#' + link} onClick={closeNav}>

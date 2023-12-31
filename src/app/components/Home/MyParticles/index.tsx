@@ -6,9 +6,9 @@ import type { Engine } from 'tsparticles-engine';
 
 import styles from './styles.module.scss';
 
-const MyParticles = (): JSX.Element => {
+const MyParticles = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
-    await loadFull(engine);
+    await loadFull(engine as any);
   }, []);
 
   return (

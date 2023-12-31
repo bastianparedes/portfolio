@@ -8,7 +8,7 @@ interface SectionProps {
   children?: React.ReactNode;
 }
 
-const Section = (props: SectionProps): JSX.Element => {
+const Section = (props: SectionProps) => {
   return (
     <section className={styles.section} id={props.id}>
       <h3 className={styles.title}>{props.title}</h3>

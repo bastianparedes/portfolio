@@ -7,9 +7,9 @@ import Typewriter from 'typewriter-effect';
 
 import MyParticles from './MyParticles';
 import styles from './styles.module.scss';
-import constants from '../../../config/constants';
+import constants from '../../../../config/constants';
 
-const Home = (): JSX.Element => {
+const Home = () => {
   return (
     <section className={styles.home} id={constants.NAV.BUTTONS.HOME.ID}>
       <MyParticles />

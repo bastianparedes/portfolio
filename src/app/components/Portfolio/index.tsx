@@ -10,7 +10,7 @@ import stylesLeft from './stylesLeft.module.scss';
 import stylesRight from './stylesRight.module.scss';
 import { Section } from '../Common';
 
-const Portfolio = (): JSX.Element => {
+const Portfolio = () => {
   return (
     <Section id="portfolio" title="Portfolio">
       <div className={styles.projectsContainer}>

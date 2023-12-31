@@ -7,19 +7,30 @@ const eslintrc = {
   },
   extends: [
     'eslint:recommended',
-    'standard-with-typescript',
+    'plugin:sonarjs/recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
-    'plugin:prettier/recommended'
+    'next',
+    'next/core-web-vitals',
+    'plugin:prettier/recommended',
+    'prettier'
   ],
-  globals: {
-    JSX: 'readonly'
-  },
+  globals: {},
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
     project: 'tsconfig.json',
     sourceType: 'module'
   },
-  plugins: ['import', 'react', 'sort-keys-fix'],
+  plugins: [
+    '@typescript-eslint',
+    'import',
+    'prettier',
+    'react',
+    'sonarjs',
+    'sort-keys-fix'
+  ],
   root: true,
   rules: {
     'arrow-parens': 'warn',
@@ -31,9 +42,9 @@ const eslintrc = {
           order: 'asc'
         },
         groups: [
-          ['external', 'builtin'],
+          ['builtin', 'external'],
           'internal',
-          ['sibling', 'parent'],
+          ['parent', 'sibling'],
           'index'
         ],
         'newlines-between': 'always',
@@ -51,22 +62,9 @@ const eslintrc = {
         pathGroupsExcludedImportTypes: ['internal', 'react']
       }
     ],
-    'multiline-ternary': ['error', 'never'],
     'no-alert': 'error',
     'no-console': 'warn',
-    'no-unused-vars': [
-      'warn',
-      { args: 'after-used', ignoreRestSiblings: false, vars: 'all' }
-    ],
-    'prettier/prettier': [
-      'error',
-      {
-        endOfLine: 'auto'
-      }
-    ],
-    quotes: ['warn', 'single'],
-    'react/display-name': 'off',
-    'react/jsx-sort-props': 1,
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
     semi: ['warn', 'always'],
     'sort-imports': ['warn', { ignoreCase: true, ignoreDeclarationSort: true }],
     'sort-keys': [
@@ -79,7 +77,7 @@ const eslintrc = {
         natural: true
       }
     ],
-    'sort-keys-fix/sort-keys-fix': 'warn'
+    "@typescript-eslint/no-explicit-any": "off"
   },
   settings: {
     react: {

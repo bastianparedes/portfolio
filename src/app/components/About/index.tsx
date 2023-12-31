@@ -2,12 +2,12 @@ import React from 'react';
 
 import Image from 'next/image';
 
-import images from './skillImages';
+import skills from './skills';
 import styles from './styles.module.scss';
-import constants from '../../../config/constants';
+import constants from '../../../../config/constants';
 import { Section } from '../Common';
 
-const About = (): JSX.Element => {
+const About = () => {
   return (
     <Section
       id={constants.NAV.BUTTONS.ABOUT.ID}
@@ -38,13 +38,13 @@ const About = (): JSX.Element => {
             {constants.ABOUT.SKILLS.TITLE}
           </h2>
           <div className={styles.skillsContainer}>
-            {Object.keys(images).map((skill) => (
-              <div className={styles.skillCard} key={skill}>
+            {skills.map((skill) => (
+              <div className={styles.skillCard} key={skill.name}>
                 <div className={styles.skillImageContainer}>
                   <Image
-                    alt={skill}
+                    alt={skill.name}
                     placeholder="blur"
-                    src={images[skill as keyof typeof images]}
+                    src={skill.image}
                     style={{
                       height: '100%',
                       objectFit: 'contain',
@@ -52,7 +52,7 @@ const About = (): JSX.Element => {
                     }}
                   />
                 </div>
-                <p className={styles.skillName}>{skill}</p>
+                <p className={styles.skillName}>{skill.name}</p>
               </div>
             ))}
           </div>

@@ -7,7 +7,7 @@ interface LinkProps {
   children: React.ReactNode;
 }
 
-const ContactLink = ({ link, children }: LinkProps): JSX.Element => {
+const ContactLink = ({ link, children }: LinkProps) => {
   return (
     <li className={styles.link}>
       <a

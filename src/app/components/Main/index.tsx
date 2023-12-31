@@ -6,7 +6,7 @@ import Contact from '../Contact';
 import Nav from '../Nav';
 import Portfolio from '../Portfolio';
 
-const Main = (): JSX.Element => {
+const Main = () => {
   return (
     <main className={styles.main}>
       <Nav />
