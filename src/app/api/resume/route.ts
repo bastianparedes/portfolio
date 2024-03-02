@@ -9,11 +9,14 @@ const config = {
 const dbx = new Dropbox(config);
 
 const GET = async () => {
-  const response = await dbx.filesDownload({
+  const file = await dbx.filesDownload({
     path: '/resume.pdf'
   });
 
-  return new Response((response.result as any).fileBinary);
+  const response = new Response((file.result as any).fileBinary);
+  response.headers.set('Content-Type', 'application/pdf');
+
+  return response;
 };
 
 export { GET };
