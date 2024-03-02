@@ -1,7 +1,11 @@
+import path from 'path';
+
+import { basePath } from '@/next.config';
+
 const constants = Object.freeze({
   ABOUT: {
     CV: {
-      LINK: '/files/cv.pdf',
+      LINK: path.join(basePath, '/api/resume'),
       MESSAGE: 'Ver currículum'
     },
     DESCRIPTION_PART_1: 'Soy Bastián Paredes,',

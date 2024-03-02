@@ -15,6 +15,10 @@ const GET = async () => {
 
   const response = new Response((file.result as any).fileBinary);
   response.headers.set('Content-Type', 'application/pdf');
+  response.headers.set(
+    'Content-Disposition',
+    'inline;filename="Bastian Paredes resume.pdf"'
+  );
 
   return response;
 };

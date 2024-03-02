@@ -22,16 +22,16 @@ const About = () => {
           <p className={styles.mainLeft__p}>
             {constants.ABOUT.DESCRIPTION_PART_3}
           </p>
-          <button className={styles.buttonCv}>
+          <div className={styles.buttonCvContainer}>
             <a
-              className={styles.buttonCv__a}
+              className={styles.buttonCv}
               href={constants.ABOUT.CV.LINK}
               rel="noreferrer noopener"
               target="_blank"
             >
               {constants.ABOUT.CV.MESSAGE}
             </a>
-          </button>
+          </div>
         </div>
         <div>
           <h2 className={styles.mainRight__h2}>
