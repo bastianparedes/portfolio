@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "bastianparedes": "^1.1.5",
+    "dropbox": "^10.34.0",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -1,6 +1,5 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: process.env.basePath ?? '/portfolio',
+  basePath: process.env.basePath ?? '',
   eslint: {
     dirs: ['.']
   },
