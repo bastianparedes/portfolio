@@ -70,17 +70,21 @@ const Component = () => {
         <Modal closeModal={closeModal}>
           <table>
             {jobs.map((job) => (
-              <tr key={job.company + job.description}>
+              <tr
+                key={job.company + job.description}
+                className="flex flex-col md:table-row"
+              >
                 <td className="align-top">
-                  <span className="text-xl text-gray-400">
-                    {job.startYear} - {job.endYear ?? 'ACTUALIDAD'}
+                  <span className="text-xl text-gray-400 text-nowrap">
+                    {job.startYear} -{' '}
+                    {job.endYear ?? translation.experience.present}
                   </span>
                 </td>
-                <td className="flex flex-col gap-3 mb-10">
+                <td className="flex flex-col gap-3 mb-10 md:ml-5">
                   <span className="text-3xl">{job.company}</span>
                   <span className="text-2xl">{job.position}</span>
                   <p className="text-xl">{job.description}</p>
-                  <ul className="flex gap-5 text-sm">
+                  <ul className="flex gap-5 text-sm flex-wrap">
                     {job.technologies.map((technologie) => (
                       <li key={technologie}>
                         <span className="rounded-full py-1 px-3 bg-green-800/50">

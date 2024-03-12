@@ -15,14 +15,14 @@ const Component = () => {
   const projects = [
     {
       name: translation.projects.projects.ba_tester.name,
-      description: translation.projects.projects.ba_tester.desciption,
+      description: translation.projects.projects.ba_tester.description,
       technologies: ['NextJS', 'PostgreSQL', 'GraphQL', 'Webpack'],
       url: 'https://github.com/BastianParedes/ba-tester/',
       github: 'https://github.com/BastianParedes/ba-tester/'
     },
     {
       name: translation.projects.projects.pdf_constructor.name,
-      description: translation.projects.projects.pdf_constructor.name,
+      description: translation.projects.projects.pdf_constructor.description,
       technologies: ['ReactJS'],
       url: 'https://www.bastianparedes.com/pdf-constructor',
       github: 'https://github.com/BastianParedes/pdf-constructor/'
@@ -61,7 +61,7 @@ const Component = () => {
                 )}
 
                 <p className="text-xl">{project.description}</p>
-                <ul className="flex gap-5 text-sm">
+                <ul className="flex gap-5 text-sm flex-wrap">
                   {project.technologies.map((technologie) => (
                     <li key={technologie}>
                       <span className="rounded-full py-1 px-3 bg-green-800/50">

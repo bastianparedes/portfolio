@@ -13,6 +13,7 @@
   },
   "experience": {
     "button": "View Experience",
+    "present": "PRESENT",
     "jobs": {
       "falabella": {
         "name": "Falabella.com",
@@ -41,14 +42,14 @@
     "projects": {
       "ba_tester": {
         "name": "BA Tester",
-        "desciption": "Web application that allows implementing A/B tests on any webpage by collecting tests from developers and making a package available through an endpoint."
+        "description": "Web application that allows implementing A/B tests on any webpage by collecting tests from developers and making a package available through an endpoint."
       },
       "pdf_constructor": {
         "name": "PDF Constructor",
         "description": "It is a web page that receives user-uploaded images, configures them to their liking, and finally generates a PDF file saved on the user's computer. The entire process occurs on the Front-end side."
       },
       "tst_maker": {
-        "name": "tst_maker",
+        "name": "Tst Maker",
         "description": "Desktop application that builds multiple-choice math assessments for secondary level schools in Chile."
       }
     }
