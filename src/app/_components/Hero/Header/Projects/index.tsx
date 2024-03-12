@@ -7,7 +7,7 @@ import { useTranslation } from '../../../../_contexts/translation';
 
 const Component = () => {
   const [showContent, setShowContent] = useState(false);
-  const { translation } = useTranslation();
+  const { translation } = useTranslationContext();
 
   const openModal = () => setShowContent(true);
   const closeModal = () => setShowContent(false);

@@ -1,11 +1,11 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import constate from 'constate';
 import spanish from './spanish.json';
 import english from './english.json';
 
-function translate() {
+function useTranslate() {
   const [translation, setTranslation] = useState(spanish);
   const switchToEnglish = () => setTranslation(english);
   const switchToSpanish = () => setTranslation(spanish);
@@ -13,5 +13,5 @@ function translate() {
   return { translation, switchToSpanish, switchToEnglish };
 }
 
-const [TranslationProvider, useTranslation] = constate(translate);
-export { TranslationProvider, useTranslation };
+const [TranslationProvider, useTranslationContext] = constate(useTranslate);
+export { TranslationProvider, useTranslationContext };

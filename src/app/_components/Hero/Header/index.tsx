@@ -13,7 +13,7 @@ import { useTranslation } from '../../../_contexts/translation';
 
 const Component = () => {
   const parts = [About, Experience, Project];
-  const { translation } = useTranslation();
+  const { translation } = useTranslationContext();
 
   return (
     <div className="min-h-svh w-svw flex justify-center items-center">
