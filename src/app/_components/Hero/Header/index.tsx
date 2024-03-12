@@ -17,13 +17,13 @@ const Component = () => {
   const { translation } = useTranslation();
 
   return (
-    <div className="h-svh w-svw flex justify-center items-center">
-      <header className="flex gap-10">
+    <div className="min-h-svh w-svw flex justify-center items-center">
+      <header className="flex flex-col p-10 gap-2 items-center justify-center md:flex-row md:items-center lg:flex-row lg:gap-10">
         <div className="flex flex-col gap-10">
-          <h1 className="text-9xl font-bold text-white fadeIn0">
+          <h1 className="text-6xl font-bold text-white fadeIn0 md:text-8xl lg:text-9xl">
             {translation.hero.name}
           </h1>
-          <h2 className="text-7xl text-white fadeIn1">
+          <h2 className="text-5xl text-white fadeIn1 md:text-7xl">
             {translation.hero.title}
           </h2>
           <ul className="text-3xl text-white fadeIn2">
@@ -80,7 +80,7 @@ const Component = () => {
             </li>
           </ul>
         </div>
-        <div className="rounded-full overflow-hidden w-96 aspect-square fadeIn4">
+        <div className="rounded-full overflow-hidden w-52 aspect-square fadeIn4 md:w-96 md:h-fit lg:w-96">
           <Image
             alt={'Bastián Paredes'}
             className="w-full h-full object-cover"
