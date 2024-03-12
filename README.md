@@ -1,8 +1,12 @@
-# [Portafolio](https://bastianparedes.com/portfolio)
+# Nanko mangas
+Created using Next 13
 
-Este es mi portafolio, puedes visitarlo haciendo click [aquí](https://bastianparedes.com/portfolio)
+### Environment variables
 
 Variable | Optional
 --- | ---
+PHONE_NUMBER | Yes
+email | Yes
+emailPassword | Depends on email
+DROPBOX_ACCESS_TOKEN | No
 basePath | Yes
-dropboxAccessToken | No

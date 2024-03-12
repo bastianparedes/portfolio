@@ -1,15 +1,5 @@
-import React from 'react';
+import Hero from './_components/Hero/Header';
 
-import Home from './components/Home';
-import Main from './components/Main';
+const Page = () => <Hero />;
 
-const Index = () => {
-  return (
-    <>
-      <Home />
-      <Main />
-    </>
-  );
-};
-
-export default Index;
+export default Page;

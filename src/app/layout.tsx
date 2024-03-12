@@ -1,23 +1,31 @@
-import React from 'react';
+import type { Metadata } from 'next';
+import { Urbanist } from 'next/font/google';
+import './globals.css';
+import Image from 'next/image';
+import background from './background.jpg';
 
-import path from 'path';
+const urbanist = Urbanist({ subsets: ['latin'] });
 
-import { basePath } from '../../next.config';
-
-import 'bastianparedes/styles/global.css';
-import 'bastianparedes/styles/normalize.css';
-
-const Layout = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <html lang="es">
-      <head>
-        <meta charSet="utf-8" />
-        <link href={path.join(basePath, '/favicon.ico')} rel="icon" />
-        <title>Bastián Paredes</title>
-      </head>
-      <body>{children}</body>
-    </html>
-  );
+export const metadata: Metadata = {
+  title: 'Bastián Paredes'
 };
 
-export default Layout;
+export default function RootLayout({
+  children
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="es">
+      <body className={`${urbanist.className} bg-sky-800`}>
+        <Image
+          alt={'Background'}
+          className="w-full h-full object-cover fixed -z-10"
+          loading="lazy"
+          src={background}
+        />
+        {children}
+      </body>
+    </html>
+  );
+}
