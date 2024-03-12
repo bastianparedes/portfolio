@@ -9,7 +9,6 @@ import Project from './Projects';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { IoMdMail } from 'react-icons/io';
 import { AiFillInstagram } from 'react-icons/ai';
-import './styles.css';
 import { useTranslation } from '../../../_contexts/translation';
 
 const Component = () => {
@@ -20,20 +19,20 @@ const Component = () => {
     <div className="min-h-svh w-svw flex justify-center items-center">
       <header className="flex flex-col p-10 gap-2 items-center justify-center md:flex-row md:items-center lg:flex-row lg:gap-10">
         <div className="flex flex-col gap-10">
-          <h1 className="text-6xl font-bold text-white fadeIn0 md:text-8xl lg:text-9xl">
+          <h1 className="text-6xl font-bold text-white md:text-8xl lg:text-9xl">
             {translation.hero.name}
           </h1>
-          <h2 className="text-5xl text-white fadeIn1 md:text-7xl">
+          <h2 className="text-5xl text-white md:text-7xl">
             {translation.hero.title}
           </h2>
-          <ul className="text-3xl text-white fadeIn2">
+          <ul className="text-3xl text-white">
             {parts.map((Part, index) => (
               <li key={index}>
                 <Part />
               </li>
             ))}
           </ul>
-          <ul className="flex gap-5 text-4xl fadeIn3">
+          <ul className="flex gap-5 text-4xl">
             <li>
               <a
                 className="text-slate-200 hover:text-white"
@@ -80,7 +79,7 @@ const Component = () => {
             </li>
           </ul>
         </div>
-        <div className="rounded-full overflow-hidden w-52 aspect-square fadeIn4 md:w-96 md:h-fit lg:w-96">
+        <div className="rounded-full overflow-hidden w-52 aspect-square md:w-96 md:h-fit lg:w-96">
           <Image
             alt={'Bastián Paredes'}
             className="w-full h-full object-cover"
