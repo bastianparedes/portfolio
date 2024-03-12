@@ -2,15 +2,14 @@
 
 import { useState } from 'react';
 import constate from 'constate';
-import spanish from './spanish.json';
-import english from './english.json';
+import languajes from './languajes';
 
 function useTranslate() {
-  const [translation, setTranslation] = useState(spanish);
-  const switchToEnglish = () => setTranslation(english);
-  const switchToSpanish = () => setTranslation(spanish);
+  const [activeLanguaje, setActiveLanguaje] =
+    useState<keyof typeof languajes>('spanish');
+  const translation = languajes[activeLanguaje];
 
-  return { translation, switchToSpanish, switchToEnglish };
+  return { translation, setActiveLanguaje };
 }
 
 const [TranslationProvider, useTranslationContext] = constate(useTranslate);

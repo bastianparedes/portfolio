@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Modal from '../../../Modal';
-import { useTranslation } from '../../../../_contexts/translation';
+import { useTranslationContext } from '../../../../_contexts/translation';
 
 const Component = () => {
   const [showContent, setShowContent] = useState(false);

@@ -9,7 +9,7 @@ import Project from './Projects';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { IoMdMail } from 'react-icons/io';
 import { AiFillInstagram } from 'react-icons/ai';
-import { useTranslation } from '../../../_contexts/translation';
+import { useTranslationContext } from '../../../_contexts/translation';
 
 const Component = () => {
   const parts = [About, Experience, Project];
