@@ -2,72 +2,70 @@
 
 import { useState } from 'react';
 import Modal from '../../../Modal';
-
-const jobs = [
-  {
-    company: 'Falabella.com',
-    position: 'A/B Tester',
-    description:
-      'Build and maintain critical components used to construct Klaviyo’s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.',
-    startYear: 2022,
-    endYear: null,
-    technologies: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'ReactJS',
-      'NextJS',
-      'Fastify',
-      'Docker'
-    ]
-  },
-  {
-    company: 'Freelance',
-    position: 'Web Developer',
-    description:
-      'Desarrollo sitios web que presentan información detallada sobre los productos de la empresa, garantizando una presentación efectiva y una navegación intuitiva. Enfoco mi diseño en la estética para atraer clientes, creando interfaces atractivas y fáciles de usar. Además, implemento estrategias sólidas de optimización para motores de búsqueda (SEO) con el objetivo de mejorar la visibilidad online de la empresa. Mi enfoque abarca desde la programación de los sitios hasta la estética y la optimización, asegurando una experiencia completa y positiva para los usuarios.',
-    startYear: 2021,
-    endYear: null,
-    technologies: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'ReactJS',
-      'NextJS',
-      'SQL',
-      'PostgreSQL',
-      'MySql',
-      'Docker'
-    ]
-  },
-  {
-    company: 'Colegio Paideia',
-    position: 'App Developer',
-    description:
-      'Desarrollé una aplicación que automatiza la creación y calificación de evaluaciones, ayudando a los profesores a evitar trabajo adicional fuera de su horario laboral.',
-    startYear: 2019,
-    endYear: 2022,
-    technologies: ['Python']
-  },
-  {
-    company: 'Varios colegios y universidad San Sebastián',
-    position: 'Profesor de programación',
-    description:
-      'Facilité la enseñanza de la resolución de problemas mediante lenguajes de programación, promoviendo una comprensión completa de estrategias efectivas de solución. Además, coordiné al personal docente para desarrollar actividades que facilitaran el logro de los objetivos de aprendizaje por parte de los estudiantes. Mi enfoque educativo se centró en dotar a los alumnos de habilidades prácticas en programación y fomentar la colaboración entre el personal docente para garantizar una experiencia de aprendizaje integral y exitosa.',
-    startYear: 2017,
-    endYear: 2022,
-    technologies: ['JavaScript', 'NodeJS', 'Python']
-  }
-];
+import { useTranslation } from '../../../../_contexts/translation';
 
 const Component = () => {
   const [showContent, setShowContent] = useState(false);
+  const { translation } = useTranslation();
   const openModal = () => setShowContent(true);
   const closeModal = () => setShowContent(false);
 
+  const jobs = [
+    {
+      company: translation.experience.jobs.falabella.name,
+      position: translation.experience.jobs.falabella.position,
+      description: translation.experience.jobs.falabella.description,
+      startYear: 2022,
+      endYear: null,
+      technologies: [
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'ReactJS',
+        'NextJS',
+        'Fastify',
+        'Docker'
+      ]
+    },
+    {
+      company: translation.experience.jobs.freelance.name,
+      position: translation.experience.jobs.freelance.position,
+      description: translation.experience.jobs.freelance.description,
+      startYear: 2021,
+      endYear: null,
+      technologies: [
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'ReactJS',
+        'NextJS',
+        'SQL',
+        'PostgreSQL',
+        'MySql',
+        'Docker'
+      ]
+    },
+    {
+      company: translation.experience.jobs.paideia.name,
+      position: translation.experience.jobs.paideia.position,
+      description: translation.experience.jobs.paideia.description,
+      startYear: 2019,
+      endYear: 2022,
+      technologies: ['Python']
+    },
+    {
+      company: translation.experience.jobs.schools.name,
+      position: translation.experience.jobs.schools.position,
+      description: translation.experience.jobs.schools.description,
+      startYear: 2017,
+      endYear: 2022,
+      technologies: ['JavaScript', 'NodeJS', 'Python']
+    }
+  ];
+
   return (
     <>
-      <button onClick={openModal}>Ver Experiencia</button>
+      <button onClick={openModal}>{translation.experience.button}</button>
       {showContent && (
         <Modal closeModal={closeModal}>
           <table>

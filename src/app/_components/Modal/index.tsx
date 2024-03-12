@@ -11,7 +11,7 @@ interface Props {
 const Component = ({ children, closeModal }: Props) => {
   return (
     <div
-      className="h-svh w-svw bg-gray-800/80 fixed top-0 left-0 flex justify-center items-center"
+      className="h-svh w-svw bg-gray-800/80 fixed top-0 left-0 flex justify-center items-center z-10"
       onClick={closeModal}
     >
       <div className="relative" onClick={(e) => e.stopPropagation()}>

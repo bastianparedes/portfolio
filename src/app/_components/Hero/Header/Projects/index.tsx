@@ -3,42 +3,42 @@
 import { useState } from 'react';
 import Modal from '../../../Modal';
 import { HiMiniArrowUpRight } from 'react-icons/hi2';
-
-const projects = [
-  {
-    name: 'BA Tester',
-    description:
-      'Aplicación web que permite implementar pruebas A/B en cualquier página web mediante la recopilación de los tests por parte de los desarrolladores y la disponibilidad de un paquete a través de un endpoint',
-    technologies: ['NextJS', 'PostgreSQL', 'GraphQL', 'Webpack'],
-    url: 'https://github.com/BastianParedes/ba-tester/',
-    github: 'https://github.com/BastianParedes/ba-tester/'
-  },
-  {
-    name: 'PDF Constructor',
-    description:
-      'Es una página web que recibe las imágenes cargadas por el usuario, las configura a gusto y finalmente genera un archivo PDF que se guarda en el computador del mismo. Todo el proceso ocurre del lado del Front-end',
-    technologies: ['ReactJS'],
-    url: 'https://www.bastianparedes.com/pdf-constructor',
-    github: 'https://github.com/BastianParedes/pdf-constructor/'
-  },
-  {
-    name: 'Tst Maker',
-    description:
-      'Aplicación de escritorio que construye evaluaciones de seleción única de matemática para el nivel secundario de las escuelas chilenas',
-    technologies: ['Python', 'Tkinter', 'ExpressJS'],
-    url: null,
-    github: 'https://github.com/BastianParedes/tstmaker/'
-  }
-];
+import { useTranslation } from '../../../../_contexts/translation';
 
 const Component = () => {
   const [showContent, setShowContent] = useState(false);
+  const { translation } = useTranslation();
+
   const openModal = () => setShowContent(true);
   const closeModal = () => setShowContent(false);
 
+  const projects = [
+    {
+      name: translation.projects.projects.ba_tester.name,
+      description: translation.projects.projects.ba_tester.desciption,
+      technologies: ['NextJS', 'PostgreSQL', 'GraphQL', 'Webpack'],
+      url: 'https://github.com/BastianParedes/ba-tester/',
+      github: 'https://github.com/BastianParedes/ba-tester/'
+    },
+    {
+      name: translation.projects.projects.pdf_constructor.name,
+      description: translation.projects.projects.pdf_constructor.name,
+      technologies: ['ReactJS'],
+      url: 'https://www.bastianparedes.com/pdf-constructor',
+      github: 'https://github.com/BastianParedes/pdf-constructor/'
+    },
+    {
+      name: translation.projects.projects.tst_maker.name,
+      description: translation.projects.projects.tst_maker.description,
+      technologies: ['Python', 'Tkinter', 'ExpressJS'],
+      url: null,
+      github: 'https://github.com/BastianParedes/tstmaker/'
+    }
+  ];
+
   return (
     <>
-      <button onClick={openModal}>Ver Proyectos</button>
+      <button onClick={openModal}>{translation.projects.button}</button>
       {showContent && (
         <Modal closeModal={closeModal}>
           <div>

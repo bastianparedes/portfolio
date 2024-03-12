@@ -10,19 +10,21 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { IoMdMail } from 'react-icons/io';
 import { AiFillInstagram } from 'react-icons/ai';
 import './styles.css';
+import { useTranslation } from '../../../_contexts/translation';
 
 const Component = () => {
   const parts = [About, Experience, Project];
+  const { translation } = useTranslation();
 
   return (
     <div className="h-svh w-svw flex justify-center items-center">
       <header className="flex gap-10">
         <div className="flex flex-col gap-10">
           <h1 className="text-9xl font-bold text-white fadeIn0">
-            Bastián Paredes
+            {translation.hero.name}
           </h1>
           <h2 className="text-7xl text-white fadeIn1">
-            Middle Frontend Developer
+            {translation.hero.title}
           </h2>
           <ul className="text-3xl text-white fadeIn2">
             {parts.map((Part, index) => (

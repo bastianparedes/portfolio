@@ -2,9 +2,11 @@
 
 import { useState } from 'react';
 import Modal from '../../../Modal';
+import { useTranslation } from '../../../../_contexts/translation';
 
 const Component = () => {
   const [showContent, setShowContent] = useState(false);
+  const { translation } = useTranslation();
   const openModal = () => setShowContent(true);
   const closeModal = () => setShowContent(false);
 
@@ -12,26 +14,15 @@ const Component = () => {
 
   return (
     <>
-      <button onClick={openModal}>Ver Acerca de mí</button>
+      <button onClick={openModal}>{translation.about.button}</button>
       {showContent && (
         <Modal closeModal={closeModal}>
           <div className="flex flex-col gap-5">
             <p>
-              Tengo {yearsExperience} años Front-end, con una especialización en
-              en la creación, depuración y optimización de aplicaciones web. Mi
-              principal enfoque se centra en el uso de React (y por ende HTML,
-              CSS y JavaScript) y tecnologías complementarias que se integran de
-              manera efectiva. Además, garantizo una atención especial al SEO en
-              todos mis proyectos y mantengo una constante actualización de mis
-              conocimientos.
+              {translation.about.paragraph_1.part_1} {yearsExperience}{' '}
+              {translation.about.paragraph_1.part_2}
             </p>
-            <p>
-              Además de mis habilidades técnicas, cuento con competencias en
-              liderazgo, toma de decisiones y una meticulosa atención al
-              detalle. Mi capacidad para comunicarme en inglés es fluida, ya que
-              en mi trabajo actual necesito interactuar con equipos en India que
-              utilizan este idioma.
-            </p>
+            <p>{translation.about.paragraph_2}</p>
           </div>
         </Modal>
       )}

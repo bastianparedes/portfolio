@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "name": "Bastián Paredes",
+    "title": "Middle Frontend Developer"
+  },
+  "about": {
+    "button": "Ver Acerca de mí",
+    "paragraph_1": {
+      "part_1": "Tengo",
+      "part_2": "años Front-end, con una especialización en la creación, depuración y optimización de aplicaciones web. Mi principal enfoque se centra en el uso de React (y por ende HTML, CSS y JavaScript) y tecnologías complementarias que se integran de manera efectiva. Además, garantizo una atención especial al SEO en todos mis proyectos y mantengo una constante actualización de mis conocimientos."
+    },
+    "paragraph_2": "Además de mis habilidades técnicas, cuento con competencias en liderazgo, toma de decisiones y una meticulosa atención al detalle. Mi capacidad para comunicarme en inglés es fluida, ya que en mi trabajo actual necesito interactuar con equipos en India que utilizan este idioma."
+  },
+  "experience": {
+    "button": "Ver Experiencia",
+    "jobs": {
+      "falabella": {
+        "name": "Falabella.com",
+        "position": "A/B Tester",
+        "description": "Desarrollé una aplicación web interna para pruebas A/B, mejorando el diseño con HTML, CSS y JavaScript. Mantengo el código en React, añadiendo funciones, corrigiendo errores y escribiendo pruebas. Coordino con equipos externos para mantener e integrar sus características y API. Mi rol abarca desde el desarrollo y mejora constante del diseño web hasta la gestión eficaz del código y la colaboración con terceros para una integración exitosa."
+      },
+      "freelance": {
+        "name": "Freelance",
+        "position": "Web Developer",
+        "description": "Desarrollo sitios web que presentan información detallada sobre los productos de la empresa, garantizando una presentación efectiva y una navegación intuitiva. Enfoco mi diseño en la estética para atraer clientes, creando interfaces atractivas y fáciles de usar. Además, implemento estrategias sólidas de optimización para motores de búsqueda (SEO) con el objetivo de mejorar la visibilidad online de la empresa. Mi enfoque abarca desde la programación de los sitios hasta la estética y la optimización, asegurando una experiencia completa y positiva para los usuarios."
+      },
+      "paideia": {
+        "name": "Colegio Paideia",
+        "position": "Desarrollador de App",
+        "description": "Desarrollé una aplicación que automatiza la creación y calificación de evaluaciones, ayudando a los profesores a evitar trabajo adicional fuera de su horario laboral."
+      },
+      "schools": {
+        "name": "Varios colegios y universidad San Sebastián",
+        "position": "Profesor de programación",
+        "description": "Facilité la enseñanza de la resolución de problemas mediante lenguajes de programación, promoviendo una comprensión completa de estrategias efectivas de solución. Además, coordiné al personal docente para desarrollar actividades que facilitaran el logro de los objetivos de aprendizaje por parte de los estudiantes. Mi enfoque educativo se centró en dotar a los alumnos de habilidades prácticas en programación y fomentar la colaboración entre el personal docente para garantizar una experiencia de aprendizaje integral y exitosa."
+      }
+    }
+  },
+  "projects": {
+    "button": "Ver Proyectos",
+    "projects": {
+      "ba_tester": {
+        "name": "BA Tester",
+        "desciption": "Aplicación web que permite implementar pruebas A/B en cualquier página web mediante la recopilación de los tests por parte de los desarrolladores y la disponibilidad de un paquete a través de un endpoint."
+      },
+      "pdf_constructor": {
+        "name": "PDF Constructor",
+        "description": "'Es una página web que recibe las imágenes cargadas por el usuario, las configura a gusto y finalmente genera un archivo PDF que se guarda en el computador del mismo. Todo el proceso ocurre del lado del Front-end."
+      },
+      "tst_maker": {
+        "name": "tst_maker",
+        "description": "Aplicación de escritorio que construye evaluaciones de seleción única de matemática para el nivel secundario de las escuelas chilenas."
+      }
+    }
+  }
+}
