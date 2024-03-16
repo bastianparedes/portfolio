@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={`${urbanist.className} bg-sky-800`}>
         <Image
           alt={'Background'}
-          className="w-full h-full object-cover fixed -z-10"
+          className="w-full h-auto min-h-full object-cover fixed -z-10"
           loading="lazy"
           src={background}
         />

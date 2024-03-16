@@ -12,7 +12,6 @@ import { AiFillInstagram } from 'react-icons/ai';
 import { useTranslationContext } from '../../../_contexts/translation';
 
 const Component = () => {
-  const parts = [About, Experience, Project];
   const { translation } = useTranslationContext();
 
   return (
@@ -26,11 +25,15 @@ const Component = () => {
             {translation.hero.title}
           </h2>
           <ul className="text-3xl text-white">
-            {parts.map((Part, index) => (
-              <li key={index}>
-                <Part />
-              </li>
-            ))}
+            <li>
+              <About />
+            </li>
+            <li>
+              <Experience />
+            </li>
+            <li>
+              <Project />
+            </li>
           </ul>
           <ul className="flex gap-5 text-4xl">
             <li>
