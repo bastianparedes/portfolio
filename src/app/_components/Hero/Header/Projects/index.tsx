@@ -20,7 +20,7 @@ const Component = () => {
       name: translation.projects.projects.ba_tester.name,
       description: translation.projects.projects.ba_tester.description,
       technologies: ['NextJS', 'PostgreSQL', 'GraphQL', 'Webpack'],
-      url: 'https://github.com/BastianParedes/ba-tester/',
+      url: 'https://www.bastianparedes.com/ba-tester',
       github: 'https://github.com/BastianParedes/ba-tester/'
     },
     {
