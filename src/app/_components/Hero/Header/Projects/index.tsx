@@ -33,6 +33,14 @@ const Component = () => {
       github: 'https://github.com/BastianParedes/pdf-constructor/'
     },
     {
+      show: getToggle('show_short_url'),
+      name: translation.projects.projects.short_url.name,
+      description: translation.projects.projects.short_url.description,
+      technologies: ['ReactJS', 'NextJS', 'SQLite', 'tRPC', 'Drizzle ORM'],
+      url: 'https://short-url.bastianparedes.com/',
+      github: 'https://github.com/bastianparedes/short-url'
+    },
+    {
       show: getToggle('show_tst_maker'),
       name: translation.projects.projects.tst_maker.name,
       description: translation.projects.projects.tst_maker.description,

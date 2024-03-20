@@ -10,6 +10,7 @@ type togglesAvailable =
   | 'show_teacher_programming'
   | 'show_ba_tester'
   | 'show_pdf_constructor'
+  | 'show_short_url'
   | 'show_tst_maker';
 
 interface Props {

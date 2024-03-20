@@ -48,6 +48,10 @@
         "name": "PDF Constructor",
         "description": "It is a web page that receives user-uploaded images, configures them to their liking, and finally generates a PDF file saved on the user's computer. The entire process occurs on the Front-end side."
       },
+      "short_url": {
+        "name": "Short URL",
+        "description": "Online tool that reduces the length of web addresses for easier use and sharing."
+      },
       "tst_maker": {
         "name": "Tst Maker",
         "description": "Desktop application that builds multiple-choice math assessments for secondary level schools in Chile."

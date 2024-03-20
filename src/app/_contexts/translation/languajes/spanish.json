@@ -48,6 +48,10 @@
         "name": "PDF Constructor",
         "description": "Es una página web que recibe las imágenes cargadas por el usuario, las configura a gusto y finalmente genera un archivo PDF que se guarda en el computador del mismo. Todo el proceso ocurre del lado del Front-end."
       },
+      "short_url": {
+        "name": "Short URL",
+        "description": "Herramienta en línea que reduce la longitud de las direcciones web para facilitar su uso y compartir."
+      },
       "tst_maker": {
         "name": "Tst Maker",
         "description": "Aplicación de escritorio que construye evaluaciones de seleción única de matemática para el nivel secundario de las escuelas chilenas."
