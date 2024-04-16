@@ -1,24 +1,22 @@
 'use client';
 
 import constate from 'constate';
-import type { get } from '@vercel/edge-config';
 
-type togglesAvailable =
-  | 'show_falabella'
-  | 'show_freelance'
-  | 'show_teacher_app'
-  | 'show_teacher_programming'
-  | 'show_ba_tester'
-  | 'show_pdf_constructor'
-  | 'show_short_url'
-  | 'show_tst_maker';
-
-interface Props {
-  toggles: Awaited<ReturnType<typeof get>>;
-}
+type Props = {
+  toggles: {
+    show_falabella: boolean;
+    show_freelance: boolean;
+    show_teacher_app: boolean;
+    show_teacher_programming: boolean;
+    show_ba_tester: boolean;
+    show_pdf_constructor: boolean;
+    show_short_url: boolean;
+    show_tst_maker: boolean;
+  };
+};
 
 function useToggles({ toggles }: Props) {
-  const getToggle = (toggleName: togglesAvailable) => {
+  const getToggle = (toggleName: keyof typeof toggles) => {
     if (!(toggles instanceof Object)) return false;
 
     const togglesTyped = toggles as Record<string, unknown>;

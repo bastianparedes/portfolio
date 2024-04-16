@@ -4,19 +4,17 @@ import { useState } from 'react';
 import Modal from '../../../Modal';
 import { HiMiniArrowUpRight } from 'react-icons/hi2';
 import { useTranslationContext } from '../../../../_contexts/translation';
-import { useTogglesContext } from '../../../../_contexts/toggles';
 
 const Component = () => {
   const [showContent, setShowContent] = useState(false);
   const { translation } = useTranslationContext();
-  const { getToggle } = useTogglesContext();
 
   const openModal = () => setShowContent(true);
   const closeModal = () => setShowContent(false);
 
   const projects = [
     {
-      show: getToggle('show_ba_tester'),
+      show: true,
       name: translation.projects.projects.ba_tester.name,
       description: translation.projects.projects.ba_tester.description,
       technologies: ['NextJS', 'PostgreSQL', 'GraphQL', 'Webpack'],
@@ -24,7 +22,7 @@ const Component = () => {
       github: 'https://github.com/BastianParedes/ba-tester/'
     },
     {
-      show: getToggle('show_pdf_constructor'),
+      show: true,
 
       name: translation.projects.projects.pdf_constructor.name,
       description: translation.projects.projects.pdf_constructor.description,
@@ -33,7 +31,7 @@ const Component = () => {
       github: 'https://github.com/BastianParedes/pdf-constructor/'
     },
     {
-      show: getToggle('show_short_url'),
+      show: true,
       name: translation.projects.projects.short_url.name,
       description: translation.projects.projects.short_url.description,
       technologies: ['ReactJS', 'NextJS', 'SQLite', 'tRPC', 'Drizzle ORM'],
@@ -41,7 +39,7 @@ const Component = () => {
       github: 'https://github.com/bastianparedes/short-url'
     },
     {
-      show: getToggle('show_tst_maker'),
+      show: true,
       name: translation.projects.projects.tst_maker.name,
       description: translation.projects.projects.tst_maker.description,
       technologies: ['Python', 'Tkinter', 'ExpressJS'],

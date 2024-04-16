@@ -6,7 +6,7 @@ import languajes from './languajes';
 
 function useTranslate() {
   const [activeLanguaje, setActiveLanguaje] =
-    useState<keyof typeof languajes>('spanish');
+    useState<keyof typeof languajes>('english');
   const translation = languajes[activeLanguaje];
 
   return { translation, setActiveLanguaje };

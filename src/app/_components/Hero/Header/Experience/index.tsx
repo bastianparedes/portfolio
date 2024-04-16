@@ -3,19 +3,17 @@
 import { useState } from 'react';
 import Modal from '../../../Modal';
 import { useTranslationContext } from '../../../../_contexts/translation';
-import { useTogglesContext } from '../../../../_contexts/toggles';
 
 const Component = () => {
   const [showContent, setShowContent] = useState(false);
   const { translation } = useTranslationContext();
-  const { getToggle } = useTogglesContext();
 
   const openModal = () => setShowContent(true);
   const closeModal = () => setShowContent(false);
 
   const jobs = [
     {
-      show: getToggle('show_falabella'),
+      show: true,
       company: translation.experience.jobs.falabella.name,
       position: translation.experience.jobs.falabella.position,
       description: translation.experience.jobs.falabella.description,
@@ -32,7 +30,7 @@ const Component = () => {
       ]
     },
     {
-      show: getToggle('show_freelance'),
+      show: true,
       company: translation.experience.jobs.freelance.name,
       position: translation.experience.jobs.freelance.position,
       description: translation.experience.jobs.freelance.description,
@@ -51,7 +49,7 @@ const Component = () => {
       ]
     },
     {
-      show: getToggle('show_teacher_app'),
+      show: true,
       company: translation.experience.jobs.paideia.name,
       position: translation.experience.jobs.paideia.position,
       description: translation.experience.jobs.paideia.description,
@@ -60,7 +58,7 @@ const Component = () => {
       technologies: ['Python']
     },
     {
-      show: getToggle('show_teacher_programming'),
+      show: true,
       company: translation.experience.jobs.schools.name,
       position: translation.experience.jobs.schools.position,
       description: translation.experience.jobs.schools.description,
