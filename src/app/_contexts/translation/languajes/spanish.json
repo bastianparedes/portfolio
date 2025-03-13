@@ -1,7 +1,8 @@
 {
   "hero": {
     "name": "Bastián Paredes",
-    "title": "Frontend Developer"
+    "title": "Frontend Developer",
+    "setLanguaje": "Cambiar idioma"
   },
   "about": {
     "button": "Ver Acerca de mí",

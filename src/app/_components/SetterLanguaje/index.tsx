@@ -6,7 +6,7 @@ import { availableLanguajes } from '../../_contexts/translation/languajes';
 
 const Component = () => {
   const [isOptionsOpen, setIsOptionsOpen] = useState(false);
-  const { setActiveLanguaje } = useTranslationContext();
+  const { translation, setActiveLanguaje } = useTranslationContext();
 
   const switchIsOptionsOpen = () => setIsOptionsOpen(!isOptionsOpen);
   const closeOptions = () => setIsOptionsOpen(false);
@@ -18,7 +18,7 @@ const Component = () => {
   return (
     <div className="bg-black text-slate-300 flex flex-col p-2 gap-0 fixed top-0 right-5">
       <button onClick={switchIsOptionsOpen} className="hover:text-white">
-        Set languaje
+        {translation.hero.setLanguaje}
       </button>
       {isOptionsOpen &&
         availableLanguajes.map((languaje) => (
