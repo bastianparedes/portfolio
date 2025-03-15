@@ -1,29 +1,26 @@
-import type { Metadata } from 'next';
-import { Urbanist } from 'next/font/google';
-import './globals.css';
-import Image from 'next/image';
-import background from './background.jpg';
+import type { Metadata } from "next";
+import { Lato } from "next/font/google";
+import "./globals.css";
 
-const urbanist = Urbanist({ subsets: ['latin'] });
+const lato = Lato({
+  weight: '700'
+});
 
 export const metadata: Metadata = {
-  title: 'Bastián Paredes'
+  title: "Bastián Paredes",
+  description: "Bastián's portfolio",
 };
 
 export default function RootLayout({
-  children
-}: {
+  children,
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html lang="es">
-      <body className={`${urbanist.className} bg-sky-800`}>
-        <Image
-          alt={'Background'}
-          className="w-full h-auto min-h-full object-cover fixed -z-10"
-          loading="lazy"
-          src={background}
-        />
+    <html lang="en">
+      <body
+        className={`${lato.className} antialiased bg-white text-black`}
+      >
         {children}
       </body>
     </html>

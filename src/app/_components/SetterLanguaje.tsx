@@ -1,12 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslationContext } from '../../_contexts/translation';
-import { availableLanguajes } from '../../_contexts/translation/languajes';
+import { useTranslationContext } from '../_contexts/translation';
+import { availableLanguajes } from '../_contexts/translation/languajes';
 
 const Component = () => {
   const [isOptionsOpen, setIsOptionsOpen] = useState(false);
-  const { translation, setActiveLanguaje } = useTranslationContext();
+  const { translation, languajes, setActiveLanguaje } = useTranslationContext();
 
   const switchIsOptionsOpen = () => setIsOptionsOpen(!isOptionsOpen);
   const closeOptions = () => setIsOptionsOpen(false);
@@ -16,7 +16,7 @@ const Component = () => {
   };
 
   return (
-    <div className="bg-black text-slate-300 flex flex-col p-2 gap-0 fixed top-0 right-5">
+    <div className="bg-black text-slate-300 flex flex-col p-2 gap-0 fixed bottom-0 left-5">
       <button onClick={switchIsOptionsOpen} className="hover:text-white">
         {translation.hero.setLanguaje}
       </button>
@@ -27,7 +27,7 @@ const Component = () => {
             onClick={() => setLanguaje(languaje)}
             className="hover:text-white"
           >
-            {languaje}
+            {languajes[languaje].languaje}
           </button>
         ))}
     </div>
