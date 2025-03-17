@@ -210,6 +210,7 @@ const experiences = Object.freeze([
 
 const Component = () => {
   const [technologiesStatus, setTechnologiesStatus] = useState(Object.keys(technologies).reduce((acc, key) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (acc as any)[key] = true;
     return acc;
   }, {} as { [key in keyof typeof technologies]: boolean }));
