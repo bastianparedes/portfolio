@@ -1,0 +1,35 @@
+{
+  "language": {
+    "name": "English",
+    "setLanguage": "Change Language"
+  },
+  "hero": {
+    "title": "Front-End Developer",
+    "react": "React",
+    "angular": "Angular",
+    "next": "Next.js",
+    "postgres": "PostgreSQL"
+  },
+  "experience": {
+    "title": "Experience",
+    "paragraph": "See where I have worked to get an idea of my experience",
+    "jobs": {
+      "sodimac": {
+        "company": "Sodimac",
+        "position": "Full Stack Software Engineer"
+      },
+      "falabella": {
+        "company": "Falabella",
+        "position": "Full Stack Software Engineer - A/B Tester Associate"
+      },
+      "trilma": {
+        "company": "Trilma",
+        "position": "Freelance Software Engineer"
+      },
+      "paideia": {
+        "company": "Paideia",
+        "position": "Web Developer"
+      }
+    }
+  }
+}
