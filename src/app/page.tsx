@@ -1,14 +1,16 @@
-import Hero from './_components/Hero/Header';
 import { TranslationProvider } from './_contexts/translation';
-import SetterLanguaje from './_components/SetterLanguaje';
+import SetterLanguage from './_components/SetterLanguage';
+import Header from './_components/Header';
+import Hero from './_components/Hero';
+import Experience from './_components/Experience';
 
-const Page = async () => {
+export default function Home() {
   return (
     <TranslationProvider>
+      <SetterLanguage />
+      <Header />
       <Hero />
-      <SetterLanguaje />
+      <Experience />
     </TranslationProvider>
   );
-};
-
-export default Page;
+}
