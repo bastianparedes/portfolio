@@ -1,9 +1,9 @@
 'use client';
 
-import PageFalabella from './images/png/page-falabella.png';
-import PageSodimac from './images/png/page-sodimac.png';
-import PageTrilma from './images/png/page-trilma.png';
-import PagePaideia from './images/png/page-paideia.png';
+import PageFalabella from './images/png/page-falabella-min.png';
+import PageSodimac from './images/png/page-sodimac-min.png';
+import PageTrilma from './images/png/page-trilma-min.png';
+import PagePaideia from './images/png/page-paideia-min.png';
 import Image from "next/image";
 import { useTranslationContext } from '../_contexts/translation';
 
