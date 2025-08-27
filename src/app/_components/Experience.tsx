@@ -34,7 +34,7 @@ const Component = () => {
       position: translation.experience.jobs.trilma.position,
       begin: '2019',
       end: '2022',
-      url: 'https://www.trilma.com',
+      url: 'https://trilma.bastianparedes.com',
       image: PageTrilma
     },
     {
