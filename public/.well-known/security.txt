@@ -1,0 +1,8 @@
+# security.txt for bastianparedes.com
+# https://securitytxt.org/
+
+Contact: mailto:bastian.p@outlook.com
+Contact: https://www.bastianparedes.com/
+Preferred-Languages: en, es
+Expires: 2035-12-31T23:59:59Z
+Canonical: https://www.bastianparedes.com/.well-known/security.txt
